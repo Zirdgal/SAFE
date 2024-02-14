@@ -23,14 +23,12 @@ focus_tree = {
 		
 		modifier = {
 			add = 10
-			tag = FRA
 			tag = GER
 			tag = ENG
 			tag = NOR
 			tag = SWE
 			tag = FIN
 			tag = SOV
-			tag = EST
 			tag = POL
 			tag = CZE
 			tag = ITA

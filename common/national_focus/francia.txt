@@ -2,16 +2,19 @@ focus_tree = {
     id = francia_focus
 	
     country = {
-	    factor = 1
+	    factor = 0
 		
 		modifier = {
+			add = 11
 		    tag = FRA
-			}
 		}
 	}
 
-    default = yes
+    default = no # the default focus tree would be inputed if this is yes
 	reset_on_civilwar = no
 	
 	focus = {
-	    id = 
+	    id = FRA_firstFocus
+	}
+}
+	
