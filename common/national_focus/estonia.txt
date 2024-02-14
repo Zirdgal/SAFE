@@ -40,13 +40,13 @@ focus_tree = {
 
 		}
 
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 
 		completion_reward = {
 		}
     }
-	
+
 	focus = {
 		id = LIV_the_english
 		icon = GFX_
@@ -62,7 +62,7 @@ focus_tree = {
 
 		}
 
-		cost = 5
+		cost = 10
 		prerequisite = { focus = LIV_look_westward }
 		available_if_capitulated = yes
 
@@ -90,7 +90,7 @@ focus_tree = {
 
 		}
 
-		cost = 5
+		cost = 10
 		prerequisite = { focus = LIV_look_westward }
 		available_if_capitulated = yes
 
@@ -122,7 +122,7 @@ focus_tree = {
 
 		}
 
-		cost = 5
+		cost = 10
 		prerequisite = { focus = LIV_look_westward }
 		available_if_capitulated = yes
 
@@ -154,8 +154,8 @@ focus_tree = {
 
 	focus = {
 		id = LIV_stay_eastward
-		icon = GFX_focus_unknown
-		x = 26
+		icon = GFX_focus_SOV_socialism_in_one_country
+		x = 30
 		y = 0
 		#relative_position_id = AST_enpower_the_workers
 		mutually_exclusive = { focus = LIV_look_westward }
@@ -167,13 +167,123 @@ focus_tree = {
 
 		}
 
-		cost = 5
+		cost = 10
 		#prerequisite = {}
 		available_if_capitulated = yes
 
 		completion_reward = {
 		}
     }
+	focus = {
+		id = LIV_greater_cooperation_with_the_soviet_union
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = -2
+		y = 1
+		relative_position_id = LIV_stay_eastward
+		mutually_exclusive = { focus = LIV_soviet_autonomous_region }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_stay_eastward }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_appoint_soviet_ministers
+		icon = GFX_focus_SWE_socialist_reforms
+		x = 1
+		y = 1
+		relative_position_id = LIV_greater_cooperation_with_the_soviet_union
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_greater_cooperation_with_the_soviet_union }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_invite_the_NKVD
+		icon = GFX_focus_LIV_nkvd_invitation
+		x = 1
+		y = 1
+		relative_position_id = LIV_demand_soviet_investment
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_appoint_soviet_ministers }
+		prerequisite = { focus = LIV_demand_soviet_investment }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	focus = {
+		id = LIV_soviet_autonomous_region
+		icon = GFX_focus_LIV_soviet_autonomous_region
+		x = 2
+		y = 1
+		relative_position_id = LIV_stay_eastward
+		mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_stay_eastward }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+	
+	
 
 
 
@@ -192,10 +302,10 @@ focus_tree = {
 
 
    	focus = {
-		id = LIV_economy
-		icon = GFX_focus_unknown   #ICONS MUST HAVE GFX INFRONT
-		x = -8
-		y = 2
+		id = LIV_construct_the_livonian_rail_network
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -10
+		y = 1
 		relative_position_id = LIV_stay_eastward
 
 		available = {
@@ -205,8 +315,80 @@ focus_tree = {
 
 		}
 
-		cost = 5
+		cost = 10
 		prerequisite = { focus = LIV_stay_eastward focus = LIV_look_westward }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_the_north
+		icon = GFX_goal_generic_construct_civ_factory   
+		x = 2
+		y = 1
+		relative_position_id = LIV_construct_the_livonian_rail_network
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_construct_the_livonian_rail_network }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+
+
+
+
+
+
+
+
+	focus = {
+		id = LIV_the_south
+		icon = GFX_goal_generic_construct_civ_factory   
+		x = -2
+		y = 1
+		relative_position_id = LIV_construct_the_livonian_rail_network
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_construct_the_livonian_rail_network }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_demand_soviet_investment
+		icon = GFX_focus_SOV_merge_plants
+		x = 6
+		y = 1
+		relative_position_id = LIV_construct_the_livonian_rail_network
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_construct_the_livonian_rail_network }
+		prerequisite = { focus = LIV_greater_cooperation_with_the_soviet_union }
 		available_if_capitulated = yes
 
 		completion_reward = {
