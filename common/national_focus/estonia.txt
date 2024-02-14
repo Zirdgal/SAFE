@@ -13,17 +13,17 @@ focus_tree = {
     default = no        # the default focus tree would be inputed if this is yes
 	reset_on_civilwar = no
 	
-	#focus = {
-	#	id = LIV_firstfocus
-	#	icon = GFX_focus_unknown   #ICONS MUST HAVE GFX INFRONT
-	#	x = 1
-	#	y = 0
-	#	cost = 10                   # cost = {inputed value} x 7
+	focus = {
+		id = LIV_firstfocus
+		icon = GFX_focus_unknown   #ICONS MUST HAVE GFX INFRONT
+		x = 1
+		y = 0
+		cost = 10                   # cost = {inputed value} x 7
 		
-	#	available_if_capitulated = yes
+		available_if_capitulated = yes
 
-	#	completion_reward = {
-	#	}
-#   }
+		completion_reward = {
+		}
+   }
 }
 	
