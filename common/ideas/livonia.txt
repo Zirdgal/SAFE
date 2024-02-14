@@ -1,0 +1,25 @@
+ideas = {
+	country = {
+		LIV_soviet_subordination_idea = {
+
+			picture = SOV_conspiracy_in_the_academy_airforce
+			
+			allowed = {
+				tag = EST
+			}
+			available = {
+
+			}
+			cancel = {
+
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = 0.05
+				communism_acceptance = 40
+			}
+		}
+	}
+}

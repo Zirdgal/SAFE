@@ -12,13 +12,26 @@ focus_tree = {
 
     default = no        # the default focus tree would be inputed if this is yes
 	reset_on_civilwar = no
-	
+	continuous_focus_position = { x = 450 y = 5000 }
+
+
+#	██╗    ██╗███████╗███████╗████████╗    ██████╗  █████╗ ████████╗██╗  ██╗
+#	██║    ██║██╔════╝██╔════╝╚══██╔══╝    ██╔══██╗██╔══██╗╚══██╔══╝██║  ██║
+#	██║ █╗ ██║█████╗  ███████╗   ██║       ██████╔╝███████║   ██║   ███████║
+#	██║███╗██║██╔══╝  ╚════██║   ██║       ██╔═══╝ ██╔══██║   ██║   ██╔══██║
+#	╚███╔███╔╝███████╗███████║   ██║       ██║     ██║  ██║   ██║   ██║  ██║
+#	 ╚══╝╚══╝ ╚══════╝╚══════╝   ╚═╝       ╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ 
+
+
+
+
 	focus = {
-		id = LIV_one_with_the_motherland
-		icon = GFX_focus_unknown   #ICONS MUST HAVE GFX INFRONT
-		x = 1
+		id = LIV_look_westward
+		icon = GFX_goal_LIV_look_westward
+		x = 10
 		y = 0
-		#relative_position_id = AST_enpower_the_workers
+		#relative_position_id = LIV_stay_eastward
+		mutually_exclusive = { focus = LIV_stay_eastward }
 
 		available = {
 
@@ -27,19 +40,163 @@ focus_tree = {
 
 		}
 
-		cost = 5                   # cost = {inputed value} x 7
+		cost = 5
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+	focus = {
+		id = LIV_the_english
+		icon = GFX_
+		x = -7
+		y = 1
+		relative_position_id = LIV_look_westward
+		mutually_exclusive = { focus = LIV_the_french focus = LIV_the_poles }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_look_westward }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+
+
+
+
+
+
+	focus = {
+		id = LIV_the_french
+		icon = GFX_
+		x = -2
+		y = 1
+		relative_position_id = LIV_look_westward
+		mutually_exclusive = { focus = LIV_the_english focus = LIV_the_poles }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_look_westward }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = LIV_the_poles
+		icon = GFX_
+		x = 3
+		y = 1
+		relative_position_id = LIV_look_westward
+		mutually_exclusive = { focus = LIV_the_english focus = LIV_the_french }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_look_westward }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+
+
+
+
+
+
+
+
+
+
+
+
+#	███████╗ █████╗ ███████╗████████╗    ██████╗  █████╗ ████████╗██╗  ██╗
+#	██╔════╝██╔══██╗██╔════╝╚══██╔══╝    ██╔══██╗██╔══██╗╚══██╔══╝██║  ██║
+#	█████╗  ███████║███████╗   ██║       ██████╔╝███████║   ██║   ███████║
+#	██╔══╝  ██╔══██║╚════██║   ██║       ██╔═══╝ ██╔══██║   ██║   ██╔══██║
+#	███████╗██║  ██║███████║   ██║       ██║     ██║  ██║   ██║   ██║  ██║
+#	╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝       ╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝     
+
+
+
+
+	focus = {
+		id = LIV_stay_eastward
+		icon = GFX_focus_unknown
+		x = 26
+		y = 0
+		#relative_position_id = AST_enpower_the_workers
+		mutually_exclusive = { focus = LIV_look_westward }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
 		#prerequisite = {}
 		available_if_capitulated = yes
 
 		completion_reward = {
 		}
-   }
+    }
+
+
+
+
+
+
+
+#	███████╗ ██████╗ ██████╗ ███╗   ██╗ ██████╗ ███╗   ███╗██╗   ██╗
+#	██╔════╝██╔════╝██╔═══██╗████╗  ██║██╔═══██╗████╗ ████║╚██╗ ██╔╝
+#	█████╗  ██║     ██║   ██║██╔██╗ ██║██║   ██║██╔████╔██║ ╚████╔╝ 
+#	██╔══╝  ██║     ██║   ██║██║╚██╗██║██║   ██║██║╚██╔╝██║  ╚██╔╝  
+#	███████╗╚██████╗╚██████╔╝██║ ╚████║╚██████╔╝██║ ╚═╝ ██║   ██║   
+#	╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝   ╚═╝   
+
+
+
+
    	focus = {
-		id = LIV_two
+		id = LIV_economy
 		icon = GFX_focus_unknown   #ICONS MUST HAVE GFX INFRONT
-		x = 0
-		y = 1
-		relative_position_id = LIV_one_with_the_motherland
+		x = -8
+		y = 2
+		relative_position_id = LIV_stay_eastward
 
 		available = {
 
@@ -48,12 +205,12 @@ focus_tree = {
 
 		}
 
-		cost = 5                   # cost = {inputed value} x 7
-		prerequisite = { focus = LIV_one_with_the_motherland }
+		cost = 5
+		prerequisite = { focus = LIV_stay_eastward focus = LIV_look_westward }
 		available_if_capitulated = yes
 
 		completion_reward = {
 		}
-   }
+    }
 }
 	

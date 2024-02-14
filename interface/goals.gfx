@@ -1,5 +1,12 @@
 spriteTypes = {	
 
+
+	SpriteType = {
+	name = "GFX_goal_LIV_look_westward"
+	texturefile = "gfx/interface/goals/goal_LIV_look_westward.dds"			
+	}	
+
+
 	#### Generic continuous goal icons
 
 	SpriteType = {
