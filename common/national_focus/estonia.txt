@@ -1,11 +1,11 @@
 focus_tree = {
-    id = livonia_focus
+    id = livonian_focus
 	
     country = {
-	    factor = 0
+	    factor = 10 # makes it that this focus is selected over base game hoi4 focus
 		
 		modifier = {
-            add = 11 # makes it that this focus is selected over base game hoi4 focus
+            add = 10 # makes it that this focus is selected over base game hoi4 focus
 		    tag = EST
 		}
 	}
@@ -14,12 +14,42 @@ focus_tree = {
 	reset_on_civilwar = no
 	
 	focus = {
-		id = LIV_firstfocus
+		id = LIV_one_with_the_motherland
 		icon = GFX_focus_unknown   #ICONS MUST HAVE GFX INFRONT
 		x = 1
 		y = 0
-		cost = 10                   # cost = {inputed value} x 7
-		
+		#relative_position_id = AST_enpower_the_workers
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5                   # cost = {inputed value} x 7
+		#prerequisite = {}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+   }
+   	focus = {
+		id = LIV_two
+		icon = GFX_focus_unknown   #ICONS MUST HAVE GFX INFRONT
+		x = 0
+		y = 1
+		relative_position_id = LIV_one_with_the_motherland
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5                   # cost = {inputed value} x 7
+		prerequisite = { focus = LIV_one_with_the_motherland }
 		available_if_capitulated = yes
 
 		completion_reward = {
