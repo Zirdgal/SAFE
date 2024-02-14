@@ -1,6 +1,13 @@
 spriteTypes = {	
 
-
+	SpriteType = {
+	name = "GFX_focus_LIV_nkvd_invitation"
+	texturefile = "gfx/interface/goals/focus_LIV_nkvd_invitation.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_focus_LIV_soviet_autonomous_region"
+	texturefile = "gfx/interface/goals/focus_LIV_our_place_in_the_world.dds"			
+	}	
 	SpriteType = {
 	name = "GFX_goal_LIV_look_westward"
 	texturefile = "gfx/interface/goals/goal_LIV_look_westward.dds"			
