@@ -324,7 +324,91 @@ focus_tree = {
     }
 	focus = {
 		id = LIV_the_north
-		icon = GFX_goal_generic_construct_civ_factory   
+		icon = GFX_focus_LIV_estonia
+		x = -2
+		y = 1
+		relative_position_id = LIV_construct_the_livonian_rail_network
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_construct_the_livonian_rail_network }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_rural_industrialization_project	
+		icon = GFX_
+		x = -1
+		y = 1
+		relative_position_id = LIV_the_north
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_the_north }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_saare_naval_prospects
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		x = 1
+		y = 1
+		relative_position_id = LIV_rural_industrialization_project
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_rural_industrialization_project }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_valka_construction_efforts
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 2
+		y = 1
+		relative_position_id = LIV_the_north
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_the_north focus = LIV_the_south }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_the_south
+		icon = GFX_focus_LIV_latvia
 		x = 2
 		y = 1
 		relative_position_id = LIV_construct_the_livonian_rail_network
@@ -343,20 +427,12 @@ focus_tree = {
 		completion_reward = {
 		}
     }
-
-
-
-
-
-
-
-
 	focus = {
-		id = LIV_the_south
-		icon = GFX_goal_generic_construct_civ_factory   
-		x = -2
+		id = LIV_invest_in_the_border_region
+		icon = GFX_
+		x = 1
 		y = 1
-		relative_position_id = LIV_construct_the_livonian_rail_network
+		relative_position_id = LIV_the_south
 
 		available = {
 
@@ -366,7 +442,28 @@ focus_tree = {
 		}
 
 		cost = 10
-		prerequisite = { focus = LIV_construct_the_livonian_rail_network }
+		prerequisite = { focus = LIV_the_south }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_courlish_industrialization
+		icon = GFX_
+		x = -1
+		y = 1
+		relative_position_id = LIV_invest_in_the_border_region
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_invest_in_the_border_region }
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -389,6 +486,30 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = LIV_construct_the_livonian_rail_network }
 		prerequisite = { focus = LIV_greater_cooperation_with_the_soviet_union }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+
+	focus = {
+		id = LIV_begin_militirization
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 0
+		y = 2
+		relative_position_id = LIV_valka_construction_efforts
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_valka_construction_efforts }
+		prerequisite = { focus = LIV_courlish_industrialization }
+		prerequisite = { focus = LIV_saare_naval_prospects }
 		available_if_capitulated = yes
 
 		completion_reward = {
