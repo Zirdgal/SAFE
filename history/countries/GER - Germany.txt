@@ -373,30 +373,22 @@ set_war_support = 0.3
 
 set_politics = {
 	ruling_party = democratic
+	last_election = "1933.1.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 10
-	fascism = 60
-	communism = 20
+	democratic = 35
+	fascism = 40
+	communism = 5
+	neutrality = 20
 }
 
-create_faction = Axis
-add_to_faction = GER
-
-
 add_ideas = {
-	sour_loser
-	general_staff
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
-#	SWE_historical_trade_with_Germany_dummy CUT
 }
-add_ideas = GER_mefo_bills_1
-
-activate_mission = GER_mefo_bills_mission
 
 recruit_character = GER_wilhelm_pieck
 recruit_character = GER_konrad_adenauer
