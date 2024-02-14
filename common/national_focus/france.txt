@@ -1,5 +1,4 @@
 focus_tree = {
-<<<<<<< Updated upstream
     id = francia_focus
 	
     country = {
@@ -14,12 +13,6 @@ focus_tree = {
     default = no # the default focus tree would be inputed if this is yes
 	reset_on_civilwar = no
 	
-	focus = {
-	    id = FRA_firstFocus
-	}
-}
-	
-=======
     id = france_focus
 	
     country = {
@@ -1747,5 +1740,4 @@ focus_tree = {
 	
 	focus = {
 	    id = 
-}
->>>>>>> Stashed changes
+    }
