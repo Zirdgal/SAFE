@@ -1,0 +1,17 @@
+focus_tree = {
+    id = francia_focus
+	
+    country = {
+	    factor = 1
+		
+		modifier = {
+		    tag = FRA
+			}
+		}
+	}
+
+    default = yes
+	reset_on_civilwar = no
+	
+	focus = {
+	    id = 
