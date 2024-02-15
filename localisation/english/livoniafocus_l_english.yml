@@ -1,3 +1,16 @@
 ﻿l_english:
-LIV_stay_eastward:0 "Stay Eastward"
-LIV_look_westward:0 "Look Westward"
+ LIV_stay_eastward:0 "Stay Eastward"
+ LIV_look_westward:0 "Look Westward"
+ LIV_construct_the_livonian_rail_network:0 "Construct the Livonian Rail Network"
+ LIV_the_north:0 "The North"
+ LIV_rural_industrialization_project:0 "Rural Industrialization Project"
+ LIV_saaremaa_naval_prospects:0 "Saaremaa Naval Prospects"
+ LIV_valka_construction_efforts:0 "Valka Construction Efforts"
+ LIV_the_south:0 "The South"
+ LIV_invest_in_the_border_region:0 "Invest in the Border Region"
+ LIV_courish_industrialization:0 "Courish Industrialization"
+ LIV_begin_militirization:0 "Begin Militirization"
+
+
+
+ LIV_demand_soviet_investment:0 "Demand Soviet Investment"
