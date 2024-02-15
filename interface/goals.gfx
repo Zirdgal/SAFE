@@ -1,5 +1,18 @@
 spriteTypes = {	
 
+
+	SpriteType = {
+	name = "GFX_focus_LIV_invest_in_the_border_region"
+	texturefile = "gfx/interface/goals/focus_LIV_invest_in_the_border_region.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_focus_LIV_valka_construction_efforts"
+	texturefile = "gfx/interface/goals/focus_LIV_valka_construction_efforts.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_focus_LIV_rural_industrialization_project"
+	texturefile = "gfx/interface/goals/focus_LIV_rural_industrialization_project.dds"			
+	}	
 	SpriteType = {
 	name = "GFX_focus_LIV_latvia"
 	texturefile = "gfx/interface/goals/focus_LIV_latvia.dds"			
