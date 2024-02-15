@@ -315,11 +315,39 @@ focus_tree = {
 
 		}
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIV_stay_eastward focus = LIV_look_westward }
 		available_if_capitulated = yes
 
 		completion_reward = {
+			build_railway = { # COURLAND RAILWAY
+				level = 2
+				build_only_on_allied = yes
+				path = { 6342 11246 9262 }
+				start_province = 6342
+				target_province = 9262	
+			}
+			build_railway = { # SAAREMAA RAILWAY
+				level = 2
+				build_only_on_allied = yes
+				path = { 3074 83 185 }
+				start_province = 3074
+				target_province = 185	
+			}
+			build_railway = { # RĒZEKNE RAILWAY
+				level = 2
+				build_only_on_allied = yes
+				path = { 9485 3298 222 341 310 }
+				start_province = 9485
+				target_province = 310
+			}
+			191 = {
+    			add_building_construction = {
+					type = supply_node
+					province = 11392
+					level = 1
+    			}
+			}
 		}
     }
 	focus = {
@@ -341,11 +369,32 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			812 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure 
+					level = 1	
+					instant_build = yes
+				}
+			} 
+			13 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			} 
 		}
     }
 	focus = {
 		id = LIV_rural_industrialization_project	
-		icon = GFX_
+		icon = GFX_focus_LIV_rural_industrialization_project
 		x = -1
 		y = 1
 		relative_position_id = LIV_the_north
@@ -362,10 +411,42 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			811 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			} 
+			191 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			813 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			} 
 		}
     }
 	focus = {
-		id = LIV_saare_naval_prospects
+		id = LIV_saaremaa_naval_prospects
 		icon = GFX_focus_POL_develop_polish_shipbuilding
 		x = 1
 		y = 1
@@ -383,11 +464,31 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			811 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					province = 185
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			add_equipment_to_stockpile = {
+        		type = convoy
+        		amount = 100
+    		}
 		}
     }
 	focus = {
 		id = LIV_valka_construction_efforts
-		icon = GFX_focus_generic_provoke_border_clashes
+		icon = GFX_focus_LIV_valka_construction_efforts
 		x = 2
 		y = 1
 		relative_position_id = LIV_the_north
@@ -399,11 +500,25 @@ focus_tree = {
 
 		}
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIV_the_north focus = LIV_the_south }
 		available_if_capitulated = yes
 
 		completion_reward = {
+			191 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			12 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
 		}
     }
 	focus = {
@@ -425,11 +540,33 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			808 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			12 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
 		}
     }
 	focus = {
 		id = LIV_invest_in_the_border_region
-		icon = GFX_
+		icon = GFX_focus_LIV_invest_in_the_border_region
 		x = 1
 		y = 1
 		relative_position_id = LIV_the_south
@@ -446,11 +583,22 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			810 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
 		}
     }
 	focus = {
-		id = LIV_courlish_industrialization
-		icon = GFX_
+		id = LIV_courish_industrialization
+		icon = GFX_focus_LIV_courish_industrialization
 		x = -1
 		y = 1
 		relative_position_id = LIV_invest_in_the_border_region
@@ -467,6 +615,28 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			190 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			809 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+				}
+			}
 		}
     }
 	focus = {
@@ -508,11 +678,26 @@ focus_tree = {
 
 		cost = 10
 		prerequisite = { focus = LIV_valka_construction_efforts }
-		prerequisite = { focus = LIV_courlish_industrialization }
-		prerequisite = { focus = LIV_saare_naval_prospects }
+		prerequisite = { focus = LIV_courish_industrialization }
+		prerequisite = { focus = LIV_saaremaa_naval_prospects }
 		available_if_capitulated = yes
 
 		completion_reward = {
+			upgrade_economy_law = yes
+			812 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			809 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 		}
     }
 }
