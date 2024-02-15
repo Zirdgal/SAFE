@@ -2,6 +2,10 @@ spriteTypes = {
 
 
 	SpriteType = {
+	name = "GFX_focus_LIV_courish_industrialization"
+	texturefile = "gfx/interface/goals/focus_LIV_courish_industrialization.dds"			
+	}	
+	SpriteType = {
 	name = "GFX_focus_LIV_invest_in_the_border_region"
 	texturefile = "gfx/interface/goals/focus_LIV_invest_in_the_border_region.dds"			
 	}	
