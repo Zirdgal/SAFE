@@ -14,6 +14,7 @@ state = {
 			}
 		}
 		add_core_of = DEN
+		add_core_of = NOR
 
 		victory_points = { #Tórshavn
 			13003 1
