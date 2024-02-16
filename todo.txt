@@ -48,12 +48,18 @@ FRANCIA!!!!!
 - Britanny, Mecklenburg = puppets.
 - Have to constantly manage their territories via decisions, as to not break apart. When in war, this mechanic is paused.
 
-
-Livonia
-
-- Change communist name to 'Livonia SSR'
-
-
 UK
 
 - Isolationist.
+
+
+
+Livonia
+
+- Remember to change the goddamn VEF icon to show the VEF logo
+- Integration Path
+- Demand Soviet territories and then (willingly) leave USSR
+- Polish path that declares war with soviet union with pink faction 
+- UK path which shows democracy and neutrality
+- French path to gain stake in baltic lands (Lithuania, Prussia, Belarus etc.), and deport russians, becoming french eastern territory
+- (Possible) Sweden path to go away from USSR captivity leading in you becoming swedish sphere of infleunce. (idk i wanna plan this more later)
