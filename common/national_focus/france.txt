@@ -1,5 +1,5 @@
 focus_tree = {
-	id = franch_focus
+	id = french_focus
 	
     country = {
 	    factor = 10
