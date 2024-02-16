@@ -481,7 +481,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_research_slot = 1
+			# ADD STUFF THAT LIKE MAKES THE IDEA BETTER
 		}
     }
 	focus = {
