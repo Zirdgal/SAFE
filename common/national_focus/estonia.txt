@@ -15,16 +15,6 @@ focus_tree = {
 	continuous_focus_position = { x = 450 y = 5000 }
 
 
-#	██╗    ██╗███████╗███████╗████████╗    ██████╗  █████╗ ████████╗██╗  ██╗
-#	██║    ██║██╔════╝██╔════╝╚══██╔══╝    ██╔══██╗██╔══██╗╚══██╔══╝██║  ██║
-#	██║ █╗ ██║█████╗  ███████╗   ██║       ██████╔╝███████║   ██║   ███████║
-#	██║███╗██║██╔══╝  ╚════██║   ██║       ██╔═══╝ ██╔══██║   ██║   ██╔══██║
-#	╚███╔███╔╝███████╗███████║   ██║       ██║     ██║  ██║   ██║   ██║  ██║
-#	 ╚══╝╚══╝ ╚══════╝╚══════╝   ╚═╝       ╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ 
-
-
-
-
 	focus = {
 		id = LIV_look_westward
 		icon = GFX_goal_LIV_look_westward
@@ -48,111 +38,6 @@ focus_tree = {
     }
 
 	focus = {
-		id = LIV_the_english
-		icon = GFX_
-		x = -7
-		y = 1
-		relative_position_id = LIV_look_westward
-		mutually_exclusive = { focus = LIV_the_french focus = LIV_the_poles }
-
-		available = {
-
-		}
-		bypass = {
-
-		}
-
-		cost = 10
-		prerequisite = { focus = LIV_look_westward }
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-    }
-
-
-
-
-
-
-	focus = {
-		id = LIV_the_french
-		icon = GFX_
-		x = -2
-		y = 1
-		relative_position_id = LIV_look_westward
-		mutually_exclusive = { focus = LIV_the_english focus = LIV_the_poles }
-
-		available = {
-
-		}
-		bypass = {
-
-		}
-
-		cost = 10
-		prerequisite = { focus = LIV_look_westward }
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-    }
-
-
-
-
-
-
-
-
-
-
-	focus = {
-		id = LIV_the_poles
-		icon = GFX_
-		x = 3
-		y = 1
-		relative_position_id = LIV_look_westward
-		mutually_exclusive = { focus = LIV_the_english focus = LIV_the_french }
-
-		available = {
-
-		}
-		bypass = {
-
-		}
-
-		cost = 10
-		prerequisite = { focus = LIV_look_westward }
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-    }
-	
-
-
-
-
-
-
-
-
-
-
-
-
-#	███████╗ █████╗ ███████╗████████╗    ██████╗  █████╗ ████████╗██╗  ██╗
-#	██╔════╝██╔══██╗██╔════╝╚══██╔══╝    ██╔══██╗██╔══██╗╚══██╔══╝██║  ██║
-#	█████╗  ███████║███████╗   ██║       ██████╔╝███████║   ██║   ███████║
-#	██╔══╝  ██╔══██║╚════██║   ██║       ██╔═══╝ ██╔══██║   ██║   ██╔══██║
-#	███████╗██║  ██║███████║   ██║       ██║     ██║  ██║   ██║   ██║  ██║
-#	╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝       ╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝     
-
-
-
-
-	focus = {
 		id = LIV_stay_eastward
 		icon = GFX_focus_SOV_socialism_in_one_country
 		x = 30
@@ -174,124 +59,7 @@ focus_tree = {
 		completion_reward = {
 		}
     }
-	focus = {
-		id = LIV_greater_cooperation_with_the_soviet_union
-		icon = GFX_focus_chi_mission_to_the_soviet_union
-		x = -2
-		y = 1
-		relative_position_id = LIV_stay_eastward
-		mutually_exclusive = { focus = LIV_soviet_autonomous_region }
-
-		available = {
-
-		}
-		bypass = {
-
-		}
-
-		cost = 10
-		prerequisite = { focus = LIV_stay_eastward }
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-    }
-	focus = {
-		id = LIV_appoint_soviet_ministers
-		icon = GFX_focus_SWE_socialist_reforms
-		x = 1
-		y = 1
-		relative_position_id = LIV_greater_cooperation_with_the_soviet_union
-		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
-
-		available = {
-
-		}
-		bypass = {
-
-		}
-
-		cost = 10
-		prerequisite = { focus = LIV_greater_cooperation_with_the_soviet_union }
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-    }
-	focus = {
-		id = LIV_invite_the_NKVD
-		icon = GFX_focus_LIV_nkvd_invitation
-		x = 1
-		y = 1
-		relative_position_id = LIV_demand_soviet_investment
-		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
-
-		available = {
-
-		}
-		bypass = {
-
-		}
-
-		cost = 10
-		prerequisite = { focus = LIV_appoint_soviet_ministers }
-		prerequisite = { focus = LIV_demand_soviet_investment }
-		available_if_capitulated = yes
-
-		completion_reward = {
-			create_intelligence_agency = yes
-		}
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	
-	focus = {
-		id = LIV_soviet_autonomous_region
-		icon = GFX_focus_LIV_soviet_autonomous_region
-		x = 2
-		y = 1
-		relative_position_id = LIV_stay_eastward
-		mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
-
-		available = {
-
-		}
-		bypass = {
-
-		}
-
-		cost = 10
-		prerequisite = { focus = LIV_stay_eastward }
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-    }
-	
-	
-	
-
-
-
-
-
-
-
 #	███████╗ ██████╗ ██████╗ ███╗   ██╗ ██████╗ ███╗   ███╗██╗   ██╗
 #	██╔════╝██╔════╝██╔═══██╗████╗  ██║██╔═══██╗████╗ ████║╚██╗ ██╔╝
 #	█████╗  ██║     ██║   ██║██╔██╗ ██║██║   ██║██╔████╔██║ ╚████╔╝ 
@@ -640,32 +408,25 @@ focus_tree = {
 			}
 		}
     }
+
+
+
+
+
+
+
+
+
+#	███╗   ███╗██╗██╗     ██╗████████╗ █████╗ ██████╗ ██╗   ██╗
+#	████╗ ████║██║██║     ██║╚══██╔══╝██╔══██╗██╔══██╗╚██╗ ██╔╝
+#	██╔████╔██║██║██║     ██║   ██║   ███████║██████╔╝ ╚████╔╝ 
+#	██║╚██╔╝██║██║██║     ██║   ██║   ██╔══██║██╔══██╗  ╚██╔╝  
+#	██║ ╚═╝ ██║██║███████╗██║   ██║   ██║  ██║██║  ██║   ██║   
+#	╚═╝     ╚═╝╚═╝╚══════╝╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   
+                                                           
 	focus = {
-		id = LIV_demand_soviet_investment
-		icon = GFX_focus_SOV_merge_plants
-		x = 6
-		y = 1
-		relative_position_id = LIV_construct_the_livonian_rail_network
-
-		available = {
-
-		}
-		bypass = {
-
-		}
-
-		cost = 10
-		prerequisite = { focus = LIV_construct_the_livonian_rail_network }
-		prerequisite = { focus = LIV_greater_cooperation_with_the_soviet_union }
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-    }
-
-	focus = {
-		id = LIV_begin_militirization
-		icon = GFX_goal_generic_construct_mil_factory
+		id = LIV_begin_militarization
+		icon = GFX_focus_generic_reorient_production
 		x = 0
 		y = 2
 		relative_position_id = LIV_valka_construction_efforts
@@ -701,5 +462,428 @@ focus_tree = {
 			}
 		}
     }
-}
+	focus = {
+		id = LIV_the_technology_problem
+		icon = GFX_focus_NORDIC_com_research
+		x = 3
+		y = 1
+		relative_position_id = LIV_begin_militarization
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_begin_militarization }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = LIV_expansion_of_the_VEF # OI ZIRD REMEMBER TO REPLACE THIS ICON
+		icon = GFX_focus_generic_copy_plane_designs # OI ZIRD REMEMBER TO REPLACE THIS ICON
+		x = -1
+		y = 1
+		relative_position_id = LIV_the_technology_problem # OI ZIRD REMEMBER TO REPLACE THIS ICON
+
+		available = {
+			# OI ZIRD REMEMBER TO REPLACE THIS ICON
+		}
+		bypass = {
+			# OI ZIRD REMEMBER TO REPLACE THIS ICON
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_the_technology_problem } # OI ZIRD REMEMBER TO REPLACE THIS ICON
+		available_if_capitulated = yes
+
+		completion_reward = {
+			# OI ZIRD REMEMBER TO REPLACE THIS ICON
+		}
+    }
+	focus = {
+		id = LIV_minox_cameras
+		icon = GFX_focus_generic_secret_service_agency
+		x = 0
+		y = 1
+		relative_position_id = LIV_expansion_of_the_VEF
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_expansion_of_the_VEF }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = LIV_the_i16
+		icon = GFX_goal_generic_air_fighter
+		x = 0
+		y = 1
+		relative_position_id = LIV_minox_cameras
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_minox_cameras }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = LIV_gaz_livonia
+		icon = GFX_focus_generic_truck
+		x = 1
+		y = 1
+		relative_position_id = LIV_the_technology_problem
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_the_technology_problem }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = LIV_reuse_the_latvian_armoured_cars
+		icon = GFX_focus_SWE_lynx_armored_car
+		x = 0
+		y = 1
+		relative_position_id = LIV_gaz_livonia
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_gaz_livonia }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = LIV_revitalize_estonian_armoured_trains
+		icon = GFX_focus_generic_railway_gun
+		x = 0
+		y = 1
+		relative_position_id = LIV_reuse_the_latvian_armoured_cars
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_reuse_the_latvian_armoured_cars }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+    }
+	focus = {
+		id = LIV_the_fastest_army_in_the_world
+		icon = GFX_focus_SOV_the_road_of_life
+		x = 1
+		y = 1
+		relative_position_id = LIV_the_i16
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_the_i16 }
+		prerequisite = { focus = LIV_revitalize_estonian_armoured_trains }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+    }
 	
+	
+
+#	██╗    ██╗███████╗███████╗████████╗    ██████╗  █████╗ ████████╗██╗  ██╗
+#	██║    ██║██╔════╝██╔════╝╚══██╔══╝    ██╔══██╗██╔══██╗╚══██╔══╝██║  ██║
+#	██║ █╗ ██║█████╗  ███████╗   ██║       ██████╔╝███████║   ██║   ███████║
+#	██║███╗██║██╔══╝  ╚════██║   ██║       ██╔═══╝ ██╔══██║   ██║   ██╔══██║
+#	╚███╔███╔╝███████╗███████║   ██║       ██║     ██║  ██║   ██║   ██║  ██║
+#	 ╚══╝╚══╝ ╚══════╝╚══════╝   ╚═╝       ╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ 
+
+	focus = {
+		id = LIV_the_english
+		icon = GFX_
+		x = -7
+		y = 1
+		relative_position_id = LIV_look_westward
+		mutually_exclusive = { focus = LIV_the_french focus = LIV_the_poles }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_look_westward }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+
+
+
+
+
+
+	focus = {
+		id = LIV_the_french
+		icon = GFX_
+		x = -2
+		y = 1
+		relative_position_id = LIV_look_westward
+		mutually_exclusive = { focus = LIV_the_english focus = LIV_the_poles }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_look_westward }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = LIV_the_poles
+		icon = GFX_
+		x = 3
+		y = 1
+		relative_position_id = LIV_look_westward
+		mutually_exclusive = { focus = LIV_the_english focus = LIV_the_french }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_look_westward }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+
+
+
+
+
+
+
+
+
+
+
+
+#	███████╗ █████╗ ███████╗████████╗    ██████╗  █████╗ ████████╗██╗  ██╗
+#	██╔════╝██╔══██╗██╔════╝╚══██╔══╝    ██╔══██╗██╔══██╗╚══██╔══╝██║  ██║
+#	█████╗  ███████║███████╗   ██║       ██████╔╝███████║   ██║   ███████║
+#	██╔══╝  ██╔══██║╚════██║   ██║       ██╔═══╝ ██╔══██║   ██║   ██╔══██║
+#	███████╗██║  ██║███████║   ██║       ██║     ██║  ██║   ██║   ██║  ██║
+#	╚══════╝╚═╝  ╚═╝╚══════╝   ╚═╝       ╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝     
+
+	focus = {
+		id = LIV_greater_cooperation_with_the_soviet_union
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = -2
+		y = 1
+		relative_position_id = LIV_stay_eastward
+		mutually_exclusive = { focus = LIV_soviet_autonomous_region }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_stay_eastward }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_appoint_soviet_ministers
+		icon = GFX_focus_SWE_socialist_reforms
+		x = 1
+		y = 1
+		relative_position_id = LIV_greater_cooperation_with_the_soviet_union
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_greater_cooperation_with_the_soviet_union }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_demand_soviet_investment
+		icon = GFX_focus_SOV_merge_plants
+		x = 6
+		y = 1
+		relative_position_id = LIV_construct_the_livonian_rail_network
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_construct_the_livonian_rail_network }
+		prerequisite = { focus = LIV_greater_cooperation_with_the_soviet_union }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_invite_the_NKVD
+		icon = GFX_focus_LIV_nkvd_invitation
+		x = 1
+		y = 1
+		relative_position_id = LIV_demand_soviet_investment
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_appoint_soviet_ministers }
+		prerequisite = { focus = LIV_demand_soviet_investment }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_intelligence_agency = yes
+		}
+    }
+	focus = {
+		id = LIV_integration_into_ussr
+		icon = GFX_
+		x = 0
+		y = 3
+		relative_position_id = LIV_invite_the_NKVD
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_begin_militarization }
+		prerequisite = { focus = LIV_invite_the_NKVD }
+		available_if_capitulated = yes
+
+		completion_reward = {	
+		}
+    }
+	focus = {
+		id = LIV_soviet_autonomous_region
+		icon = GFX_focus_LIV_soviet_autonomous_region
+		x = 2
+		y = 1
+		relative_position_id = LIV_stay_eastward
+		mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_stay_eastward }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+}
