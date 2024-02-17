@@ -1708,10 +1708,19 @@ focus_tree = {
 		}
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	focus = {
-	    id = FRA_counter_terrorism_bureau
-		icon = GFX_focus_FRA_counter_terrorism_bureau
-		x = 19
+	    id = FRA_our_path
+		icon = GFX_focus_FRA_our_path
+		x = 40
 		y = 0
 		cost = 10
 		
@@ -1725,11 +1734,11 @@ focus_tree = {
 	focus = {
 	    id = FRA_harm_reduction
 		icon = GFX_focus_FRA_harm_reduction
-	    prerequisite = { focus = FRA_counter_terrorism_bureau }
+	    prerequisite = { focus = FRA_our_path }
 		mutually_exclusive = { focus = FRA_harm_production }
-		x = -1
+		x = -5
 		y = 1
-		relative_position_id = FRA_counter_terrorism_bureau
+		relative_position_id = FRA_our_path
 		cost = 10
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1742,11 +1751,212 @@ focus_tree = {
     focus = {
 	    id = FRA_harm_production
 		icon = GFX_focus_FRA_harm_production
-	    prerequisite = { focus = FRA_counter_terrorism_bureau }
+	    prerequisite = { focus = FRA_our_path }
 		mutually_exclusive = { focus = FRA_harm_reduction }
+		x = 5
+		y = 1
+		relative_position_id = FRA_our_path
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 50
+			}
+	}
+	
+	
+	
+	 **      ********  ******** ** ****     **** ** **           **     ********** **   *******   ****     **
+    ****    **//////  **////// /**/**/**   **/**/**/**          ****   /////**/// /**  **/////** /**/**   /**
+   **//**  /**       /**       /**/**//** ** /**/**/**         **//**      /**    /** **     //**/**//**  /**
+  **  //** /*********/*********/**/** //***  /**/**/**        **  //**     /**    /**/**      /**/** //** /**
+ **********////////**////////**/**/**  //*   /**/**/**       **********    /**    /**/**      /**/**  //**/**
+/**//////**       /**       /**/**/**   /    /**/**/**      /**//////**    /**    /**//**     ** /**   //****
+/**     /** ********  ******** /**/**        /**/**/********/**     /**    /**    /** //*******  /**    //***
+//      // ////////  ////////  // //         // // //////// //      //     //     //   ///////   //      /// 
+	
+	
+    focus = {
+	    id = FRA_assimilate_the_masses
+		icon = GFX_goal_generic_air_bomber
+	    prerequisite = { focus = FRA_harm_reduction }
+		x = -12
+		y = 1
+		relative_position_id = FRA_harm_reduction
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 50
+			}
+	}
+	
+    focus = {
+	    id = FRA_introduce_social_security
+		icon = GFX_goal_generic_air_bomber
+	    prerequisite = { focus = FRA_assimilate_the_masses }
+		x = 0
+		y = 1
+		relative_position_id = FRA_assimilate_the_masses
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 50
+			}
+	}
+	
+	focus = {
+	    id = FRA_bureau_of_public_spending
+		icon = GFX_goal_generic_air_bomber
+	    prerequisite = { focus = FRA_introduce_social_security }
 		x = 1
 		y = 1
-		relative_position_id = FRA_counter_terrorism_bureau
+		relative_position_id = FRA_introduce_social_security
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 50
+			}
+	}
+	
+	focus = {
+	    id = FRA_establish_the_ministries_of_territory
+		icon = GFX_goal_generic_air_bomber
+	    prerequisite = { focus = FRA_introduce_social_security }
+		x = 2
+		y = 0
+		relative_position_id = FRA_bureau_of_public_spending
+		cost = 20
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 50
+			}
+	}
+	
+	focus = {
+	    id = FRA_netherlands_public_spending
+		icon = GFX_goal_generic_air_bomber
+	    prerequisite = { focus = FRA_bureau_of_public_spending }
+		x = 1
+		y = 1
+		relative_position_id = FRA_bureau_of_public_spending
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 50
+			}
+	}
+	
+	focus = {
+	    id = FRA_flanders_public_spending
+		icon = GFX_goal_generic_air_bomber
+	    prerequisite = { focus = FRA_bureau_of_public_spending }
+		x = 3
+		y = 1
+		relative_position_id = FRA_bureau_of_public_spending
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 50
+			}
+	}
+	
+	focus = {
+	    id = FRA_rhine_public_spending
+		icon = GFX_goal_generic_air_bomber
+	    prerequisite = { focus = FRA_bureau_of_public_spending }
+		x = 5
+		y = 1
+		relative_position_id = FRA_bureau_of_public_spending
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 50
+			}
+	}
+	
+	focus = {
+	    id = FRA_rural_german_public_spending
+		icon = GFX_goal_generic_air_bomber
+	    prerequisite = { focus = FRA_bureau_of_public_spending }
+		x = 7
+		y = 1
+		relative_position_id = FRA_bureau_of_public_spending
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 50
+			}
+	}
+	
+	focus = {
+	    id = FRA_fruit_season
+		icon = GFX_goal_generic_air_bomber
+	    prerequisite = { 
+		    focus = FRA_rural_german_public_spending
+			focus = FRA_rhine_public_spending
+			focus = FRA_flanders_public_spending
+			focus = FRA_netherlands_public_spending
+			}
+		x = 4
+		y = 2
+		relative_position_id = FRA_bureau_of_public_spending
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 50
+			}
+	}
+	
+ ######  ##          ###    ##    ## ########   #######  ##     ## 
+##    ## ##         ## ##   ###   ## ##     ## ##     ## ###   ### 
+##       ##        ##   ##  ####  ## ##     ## ##     ## #### #### 
+##       ##       ##     ## ## ## ## ##     ## ##     ## ## ### ## 
+##       ##       ######### ##  #### ##     ## ##     ## ##     ## 
+##    ## ##       ##     ## ##   ### ##     ## ##     ## ##     ## 
+ ######  ######## ##     ## ##    ## ########   #######  ##     ## 
+	
+	focus = {
+	    id = FRA_the_way_of_the_clan
+		icon = GFX_goal_generic_air_bomber
+	    prerequisite = { focus = FRA_harm_reduction }
+		x = 0
+		y = 3
+		relative_position_id = FRA_harm_reduction
+		cost = 10
+		
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_political_power = 50
+			}
+	}
+	
+	focus = {
+	    id = FRA_
+		icon = GFX_goal_generic_air_bomber
+	    prerequisite = { focus = FRA_the_way_of_the_clan }
+		x = 2
+		y = 1
+		relative_position_id = FRA_the_way_of_the_clan
 		cost = 10
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
