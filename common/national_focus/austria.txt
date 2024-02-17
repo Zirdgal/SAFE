@@ -18,7 +18,7 @@ focus_tree = {
 	focus = {
 		id = SAX_state_of_emergency
 		icon = GFX_goal_LIV_look_westward
-		x = 10
+		x = 1
 		y = 0
 		#relative_position_id = LIV_stay_eastward
 		#mutually_exclusive = { focus = LIV_stay_eastward }
@@ -31,6 +31,29 @@ focus_tree = {
 		}
 
 		cost = 10
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+	focus = {
+		id = SAX_REMAIN_CALM
+		icon = GFX_goal_LIV_look_westward
+		x = 1
+		y = 1
+		relative_position_id = SAX_state_of_emergency
+		#mutually_exclusive = { focus = LIV_stay_eastward }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = SAX_state_of_emergency}
 		available_if_capitulated = yes
 
 		completion_reward = {
