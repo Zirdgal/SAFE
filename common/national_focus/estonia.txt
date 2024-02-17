@@ -438,7 +438,7 @@ focus_tree = {
 
 		}
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIV_valka_construction_efforts }
 		prerequisite = { focus = LIV_courish_industrialization }
 		prerequisite = { focus = LIV_saaremaa_naval_prospects }
@@ -447,14 +447,7 @@ focus_tree = {
 		completion_reward = {
 			upgrade_economy_law = yes
 			812 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			809 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -464,7 +457,7 @@ focus_tree = {
     }
 	focus = {
 		id = LIV_the_technology_problem
-		icon = GFX_focus_NORDIC_com_research
+		icon = GFX_focus_research
 		x = 3
 		y = 1
 		relative_position_id = LIV_begin_militarization
@@ -547,15 +540,14 @@ focus_tree = {
 			air_experience = 15
 			add_tech_bonus = {
 				name = LIV_VEF_electronics_expansion
-				bonus = 0.5
-				uses = 1
+				bonus = 0.75
+				uses = 2
 				category = electronics
 			}
 			add_tech_bonus = {
 				name = LIV_VEF_electronics_expansion
 				bonus = 0.5
 				uses = 1
-				category = plane_modules_tech
 				technology = photo_reconnaisance
 			}
 		}
@@ -614,11 +606,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 15
 			EST = { 
 				add_opinion_modifier = { 
 					target = SOV 
 					modifier = large_increase
 				} 
+			}
+			add_tech_bonus = {
+				name = LIV_gaz_livonia
+				bonus = 1.25
+				uses = 1
+				category = motorized_equipment
 			}
     	}
 	}
@@ -641,12 +640,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 15
 			add_tech_bonus = {
 					name = LIV_latvian_armoured_cars
 					bonus = 1.5
 					uses = 2
 					category = cat_armored_cars
-				}
+			}
 		}
     }
 	focus = {
@@ -668,7 +668,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			army_experience = 15
+			add_tech_bonus = {
+					name = LIV_latvian_armoured_cars
+					bonus = 2.5
+					uses = 1
+					technology = railway_gun
+			}
 		}
     }
 	focus = {
@@ -691,10 +697,323 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = LIV_fastest_army_in_the_world_idea
 		}
     }
-	
+
+	focus = {
+		id = LIV_protect_the_dual_cities
+		icon = GFX_goal_generic_fortify_city   # PLACEHOLDER
+		x = 0
+		y = 2
+		relative_position_id = LIV_begin_militarization
+
+		available = {
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_begin_militarization }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 15
+			812 = {
+				add_building_construction = {
+					province = 3152
+					type = bunker
+					level = 5
+				}
+				add_building_construction = {
+					province = 496
+					type = bunker
+					level = 3
+				}
+				add_building_construction = {
+					province = 11426
+					type = bunker
+					level = 3
+				}
+				add_building_construction = {
+					province = 567
+					type = bunker
+					level = 3
+				}
+			}
+			808 = {
+				add_building_construction = {
+					province = 9340
+					type = bunker
+					level = 5
+				}
+				add_building_construction = {
+					province = 9240
+					type = bunker
+					level = 3
+				}
+				add_building_construction = {
+					province = 10323
+					type = bunker
+					level = 3
+				}
+			}
+		}
+    }
+	focus = {
+		id = LIV_baltic_sea_protection
+		icon = GFX_focus_generic_coastal_fort
+		x = 0
+		y = 1
+		relative_position_id = LIV_protect_the_dual_cities
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_protect_the_dual_cities }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 15
+			812 = {
+				add_building_construction = {
+					province = 3152
+					type = coastal_bunker 
+					level = 6
+				}
+			}
+			811 = {
+				add_building_construction = {
+					province = 185
+					type = coastal_bunker 
+					level = 5
+				}
+			}
+			813 = {
+				add_building_construction = {
+					province = 4640
+					type = coastal_bunker 
+					level = 5
+				}
+				add_building_construction = {
+					province = 11127
+					type = coastal_bunker 
+					level = 4
+				}
+			}
+			811 = {
+				add_building_construction = {
+					province = 3174
+					type = coastal_bunker 
+					level = 4
+				}
+			}
+			808 = {
+				add_building_construction = {
+					province = 9340
+					type = coastal_bunker 
+					level = 6
+				}
+			}
+			190 = {
+				add_building_construction = {
+					province = 9262
+					type = coastal_bunker 
+					level = 5
+				}
+				add_building_construction = {
+					province = 3296
+					type = coastal_bunker 
+					level = 4
+				}
+			}
+			809 = {
+				add_building_construction = {
+					province = 6222
+					type = coastal_bunker 
+					level = 4
+				}
+			}
+		}
+    }
+	focus = {
+		id = LIV_protection_agaisnt_the_red_bear
+		icon = GFX_focus_ger_great_red_menace # PLACEHOLDER
+		x = 0
+		y = 1
+		relative_position_id = LIV_baltic_sea_protection
+
+		available = {
+			NOT = {
+				has_completed_focus = LIV_stay_eastward
+			}
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_baltic_sea_protection }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 15
+			add_ideas = LIV_protection_agaisnt_the_red_bear_idea
+		}
+    }
+	focus = {
+		id = LIV_construction_effort_idfk
+		icon = GFX_
+		x = -3
+		y = 1
+		relative_position_id = LIV_begin_militarization
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_begin_militarization }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_latvia_effort
+		icon = GFX_
+		x = 1
+		y = 1
+		relative_position_id = LIV_construction_effort_idfk
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_construction_effort_idfk }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_militarize_riga
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = LIV_latvia_effort
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_latvia_effort }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_expand_the_courish_military_bases
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = LIV_militarize_riga
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_militarize_riga }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_estonia_effort
+		icon = GFX_
+		x = -1
+		y = 1
+		relative_position_id = LIV_construction_effort_idfk
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_construction_effort_idfk }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_expand_the_parnu_military_production
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = LIV_estonia_effort
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_estonia_effort }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_militarize_the_border_states
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = LIV_expand_the_parnu_military_production
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_expand_the_parnu_military_production }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
 	
 
 #	██╗    ██╗███████╗███████╗████████╗    ██████╗  █████╗ ████████╗██╗  ██╗
