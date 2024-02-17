@@ -2,7 +2,7 @@ focus_tree = {
     id = saxon_focus
 	
     country = {
-	    factor = 0 # makes it that this focus is selected over base game hoi4 focus
+	    factor = 10 # makes it that this focus is selected over base game hoi4 focus
 		
 		modifier = {
             add = 10 # makes it that this focus is selected over base game hoi4 focus
