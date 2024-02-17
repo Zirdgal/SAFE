@@ -1124,6 +1124,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_yug_pan_slavic_congress.dds"
 	}
 	
+	### Saxony
+	
+	SpriteType = {
+	name = "GFX_focus_SAX_Emergency"
+	texturefile = "gfx/interface/goals/focus_SAX_Emergency.dds"
+	}
 	
 	### India
 
