@@ -1,0 +1,20 @@
+
+###FOCUS TREE EVENTS
+
+add_namespace = ger_focus_events
+
+country_event = {
+	id = ger_focus_events.1
+	title = ger_focus_events.1.title
+	desc = ger_focus_events.1.desc
+	
+	picture = GFX_report_event_ast_parliament_house
+	is_triggered_only = yes
+	option = {
+		name = ger_focus_events.1.option
+		
+		add_ideas = GER_government_deadlock
+		
+		ai_chance = { factor = 1}
+	}
+}
