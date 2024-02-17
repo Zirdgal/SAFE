@@ -479,21 +479,19 @@ focus_tree = {
 		}
     }
 	focus = {
-		id = LIV_expansion_of_the_VEF # OI ZIRD REMEMBER TO REPLACE THIS ICON
-		icon = GFX_focus_generic_copy_plane_designs # OI ZIRD REMEMBER TO REPLACE THIS ICON
+		id = LIV_expansion_of_the_VEF 
+		icon = GFX_focus_LIV_invest_in_vef 
 		x = -1
 		y = 1
-		relative_position_id = LIV_the_technology_problem # OI ZIRD REMEMBER TO REPLACE THIS ICON
+		relative_position_id = LIV_the_technology_problem 
 
 		available = {
-			# OI ZIRD REMEMBER TO REPLACE THIS ICON
 		}
 		bypass = {
-			# OI ZIRD REMEMBER TO REPLACE THIS ICON
 		}
 
 		cost = 5
-		prerequisite = { focus = LIV_the_technology_problem } # OI ZIRD REMEMBER TO REPLACE THIS ICON
+		prerequisite = { focus = LIV_the_technology_problem } 
 		available_if_capitulated = yes
 
 		completion_reward = {
