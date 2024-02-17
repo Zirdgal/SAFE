@@ -21,3 +21,5 @@ set_popularities = {
 		elections_allowed = no
 	}
 }
+
+recruit_character = SAX_Friedrich_Christian

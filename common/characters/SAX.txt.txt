@@ -1,0 +1,14 @@
+characters={
+	SAX_Friedrich_Christian={
+		name=SAX_Friedrich_Christian
+		portraits={
+			civillian={
+				large="GFX_portrait_sax_friedrich_christian_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1999.1.1.1"
+		}
+	}
+}
