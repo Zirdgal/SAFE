@@ -1,6 +1,7 @@
 spriteTypes = {
 	spriteType + {
-		name = "GFX_portrait_sax_friedrich_christian_large"
+		name ="GFX_portrait_sax_friedrich_christian_large"
 		texturefile = "gfx/leaders/SAX/portrait_large_friedrich.dds"
 	}
-}	
+}
+	
