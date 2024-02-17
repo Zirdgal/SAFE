@@ -4,6 +4,7 @@ The people that worked on this mod directly:
  2. Zird - https://steamcommunity.com/id/zird_/ (Steam)
  3. Kwazy -https://www.youtube.com/channel/UCGhGfJomWnLoc4FJlZIytxg (YouTube)
  4. Jacket08 - https://steamcommunity.com/profiles/76561198204369289/ (Steam) 
+ 5. Inverse -https://steamcommunity.com/id/iminverse/
 
 Baltic state GFX pack by u/PivotStories on reddit: https://www.reddit.com/r/hoi4modding/comments/qpc0hb/all_of_my_focusnational_spirit_gfx/
 Globvs' GFX ultimate pack on github: https://github.com/Globvs/Ultimate-HOI4-GFX
