@@ -1127,8 +1127,13 @@ spriteTypes = {
 	### Saxony
 	
 	SpriteType = {
-	name = "GFX_focus_SAX_Emergency"
-	texturefile = "gfx/interface/goals/focus_SAX_Emergency.dds"
+		name = "GFX_focus_SAX_Emergency"
+		texturefile = "gfx/interface/goals/focus_SAX_Emergency.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_SAX_calm"
+		texturefile = "gfx/interface/goals/focus_SAX_calm.dds"
 	}
 	
 	### India
