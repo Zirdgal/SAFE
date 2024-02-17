@@ -16,12 +16,35 @@ focus_tree = {
 
 
 	focus = {
-		id = SAX_state_of_emergency
-		icon = GFX_goal_LIV_look_westward
-		x = 1
+		id = "State Of Emegency"
+		icon = GFX_focus_SAX_Emergency_shine 
+		x = 0
 		y = 0
 		#relative_position_id = LIV_stay_eastward
 		#mutually_exclusive = { focus = LIV_stay_eastward }
+
+		available = {
+	
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -100
+		}
+    }
+	
+	focus = {
+		id = "REMAIN CALM"
+		icon = GFX_goal_LIV_look_westward
+		x = 1
+		y = 1
+		relative_position_id = "State Of Emegency"
+		mutually_exclusive = { focus = "Concede To Their Demands" }
 
 		available = {
 
@@ -31,6 +54,7 @@ focus_tree = {
 		}
 
 		cost = 10
+		prerequisite = { focus = "State Of Emegency"}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -38,12 +62,12 @@ focus_tree = {
     }
 	
 	focus = {
-		id = SAX_REMAIN_CALM
+		id = "Concede To Their Demands"
 		icon = GFX_goal_LIV_look_westward
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = SAX_state_of_emergency
-		#mutually_exclusive = { focus = LIV_stay_eastward }
+		mutually_exclusive = { focus = "REMAIN CALM" }
 
 		available = {
 
@@ -53,10 +77,34 @@ focus_tree = {
 		}
 
 		cost = 10
-		prerequisite = { focus = SAX_state_of_emergency}
+		prerequisite = { focus = "State Of Emegency"}
 		available_if_capitulated = yes
 
 		completion_reward = {
 		}
     }
+	
+		focus = {
+		id = "Send In The Army"
+		icon = GFX_goal_LIV_look_westward
+		x = 0
+		y = 1
+		relative_position_id = "REMAIN CALM"
+		#mutually_exclusive = { focus = "REMAIN CALM" }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = "REMAIN CALM"}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
 }
