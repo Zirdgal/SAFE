@@ -14,6 +14,8 @@ focus_tree = {
     default = no
 	reset_on_civilwar = no
 	
+	###POLITICAL FOCUSES
+	
 	focus = {
 		id = GER_aftermath_of_elections
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
@@ -31,9 +33,37 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = GER_socialist_campaigning
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = GER_aftermath_of_elections }
+		x = -2
+		y = 2
+		relative_position_id = GER_aftermath_of_elections
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_political_power > 50
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			add_timed_idea = {
+				idea = GER_minor_socialist_campaigning
+				days = 210
+			}
+		}
+	}
+	
+	###ARMY FOCUSES
+	
+	focus = {
 		id = GER_a_cornered_eagle
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
-		x = 8
+		x = 12
 		y = 0
 		cost = 5
 		search_filters = { FOCUS_FILTER_ARMY_XP }

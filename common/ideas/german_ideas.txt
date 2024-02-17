@@ -28,5 +28,14 @@ ideas = {
 				resistance_decay_on_our_occupied_states = -0.20
 			}
 		}
+	
+		GER_minor_socialist_campaigning = {
+		
+			picture = generic_communism_drift_bonus ###PLACEHOLDER
+			
+			modifier = {
+				communism_drift = 0.05
+			}
+		}
 	}
 }
