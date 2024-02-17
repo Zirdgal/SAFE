@@ -33,14 +33,40 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GER_socialist_campaigning
+		id = GER_minor_socialist_campaigning
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
 		x = -2
-		y = 2
+		y = 1
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_political_power > 25
+		}
+
+		completion_reward = {
+			add_political_power = -25
+			add_timed_idea = {
+				idea = GER_minor_socialist_campaigning_idea
+				days = 210
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_major_socialist_campaigning
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = GER_minor_socialist_campaigning }
+		x = 0
+		y = 1
+		relative_position_id = GER_minor_socialist_campaigning
+		
+		cost = 5
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
@@ -51,9 +77,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = -50
+			remove_ideas = GER_minor_socialist_campaigning_idea
 			add_timed_idea = {
-				idea = GER_minor_socialist_campaigning
-				days = 210
+				idea = GER_major_socialist_campaigning_idea
+				days = 180
 			}
 		}
 	}

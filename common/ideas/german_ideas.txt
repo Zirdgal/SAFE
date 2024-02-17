@@ -29,12 +29,21 @@ ideas = {
 			}
 		}
 	
-		GER_minor_socialist_campaigning = {
+		GER_minor_socialist_campaigning_idea = {
 		
 			picture = generic_communism_drift_bonus ###PLACEHOLDER
 			
 			modifier = {
 				communism_drift = 0.05
+			}
+		}
+	
+		GER_major_socialist_campaigning_idea = {
+		
+			picture = generic_communism_drift_bonus ###PLACEHOLDER
+			
+			modifier = {
+				communism_drift = 0.15
 			}
 		}
 	}

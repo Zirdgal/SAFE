@@ -5,5 +5,8 @@
  GER_a_cornered_eagle:0 "A cornered eagle"
  GER_a_cornered_eagle_desc:0 "The Deutsches Republik is in a difficult situation, with larger powers to almost every single direction. The need for self defense has led to a high fervor and austerity within the german populous. This translates into strong defensive doctrines ruling the german military."
  
- GER_socialist_campaigning:0 "Socialist Campaigning"
- GER_socialist_campaigning_desc:0 "The political campaigns by the socialists has started to change public perception. The people is starting to repeat various rethorics, for example that the government deadlock has been caused by interference from the rich with the purpose to stop the will of the people. Whether this is actually true, noone knows."
+ GER_minor_socialist_campaigning:0 "Socialist Campaigning"
+ GER_minor_socialist_campaigning_desc:0 "The political campaigns by the socialists has started to change public perception. The people is starting to repeat various rethorics, for example that the government deadlock has been caused by interference from the rich with the purpose to stop the will of the people. Whether this is actually true, noone knows."
+ 
+ GER_major_socialist_campaigning:0 "Continued Socialist Campaigning"
+ GER_major_socialist_campaigning_desc:0 "The campaigning by the socialist coalition has gained a large amount of traction and their rethoric is spreading like wildfire within the masses. It is now highly likely that the socialist coalition will win the deadlock."

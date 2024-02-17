@@ -6,5 +6,8 @@
  GER_cornered_eagle:0 "Fervor of a Cornered Eagle"
  GER_cornered_eagle_desc:0 "The might of the surrounding empires has whipped citizens and soldiers alike into a strong and resilient mass, designed to protect their homeland."
  
- GER_minor_socialist_campaigning:0 "Minor Socialist Campaigning"
- GER_minor_socialist_campaigning_desc:0 "Political campaigns by the socialist coalition are mildly affecting the popular opinion."
+ GER_minor_socialist_campaigning_idea:0 "Minor Socialist Campaigning"
+ GER_minor_socialist_campaigning_idea_desc:0 "Political campaigns by the socialist coalition are mildly affecting the popular opinion."
+ 
+ GER_major_socialist_campaigning_idea:0 "Major Socialist Campaigning"
+ GER_major_socialist_campaigning_idea_desc:0 "Political campaigns by the socialist coalition are gaining traction, largely affecting the popular opinion."
