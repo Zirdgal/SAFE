@@ -1,0 +1,32 @@
+focus_tree = {
+	id = german_focus
+	
+    country = {
+	    factor = 10
+		
+		modifier = {
+		    add = 100
+		    tag = GER
+		}
+	}
+	
+
+    default = no
+	reset_on_civilwar = no
+	
+	focus = {
+		id = GER_aftermath_of_elections
+		icon = GFX_focus_generic_improve_the_administration
+		x = 4
+		y = 0
+		cost = 2
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = -50
+			GER = { country_event = ger_focus_events.1 }
+		}
+	}
+}
