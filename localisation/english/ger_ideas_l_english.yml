@@ -1,13 +1,29 @@
 ﻿l_english:
  ###FOCUS TREE IDEAS
- GER_government_deadlock:0 "Government Deadlock"
- GER_government_deadlock_desc:0 "The rise of the socialist coalition has left the government in peril. Progress has stagnated and infighting is common. Germany cannot keep functioning in this state. But who will save it?"
  
- GER_cornered_eagle:0 "Fervor of a Cornered Eagle"
- GER_cornered_eagle_desc:0 "The might of the surrounding empires has whipped citizens and soldiers alike into a strong and resilient mass, designed to protect their homeland."
+    ###MILITARY
+        GER_cornered_eagle:0 "Fervor of a Cornered Eagle"
+        GER_cornered_eagle_desc:0 "The might of the surrounding empires has whipped citizens and soldiers alike into a strong and resilient mass, designed to protect their homeland."
+        
+        GER_decadent_military:0 "Decadent Military"
+        GER_decadent_military_desc:0 "From high command to common soldier to the guns in use the Deutsches Armee is in a bad shape. The lack of initiative from a stagnant government has led to a less than modern military. Modernization is needed to keep the Deutsches Republik safe."
+        
+    ###POLITICAL
+        
+        GER_government_deadlock_1:0 "Government Deadlock"
+        GER_government_deadlock_1_desc:0 "The rise of the socialist coalition has left the government in peril. Progress has stagnated and infighting is common. Germany cannot keep functioning in this state. Can anyone save it?"
  
- GER_minor_socialist_campaigning_idea:0 "Minor Socialist Campaigning"
- GER_minor_socialist_campaigning_idea_desc:0 "Political campaigns by the socialist coalition are mildly affecting the popular opinion."
+        GER_government_deadlock_2:0 "Government Deadlock"
+        GER_government_deadlock_2_desc:0 "The rise of the socialist coalition has left the government in peril. Progress has stagnated and infighting is common. Germany cannot keep functioning in this state. But who will save it?"
  
- GER_major_socialist_campaigning_idea:0 "Major Socialist Campaigning"
- GER_major_socialist_campaigning_idea_desc:0 "Political campaigns by the socialist coalition are gaining traction, largely affecting the popular opinion."
+        GER_minor_ultranationalist_campaigning_idea:0 "Minor Ultranationalist Campaigning"
+        GER_minor_ultranationalist_campaigning_idea_desc:0 "Political campaigns by the ultranationalists are mildly affecting the popular opinion."
+ 
+        GER_major_ultranationalist_campaigning_idea:0 "Major Ultranationalist Campaigning"
+        GER_major_ultranationalist_campaigning_idea_desc:0 "Political campaigns by the ultranationalists are gaining traction, largely affecting the popular opinion."
+ 
+        GER_minor_socialist_campaigning_idea:0 "Minor Socialist Campaigning"
+        GER_minor_socialist_campaigning_idea_desc:0 "Political campaigns by the socialist coalition are mildly affecting the popular opinion."
+ 
+        GER_major_socialist_campaigning_idea:0 "Major Socialist Campaigning"
+        GER_major_socialist_campaigning_idea_desc:0 "Political campaigns by the socialist coalition are gaining traction, largely affecting the popular opinion."

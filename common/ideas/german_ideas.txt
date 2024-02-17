@@ -4,8 +4,48 @@
 ideas = {
 
 	country = {
+		
+		###MILITARY
+		
+		GER_decadent_military = {
+		
+			picture = great_depression ###PLACEHOLDER
+			
+			modifier = {
+				army_org_factor = -0.15
+				army_attack_factor = -0.05
+				army_defense_factor = -0.05
+				max_planning_factor = -0.2
+			}
+			
+		}
 	
-		GER_government_deadlock = {
+		GER_cornered_eagle = {
+		
+			picture = idea_yug_federal_defense_council ###PLACEHOLDER
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+				army_org_factor = -0.15
+				resistance_growth_on_our_occupied_states = 0.12
+				resistance_decay_on_our_occupied_states = -0.20
+			}
+		}
+		
+		###POLITICAL
+	
+		GER_government_deadlock_1 = {
+		
+			picture = great_depression ###PLACEHOLDER
+			
+			modifier = {
+				political_power_gain = -0.07
+				stability_factor = -0.1
+				war_stability_factor = -0.2
+			}
+		}
+	
+		GER_government_deadlock_2 = {
 		
 			picture = great_depression ###PLACEHOLDER
 			
@@ -17,15 +57,21 @@ ideas = {
 			}
 		}
 	
-		GER_cornered_eagle = {
+		GER_minor_ultranationalist_campaigning_idea = {
 		
-			picture = idea_yug_federal_defense_council ###PLACEHOLDER
+			picture = generic_communism_drift_bonus ###PLACEHOLDER
 			
 			modifier = {
-				army_core_defence_factor = 0.1
-				army_org_factor= -0.15
-				resistance_growth_on_our_occupied_states = 0.12
-				resistance_decay_on_our_occupied_states = -0.20
+				fascism_drift = 0.05
+			}
+		}
+	
+		GER_major_ultranationalist_campaigning_idea = {
+		
+			picture = generic_communism_drift_bonus ###PLACEHOLDER
+			
+			modifier = {
+				fascism_drift = 0.15
 			}
 		}
 	

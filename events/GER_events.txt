@@ -11,9 +11,12 @@ country_event = {
 	picture = GFX_report_event_german_reichstag_gathering ##PLACEHOLDER
 	is_triggered_only = yes
 	option = {
-		name = ger_focus_events.1.option
+		name = ger_focus_events.1.a.option
 		
-		add_ideas = GER_government_deadlock
+		swap_ideas = {
+			remove_idea = GER_government_deadlock_1
+			add_idea = GER_government_deadlock_2
+		}
 		
 		ai_chance = { factor = 1}
 	}
