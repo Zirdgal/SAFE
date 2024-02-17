@@ -499,12 +499,30 @@ focus_tree = {
 			# OI ZIRD REMEMBER TO REPLACE THIS ICON
 		}
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIV_the_technology_problem } # OI ZIRD REMEMBER TO REPLACE THIS ICON
 		available_if_capitulated = yes
 
 		completion_reward = {
-			# OI ZIRD REMEMBER TO REPLACE THIS ICON
+			air_experience = 15
+			add_tech_bonus = {
+				name = LIV_VEF_electronics_expansion
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = LIV_VEF_airplane_engine_expansion
+				bonus = 0.5
+				uses = 2
+				category = plane_modules_tech
+			}
+			add_tech_bonus = {
+				name = LIV_VEF_airplane_expansion
+				bonus = 0.75
+				uses = 1
+				category = light_air
+			}
 		}
     }
 	focus = {
@@ -526,7 +544,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			air_experience = 15
+			add_tech_bonus = {
+				name = LIV_VEF_electronics_expansion
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				name = LIV_VEF_electronics_expansion
+				bonus = 0.5
+				uses = 1
+				category = plane_modules_tech
+				technology = photo_reconnaisance
+			}
 		}
     }
 	focus = {
@@ -548,7 +579,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			air_experience = 15
+			add_tech_bonus = {
+				name = LIV_VEF_airplane_engine_expansion
+				bonus = 0.5
+				uses = 1
+				category = plane_modules_tech
+			}
+			add_tech_bonus = {
+				name = LIV_VEF_airplane_expansion
+				ahead_reduction = 1
+				bonus = 0.75
+				uses = 1
+				category = light_air
+			}
 		}
     }
 	focus = {
@@ -570,9 +614,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
-		}
-    }
+			EST = { 
+				add_opinion_modifier = { 
+					target = SOV 
+					modifier = large_increase
+				} 
+			}
+    	}
+	}
 	focus = {
 		id = LIV_reuse_the_latvian_armoured_cars
 		icon = GFX_focus_SWE_lynx_armored_car
@@ -587,12 +636,17 @@ focus_tree = {
 
 		}
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIV_gaz_livonia }
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+					name = LIV_latvian_armoured_cars
+					bonus = 1.5
+					uses = 2
+					category = cat_armored_cars
+				}
 		}
     }
 	focus = {
@@ -609,7 +663,7 @@ focus_tree = {
 
 		}
 
-		cost = 10
+		cost = 5
 		prerequisite = { focus = LIV_reuse_the_latvian_armoured_cars }
 		available_if_capitulated = yes
 
