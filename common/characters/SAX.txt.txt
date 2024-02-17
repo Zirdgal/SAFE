@@ -3,7 +3,7 @@ characters={
 		name=SAX_Friedrich_Christian
 		portraits={
 			civillian={
-				large="GFX_portrait_SAX_friedrich_christian"
+				large="GFX_portrait_sax_friedrich_christian_large"
 			}
 		}
 		country_leader={
