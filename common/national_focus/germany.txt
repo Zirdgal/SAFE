@@ -16,7 +16,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_aftermath_of_elections
-		icon = GFX_focus_generic_improve_the_administration
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		x = 4
 		y = 0
 		cost = 2
@@ -27,6 +27,28 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = -50
 			GER = { country_event = ger_focus_events.1 }
+		}
+	}
+	
+	focus = {
+		id = GER_a_cornered_eagle
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		x = 8
+		y = 0
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 10
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.10
+				uses = 1
+				category = cat_grand_battle_plan
+			}
+			GER = { country_event = ger_focus_events.2 }
 		}
 	}
 }

@@ -1,4 +1,7 @@
 ﻿l_english:
  ###FOCUS TREE IDEAS
  GER_government_deadlock:0 "Government Deadlock"
- GER_government_deadlock:0 "The rise of the socialist coalition has left the government in peril. Progress has stagnated and infighting is common. Germany cannot keep functioning in this state. But who will save it?"
+ GER_government_deadlock_desc:0 "The rise of the socialist coalition has left the government in peril. Progress has stagnated and infighting is common. Germany cannot keep functioning in this state. But who will save it?"
+ 
+ GER_cornered_eagle:0 "Fervor of a Cornered Eagle"
+ GER_cornered_eagle_desc:0 "The might of the surrounding empires has whipped citizens and soldiers alike into a strong and resilient mass, designed to protect their homeland."
