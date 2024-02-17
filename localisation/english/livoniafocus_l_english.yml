@@ -11,6 +11,7 @@
  LIV_courish_industrialization:0 "Courish Industrialization"
 
  LIV_begin_militarization:0 "Begin Militarization"
+
  LIV_the_technology_problem:0 "The Technology Problem"
  LIV_expansion_of_the_VEF:0 "Expansion of the VEF"
  LIV_minox_cameras:0 "Minox Cameras"
@@ -19,6 +20,10 @@
  LIV_reuse_the_latvian_armoured_cars:0 "Reuse the Latvian Armoured Cars"
  LIV_revitalize_estonian_armoured_trains:0 "Revitalize Estonian Armoured Trains"
  LIV_the_fastest_army_in_the_world:0 "The Fastest Army in the World"
+
+ LIV_protect_the_dual_cities:0 "Protect the Dual Cities"
+ LIV_baltic_sea_protection:0 "Baltic Sea Protection"
+ LIV_protection_agaisnt_the_red_bear:0 "Protection Agaisnt the Red Bear"
 
 
 

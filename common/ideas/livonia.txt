@@ -21,5 +21,54 @@ ideas = {
 				communism_acceptance = 40
 			}
 		}
+		LIV_fastest_army_in_the_world_idea = {
+
+			picture = LIV
+			
+			allowed = {
+				tag = EST
+			}
+			available = {
+
+			}
+			cancel = {
+
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_speed_factor = 0.15
+				war_support_factor = 0.1
+				army_org_regain = 0.05
+				experience_gain_army_factor = 0.1
+			}
+		}
+		LIV_protection_agaisnt_the_red_bear_idea = {
+
+			picture = LIV
+			
+			allowed = {
+				tag = EST
+			}
+			available = {
+
+			}
+			cancel = {
+
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = 0.05
+				max_dig_in_factor = 0.1
+				army_core_defence_factor = 0.2
+			}
+			targeted_modifier = {
+				tag = SOV
+				defense_bonus_against = 0.25
+			}
+		}
 	}
 }
