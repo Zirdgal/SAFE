@@ -141,10 +141,25 @@ focus_tree = {
 	###ARMY FOCUSES
 	
 	focus = {
-		id = GER_a_cornered_eagle
+		id = GER_acknowledge_military
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
 		x = 12
 		y = 0
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			GER = { country_event = ger_focus_events.3 }
+		}
+	}
+	
+	focus = {
+		id = GER_a_cornered_eagle
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		x = 12
+		y = 10
 		cost = 5
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 		

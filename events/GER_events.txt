@@ -18,6 +18,8 @@ country_event = {
 			add_idea = GER_government_deadlock_2
 		}
 		
+		add_stability = -0.05
+		
 		ai_chance = { factor = 1}
 	}
 }
@@ -33,6 +35,22 @@ country_event = {
 		name = ger_focus_events.2.option
 		
 		add_ideas = GER_cornered_eagle
+		
+		ai_chance = { factor = 1}
+	}
+}
+
+country_event = {
+	id = ger_focus_events.3
+	title = ger_focus_events.3.title
+	desc = ger_focus_events.3.desc
+	
+	picture = GFX_report_event_german_troops ##PLACEHOLDER
+	is_triggered_only = yes
+	option = {
+		name = ger_focus_events.3.option
+		
+		add_stability = -0.1
 		
 		ai_chance = { factor = 1}
 	}
