@@ -12,6 +12,16 @@ set_popularities = {
 	communism = 5
 	neutrality = 40
 }
+create_country_leader = {
+	name = "Friedrich Christian"
+	desc = "POLITICS_FRIEDRICH_CHRISTIAN_DESC"
+	picture = "portrait_large_friedrich.dds"
+	expire = "1999.1.1"
+	ideology = despotism
+	traits = {
+		dictator
+	}
+}
 
 1939.1.1 = {
 	set_politics = {
@@ -21,5 +31,3 @@ set_popularities = {
 		elections_allowed = no
 	}
 }
-
-recruit_character = SAX_Friedrich_Christian
