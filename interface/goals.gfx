@@ -1136,6 +1136,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_SAX_calm.dds"
 	}
 	
+		SpriteType = {
+		name = "GFX_focus_SAX_march"
+		texturefile = "gfx/interface/goals/focus_SAX_march.dds"
+	}
+	
 	### India
 
 	SpriteType = { 

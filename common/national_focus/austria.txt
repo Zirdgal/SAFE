@@ -86,7 +86,7 @@ focus_tree = {
 	
 		focus = {
 		id = "Send In The Army"
-		icon = GFX_goal_LIV_look_westward
+		icon = GFX_focus_SAX_march
 		x = 0
 		y = 1
 		relative_position_id = "REMAIN CALM"
