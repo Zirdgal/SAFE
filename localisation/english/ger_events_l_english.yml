@@ -3,6 +3,10 @@
  ger_focus_events.1.desc:0 "With the rise of a large socialist coalition minority, the Reichstag is now practically split in two. The two big groups have to rally smaller parties by their side to pass even a single law, and even then infighting in the parties makes it unlikely to make any progress. The Reichstag is simply put, deadlocked."
  ger_focus_events.1.a.option:0 "This can't be good..."
  
- ger_focus_events.2.title:0 "The cornered eagle that is the Deutsches Republik"
- ger_focus_events.2.desc:0 "With the encroaching powers of the Frankish, the USSR and the newly founded Pink Union (placeholder name) the Deutsches Republik is a cornered eagle. The citizens, while scared for their futures, will use every single drop of blood they have to protect the life of their precious republic."
+ ger_focus_events.2.title:0 "The cornered eagle that is the Deutsche Republik"
+ ger_focus_events.2.desc:0 "With the encroaching powers of the Frankish, the USSR and the newly founded Pink Union (placeholder name) the Deutsche Republik is a cornered eagle. The citizens, while scared for their futures, will use every single drop of blood they have to protect the life of their precious republic."
  ger_focus_events.2.option:0 "The eagle must endure"
+ 
+ ger_focus_events.3.title:0 "Acknowledging the Deutsche Armee"
+ ger_focus_events.3.desc:0 "During a debate a politician argues: \"It is simple really, our army will not suffice. It is suffering from a lack of quality in training, planning and equipment. We must reinvigorate our military to protect our homeland. Otherwise there is no future for our Deutsche Republik.\""
+ ger_focus_events.3.option:0 "The crowd's silence says everything"
