@@ -37,6 +37,17 @@ spriteTypes = {
 	name = "GFX_goal_LIV_look_westward"
 	texturefile = "gfx/interface/goals/goal_LIV_look_westward.dds"			
 	}	
+
+
+
+
+
+
+
+
+
+
+
 	SpriteType = {
 	name = "GFX_focus_FRA_harm_production"
 	texturefile = "gfx/interface/goals/focus_FRA_harm_production.dds"			
@@ -49,6 +60,17 @@ spriteTypes = {
 	name = "GFX_focus_FRA_counter_terrorism_bureau"
 	texturefile = "gfx/interface/goals/focus_FRA_counter_terrorism_bureau.dds"			
 	}	
+
+
+
+
+
+
+
+
+
+
+
 
 	#### Generic continuous goal icons
 
