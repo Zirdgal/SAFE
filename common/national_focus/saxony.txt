@@ -1,0 +1,38 @@
+focus_tree = {
+    id = saxon_focus
+	
+	country = {
+	    factor = 0 # makes it that this focus is selected over base game hoi4 focus
+	
+		modifier = {
+            add = 11 # makes it that this focus is selected over base game hoi4 focus
+		    tag = SAX
+		}
+	}
+
+	default = no        # the default focus tree would be inputed if this is yes
+	
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 450 y = 5000 }
+
+
+	focus = {
+		id = SAX_state_of_emergency
+		icon = GFX_goal_LIV_look_westward
+		x = 2
+		y = 1
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+}
