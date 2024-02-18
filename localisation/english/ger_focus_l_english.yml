@@ -19,3 +19,21 @@
  
  GER_major_socialist_campaigning:0 "Continued Socialist Campaigning"
  GER_major_socialist_campaigning_desc:0 "The campaigning by the socialist coalition has gained a large amount of traction and their rethoric is spreading like wildfire within the masses. It is now highly likely that the socialist coalition will win the deadlock."
+ 
+ GER_minor_liberal_campaigning:0 "Liberal Campaigning"
+ GER_minor_liberal_campaigning_desc:0 "The political campaigns by the liberal majority has started to change public perception. The people is starting to repeat various rethorics, for example that the government deadlock has been caused by interference from the rich with the purpose to stop the will of the people. Whether this is actually true, noone knows."
+ 
+ GER_major_liberal_campaigning:0 "Continued Liberal Campaigning"
+ GER_major_liberal_campaigning_desc:0 "The campaigning by the liberal majority has gained a large amount of traction and their rethoric is spreading like wildfire within the masses. It is now highly likely that the democratic majority will win the deadlock."
+ 
+ GER_minor_conservative_campaigning:0 "Conservative Campaigning"
+ GER_minor_conservative_campaigning_desc:0 "The political campaigns by the conservatives has started to change public perception. The people is starting to repeat various rethorics, for example that the government deadlock has been caused by interference from the rich with the purpose to stop the will of the people. Whether this is actually true, noone knows."
+ 
+ GER_major_conservative_campaigning:0 "Continued Conservative Campaigning"
+ GER_major_conservative_campaigning_desc:0 "The campaigning by the conservatives has gained a large amount of traction and their rethoric is spreading like wildfire within the masses. It is now highly likely that the democratic majority will win the deadlock."
+ 
+ GER_minor_monarchist_campaigning:0 "Monarchist Campaigning"
+ GER_minor_monarchist_campaigning_desc:0 "The political campaigns by the monarchist has started to change public perception. The people is starting to repeat various rethorics, for example that the government deadlock has been caused by the Republik being punished by god for removing their monarchs. Whether this is actually true, noone knows."
+ 
+ GER_major_monarchist_campaigning:0 "Successfull Monarchist Campaigning"
+ GER_major_monarchist_campaigning_desc:0 "The campaigning by the monarchists has gained a large amount of traction and their rethoric is spreading like wildfire within the masses. It is now highly likely that the people will demand a coronation, constitutional or absolute."

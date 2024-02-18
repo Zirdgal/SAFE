@@ -27,3 +27,21 @@
  
         GER_major_socialist_campaigning_idea:0 "Major Socialist Campaigning"
         GER_major_socialist_campaigning_idea_desc:0 "Political campaigns by the socialist coalition are gaining traction, largely affecting the popular opinion."
+ 
+        GER_minor_liberal_campaigning_idea:0 "Minor Liberal Campaigning"
+        GER_minor_liberal_campaigning_idea_desc:0 "Political campaigns by the liberals are mildly affecting the popular opinion."
+ 
+        GER_major_liberal_campaigning_idea:0 "Major Liberal Campaigning"
+        GER_major_liberal_campaigning_idea_desc:0 "Political campaigns by the liberals are gaining traction, largely affecting the popular opinion."
+ 
+        GER_minor_conservative_campaigning_idea:0 "Minor Conservative Campaigning"
+        GER_minor_conservative_campaigning_idea_desc:0 "Political campaigns by the conservatives are mildly affecting the popular opinion."
+ 
+        GER_major_conservative_campaigning_idea:0 "Major Conservative Campaigning"
+        GER_major_conservative_campaigning_idea_desc:0 "Political campaigns by the conservatives are gaining traction, largely affecting the popular opinion."
+ 
+        GER_minor_monarchist_campaigning_idea:0 "Minor Monarchist Campaigning"
+        GER_minor_monarchist_campaigning_idea_desc:0 "Political campaigns by the monarchists are mildly affecting the popular opinion."
+ 
+        GER_major_monarchist_campaigning_idea:0 "Major Monarchist Campaigning"
+        GER_major_monarchist_campaigning_idea_desc:0 "Political campaigns by the monarchists are gaining traction, largely affecting the popular opinion."

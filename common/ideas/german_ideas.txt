@@ -59,7 +59,7 @@ ideas = {
 	
 		GER_minor_ultranationalist_campaigning_idea = {
 		
-			picture = generic_communism_drift_bonus ###PLACEHOLDER
+			picture = generic_fascism_drift_bonus ###PLACEHOLDER
 			
 			modifier = {
 				fascism_drift = 0.05
@@ -68,7 +68,7 @@ ideas = {
 	
 		GER_major_ultranationalist_campaigning_idea = {
 		
-			picture = generic_communism_drift_bonus ###PLACEHOLDER
+			picture = generic_fascism_drift_bonus ###PLACEHOLDER
 			
 			modifier = {
 				fascism_drift = 0.15
@@ -90,6 +90,62 @@ ideas = {
 			
 			modifier = {
 				communism_drift = 0.15
+			}
+		}
+	
+		GER_minor_liberal_campaigning_idea = {
+		
+			picture = generic_democratic_drift_bonus ###PLACEHOLDER
+			
+			modifier = {
+				democratic_drift = 0.05
+			}
+		}
+	
+		GER_major_liberal_campaigning_idea = {
+		
+			picture = generic_democratic_drift_bonus ###PLACEHOLDER
+			
+			modifier = {
+				democratic_drift = 0.15
+			}
+		}
+	
+		GER_minor_conservative_campaigning_idea = {
+		
+			picture = generic_democratic_drift_bonus ###PLACEHOLDER
+			
+			modifier = {
+				democratic_drift = 0.03
+				neutrality_drift = 0.02
+			}
+		}
+	
+		GER_major_conservative_campaigning_idea = {
+		
+			picture = generic_democratic_drift_bonus ###PLACEHOLDER
+			
+			modifier = {
+				democratic_drift = 0.09
+				neutrality_drift = 0.06
+			}
+		}
+	
+		GER_minor_monarchist_campaigning_idea = {
+		
+			picture = idea_generic_monarchist_uprising ###PLACEHOLDER
+			
+			modifier = {
+				neutrality_drift = 0.05
+			}
+		}
+	
+		GER_major_monarchist_campaigning_idea = {
+		
+			picture = idea_generic_monarchist_uprising ###PLACEHOLDER
+			
+			modifier = {
+				neutrality_drift = 0.15
 			}
 		}
 	}
