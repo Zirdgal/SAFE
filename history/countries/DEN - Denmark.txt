@@ -12,16 +12,13 @@ set_politics = {
 	elections_allowed = no
 }
 
-recruit_character = DEN_christian_the_x
-
-add_country_leader_role = {
-	character = DEN_christian_the_x
-	promote_leader = yes
-	country_leader = {
-		ideology = despotism
-		expire = 1954.2.17.1
-		traits = {
-		}
+create_country_leader = {
+	name = "Christian the X"
+	desc = "POLITICS_CHRISTIAN_THE_X_DESC"
+	picture = "portrait_large_christian_the_x.dds"
+	expire = "1954.2.17"
+	ideology = despotism
+	traits = {
 	}
 }
 
