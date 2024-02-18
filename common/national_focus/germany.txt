@@ -19,7 +19,7 @@ focus_tree = {
 	focus = {
 		id = GER_aftermath_of_elections
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
-		x = 4
+		x = 8
 		y = 0
 		cost = 2
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -36,8 +36,8 @@ focus_tree = {
 		id = GER_minor_ultranationalist_campaigning
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
-		x = -4
-		y = 1
+		x = -8
+		y = 2
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -63,7 +63,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_minor_ultranationalist_campaigning }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_minor_ultranationalist_campaigning
 		
 		cost = 5
@@ -89,8 +89,8 @@ focus_tree = {
 		id = GER_minor_socialist_campaigning
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
-		x = -2
-		y = 1
+		x = -4
+		y = 2
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -116,7 +116,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_minor_socialist_campaigning }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_minor_socialist_campaigning
 		
 		cost = 5
@@ -143,7 +143,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -169,7 +169,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_minor_liberal_campaigning }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_minor_liberal_campaigning
 		
 		cost = 5
@@ -195,8 +195,8 @@ focus_tree = {
 		id = GER_minor_conservative_campaigning
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
-		x = 2
-		y = 1
+		x = 4
+		y = 2
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -222,7 +222,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_minor_conservative_campaigning }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_minor_conservative_campaigning
 		
 		cost = 5
@@ -248,8 +248,8 @@ focus_tree = {
 		id = GER_minor_monarchist_campaigning
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
-		x = 4
-		y = 1
+		x = 8
+		y = 2
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -275,7 +275,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_minor_monarchist_campaigning }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_minor_monarchist_campaigning
 		
 		cost = 5
@@ -298,12 +298,13 @@ focus_tree = {
 	}
 	
 	
+	
 	###ARMY FOCUSES
 	
 	focus = {
 		id = GER_acknowledge_military
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
-		x = 12
+		x = 20
 		y = 0
 		cost = 5
 		search_filters = { FOCUS_FILTER_ARMY_XP }

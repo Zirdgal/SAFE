@@ -60,3 +60,7 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
+
+oob = "DEN_1936"
+set_naval_oob = "DEN_1936_naval_mtg"
+set_air_oob = "DEN_1936_air_bba"
