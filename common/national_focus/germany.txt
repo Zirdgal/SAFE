@@ -138,6 +138,166 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = GER_minor_liberal_campaigning
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = GER_aftermath_of_elections }
+		x = 0
+		y = 1
+		relative_position_id = GER_aftermath_of_elections
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_political_power > 25
+		}
+
+		completion_reward = {
+			add_political_power = -25
+			add_timed_idea = {
+				idea = GER_minor_liberal_campaigning_idea
+				days = 210
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_major_liberal_campaigning
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = GER_minor_liberal_campaigning }
+		x = 0
+		y = 1
+		relative_position_id = GER_minor_liberal_campaigning
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_political_power > 50
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			remove_ideas = GER_minor_liberal_campaigning_idea
+			add_timed_idea = {
+				idea = GER_major_liberal_campaigning_idea
+				days = 180
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_minor_conservative_campaigning
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = GER_aftermath_of_elections }
+		x = 2
+		y = 1
+		relative_position_id = GER_aftermath_of_elections
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_political_power > 25
+		}
+
+		completion_reward = {
+			add_political_power = -25
+			add_timed_idea = {
+				idea = GER_minor_conservative_campaigning_idea
+				days = 210
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_major_conservative_campaigning
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = GER_minor_conservative_campaigning }
+		x = 0
+		y = 1
+		relative_position_id = GER_minor_conservative_campaigning
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_political_power > 50
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			remove_ideas = GER_minor_conservative_campaigning_idea
+			add_timed_idea = {
+				idea = GER_major_conservative_campaigning_idea
+				days = 180
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_minor_monarchist_campaigning
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = GER_aftermath_of_elections }
+		x = 4
+		y = 1
+		relative_position_id = GER_aftermath_of_elections
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_political_power > 25
+		}
+
+		completion_reward = {
+			add_political_power = -25
+			add_timed_idea = {
+				idea = GER_minor_monarchist_campaigning_idea
+				days = 210
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_major_monarchist_campaigning
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = GER_minor_monarchist_campaigning }
+		x = 0
+		y = 1
+		relative_position_id = GER_minor_monarchist_campaigning
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_political_power > 50
+		}
+
+		completion_reward = {
+			add_political_power = -50
+			remove_ideas = GER_minor_monarchist_campaigning_idea
+			add_timed_idea = {
+				idea = GER_major_monarchist_campaigning_idea
+				days = 180
+			}
+		}
+	}
+	
+	
 	###ARMY FOCUSES
 	
 	focus = {
