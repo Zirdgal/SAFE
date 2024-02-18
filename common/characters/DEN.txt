@@ -3,7 +3,7 @@ characters={
 		name=DEN_character_christian_the_x
 		portraits={
 			civilian={
-				large="GFX_portrait_christian_the_x_large"
+				large="GFX_portrait_DEN_christian_the_x"
 			}
 		}
 		country_leader={
