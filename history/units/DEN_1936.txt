@@ -96,7 +96,7 @@ units = {
 		location = 6287  # Copenhagen
 		division_template = "Infanteri Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division = { # "2. Sjællandske Division"
@@ -107,7 +107,7 @@ units = {
 		location = 3325  # Odense
 		division_template = "Infanteri Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 	division = { # "1. Jyske Division"
@@ -118,7 +118,7 @@ units = {
 		location = 394  # Aalborg
 		division_template = "Infanteri Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 	division = { 
@@ -126,7 +126,7 @@ units = {
 		location = 11251  # Sonderborg
 		division_template = "Binær Division"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division = {
@@ -134,7 +134,7 @@ units = {
 		location = 6364  # Aarhus
 		division_template = "Kavaleri Brigade"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	##### Kongelige Norwegan Overkommando #####
@@ -146,7 +146,7 @@ units = {
 		location = 6115
 		division_template = "Infanteriet Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 	division = {
@@ -166,7 +166,7 @@ units = {
 		location = 9157
 		division_template = "Binær Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.8
 
 	}
 	division = {
@@ -174,7 +174,7 @@ units = {
 		location = 9157
 		division_template = "Dragonregiment"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 
@@ -186,7 +186,7 @@ units = {
 		location = 9296
 		division_template = "Binær Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.9
 
 	}
 
@@ -198,7 +198,7 @@ units = {
 		location = 122
 		division_template = "Binær Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 
@@ -218,7 +218,7 @@ units = {
 		location = 3022
 		division_template = "Dragonregiment"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.6
 
 	}
 
@@ -230,7 +230,7 @@ units = {
 		location = 192
 		division_template = "Binær Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1
 
 	}
 	division = {
@@ -238,7 +238,7 @@ units = {
 		location = 9116
 		division_template = "Binær Divisjon"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_equipment_factor = 0.7
 
 	}
 }
@@ -269,7 +269,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "NOR"
+			creator = "DEN"
 		}
 		requested_factories = 1
 		progress = 0.37
@@ -279,7 +279,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "NOR"
+			creator = "DEN"
 		}
 		requested_factories = 1
 		progress = 0.54
