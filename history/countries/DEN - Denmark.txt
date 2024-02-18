@@ -60,3 +60,5 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
+
+oob = "DEN_1936"
