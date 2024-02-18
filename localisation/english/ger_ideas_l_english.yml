@@ -5,8 +5,8 @@
         GER_cornered_eagle:0 "Fervor of a Cornered Eagle"
         GER_cornered_eagle_desc:0 "The might of the surrounding empires has whipped citizens and soldiers alike into a strong and resilient mass, designed to protect their homeland."
         
-        GER_decadent_military:0 "Decadent Military"
-        GER_decadent_military_desc:0 "From high command to common soldier to the guns in use the Deutsches Armee is in a bad shape. The lack of initiative from a stagnant government has led to a less than modern military. Modernization is needed to keep the Deutsches Republik safe."
+        GER_decadent_army:0 "Decadent Army"
+        GER_decadent_army_desc:0 "From high command to common soldier to the guns in use the Deutsches Armee is in a bad shape. The lack of initiative from a stagnant government has led to a less than modern military. Without modernizing the army the safety of the Republik can not be guaranteed."
         
     ###POLITICAL
         
@@ -27,3 +27,21 @@
  
         GER_major_socialist_campaigning_idea:0 "Major Socialist Campaigning"
         GER_major_socialist_campaigning_idea_desc:0 "Political campaigns by the socialist coalition are gaining traction, largely affecting the popular opinion."
+ 
+        GER_minor_liberal_campaigning_idea:0 "Minor Liberal Campaigning"
+        GER_minor_liberal_campaigning_idea_desc:0 "Political campaigns by the liberals are mildly affecting the popular opinion."
+ 
+        GER_major_liberal_campaigning_idea:0 "Major Liberal Campaigning"
+        GER_major_liberal_campaigning_idea_desc:0 "Political campaigns by the liberals are gaining traction, largely affecting the popular opinion."
+ 
+        GER_minor_conservative_campaigning_idea:0 "Minor Conservative Campaigning"
+        GER_minor_conservative_campaigning_idea_desc:0 "Political campaigns by the conservatives are mildly affecting the popular opinion."
+ 
+        GER_major_conservative_campaigning_idea:0 "Major Conservative Campaigning"
+        GER_major_conservative_campaigning_idea_desc:0 "Political campaigns by the conservatives are gaining traction, largely affecting the popular opinion."
+ 
+        GER_minor_monarchist_campaigning_idea:0 "Minor Monarchist Campaigning"
+        GER_minor_monarchist_campaigning_idea_desc:0 "Political campaigns by the monarchists are mildly affecting the popular opinion."
+ 
+        GER_major_monarchist_campaigning_idea:0 "Major Monarchist Campaigning"
+        GER_major_monarchist_campaigning_idea_desc:0 "Political campaigns by the monarchists are gaining traction, largely affecting the popular opinion."

@@ -7,7 +7,7 @@ set_war_support = 0.5
 
 add_ideas = {
 	GER_government_deadlock_1
-	GER_decadent_military
+	GER_decadent_army
 }
 
 set_politics = {
@@ -17,17 +17,14 @@ set_politics = {
 	elections_allowed = yes
 }
 
-recruit_character = GER_konrad_adenauer
-
-add_country_leader_role = {
-	character = GER_konrad_adenauer
-	promote_leader = yes
-	country_leader = {
-		ideology = liberalism
-		expire = 1954.2.17.1
-		traits = {
-			GER_trait_ineffective_leader
-		}
+create_country_leader = {
+	name = "Konrad Adenauer"
+	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+	picture = "Portrait_Germany_Konrad_Adenauer.dds"
+	expire = "1954.2.17"
+	ideology = liberalism
+	traits = {
+		GER_trait_ineffective_leader
 	}
 }
 
