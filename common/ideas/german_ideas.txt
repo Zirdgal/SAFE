@@ -7,7 +7,7 @@ ideas = {
 		
 		###MILITARY
 		
-		GER_decadent_military = {
+		GER_decadent_army = {
 		
 			picture = great_depression ###PLACEHOLDER
 			
