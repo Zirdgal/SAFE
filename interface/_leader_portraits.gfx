@@ -4,7 +4,7 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SAX/portrait_large_friedrich.dds"
 	}
 	
-	sprite_Type = {
+	spriteType = {
 		name = "GFX_portrait_DEN_christian_the_x"
 		texturefile = "gfx/leaders/DEN/portrait_large_christian_the_x.dds"
 	}
