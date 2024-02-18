@@ -12,13 +12,6 @@ set_politics = {
 	elections_allowed = no
 }
 
-set_party_name = {
-		ideology = neutrality
-		long_name = DEN_THE_HOUSE_OF_OLDENBURG_LONG
-		short_name = DEN_THE_HOUSE_OF_OLDENBURG_SHORT
-		
-}
-
 create_country_leader = {
 	name = "Christian the X"
 	desc = "POLITICS_CHRISTIAN_THE_X_DESC"
