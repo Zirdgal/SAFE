@@ -1,6 +1,6 @@
 characters={
 	DEN_christian_the_x={
-		name=DEN_CHARACTER_CHRISTIAN_THE_X
+		name="Christian the X"
 		portraits={
 			civilian={
 				large="GFX_portrait_DEN_christian_the_x"
