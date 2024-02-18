@@ -1,6 +1,6 @@
 characters={
 	DEN_christian_the_x={
-		name=DEN_character_christian_the_x
+		name=DEN_CHARACTER_CHRISTIAN_THE_X
 		portraits={
 			civilian={
 				large="GFX_portrait_DEN_christian_the_x"
@@ -9,6 +9,7 @@ characters={
 		country_leader={
 			ideology=despotism
 			traits = { humble }
+			desc = DEN_CHRISTIAN_THE_X_DESC
 			expire="1954.1.1.1"
 		}
 	}
