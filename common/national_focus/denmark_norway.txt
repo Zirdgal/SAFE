@@ -19,7 +19,7 @@ focus_tree = {
 		id = DEN_the_fate_of_the_king
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		x = 12
-		y = 1
+		y = 0
 		cost = 2
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
@@ -47,7 +47,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.1
-			}
+			
 		}
 	
 	}
@@ -68,7 +68,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = -0.25
-			}
+			
 		}
 	}
 	
@@ -77,7 +77,7 @@ focus_tree = {
 	focus = {
 		id = DEN_state_of_the_haer
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
-		x = 12
+		x = 26
 		y = 0
 		relative_position_id = DEN_the_fate_of_the_king
 		
