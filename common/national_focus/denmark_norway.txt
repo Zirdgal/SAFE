@@ -407,13 +407,104 @@ focus_tree = {
 		}
 	}
 	
+	###DOCTERINE
+	
+	focus = {
+		id = DEN_docterine_efforts
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		x = 0
+		y = -1
+		relative_position_id = DEN_state_of_the_haer
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	
+	focus = {
+		id = DEN_mass_mobilisation
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		x = 2
+		y = 1
+		relative_position_id = DEN_docterine_efforts
+		prerequisite { focus = DEN_docterine_efforts }
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	
+	focus = {
+		id = DEN_mobile_warfare
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		x = -2
+		y = 1
+		relative_position_id = DEN_docterine_efforts
+		prerequisite { focus = DEN_docterine_efforts }
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	
+	focus = {
+		id = DEN_superior_firepower
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		x = -4
+		y = 1
+		relative_position_id = DEN_docterine_efforts
+		prerequisite { focus = DEN_docterine_efforts }
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	
+	focus = {
+		id = DEN_mass_assault
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		x = 4
+		y = 1
+		relative_position_id = DEN_docterine_efforts
+		prerequisite { focus = DEN_docterine_efforts }
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	
 	###ARMY FOCUSES
 	
 	focus = {
 		id = DEN_state_of_the_haer
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
 		x = 32
-		y = 0
+		y = 4
 		relative_position_id = DEN_the_fate_of_the_king
 		
 		cost = 5
@@ -429,7 +520,7 @@ focus_tree = {
 	focus = {
 		id = DEN_further_recuitment_efforts
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = DEN_state_of_the_haer
 		prerequisite = { focus = DEN_state_of_the_haer }
@@ -445,9 +536,46 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = DEN_modernize_our_infantry
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		x = 0
+		y = 1
+		relative_position_id = DEN_further_recuitment_efforts
+		prerequisite = { focus = DEN_further_recuitment_efforts }
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_an_army_of_men
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		x = 1
+		y = 1
+		relative_position_id = DEN_modernize_our_infantry
+		prerequisite = { focus = DEN_modernize_our_infantry }
+		mutually_exclusive = { focus = DEN_an_army_on_wheels }
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
 		id = DEN_motorised_infantry_investments
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = DEN_state_of_the_haer
 		prerequisite = { focus = DEN_state_of_the_haer }
@@ -483,10 +611,11 @@ focus_tree = {
 	focus = {
 		id = DEN_an_army_on_wheels
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = DEN_potential_of_mechanized
 		prerequisite = { focus = DEN_potential_of_mechanized }
+		mutually_exclusive = { focus = DEN_an_army_of_men }
 		
 		cost = 5
 		search_filters = { FOCUS_FILTER_ARMY_XP }
@@ -500,6 +629,7 @@ focus_tree = {
 	
 	
 	###ECONOMIC FOCUSES
+	
 	
 	focus = {
 		id = DEN_adressing_our_economic_situation
