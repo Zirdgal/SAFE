@@ -21,26 +21,6 @@ ideas = {
 				communism_acceptance = 40
 			}
 		}
-		LIV_latvian_distrust_idea = {
-
-			picture = LIV
-			
-			allowed = {
-				tag = EST
-			}
-			available = {
-
-			}
-			cancel = {
-
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-
-			}
-		}
 		LIV_fastest_army_in_the_world_idea = {
 
 			picture = LIV

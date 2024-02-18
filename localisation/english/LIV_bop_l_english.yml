@@ -1,0 +1,17 @@
+﻿l_english:
+
+ LIV_balance_of_power:0 "Livonian Parliament Majority"
+ default_left_side:0 "Latvian Power in Parliament"
+ default_right_side:0 "Estonian Power in Parliament"
+
+ mid_range:0 "Equal Power in Parliament"
+
+ low_left_side_range:0 "Slight Latvian Majority in Parliament"
+ middle_left_side_range:0 "Moderate Latvian Majority in Parliament"
+ far_left_side_range:0 "High Latvian Majority in Parliament"
+ very_far_left_side_range:0 "Extremely High Latvian Majority in Parliament"
+
+ low_right_side_range:0 "Slight Estonian Majority in Parliament"
+ middle_right_side_range:0 "Moderate Estonian Majority in Parliament"
+ far_right_side_range:0 "High Latvian Estonian in Parliament"
+ very_far_right_side_range:0 "Extremely High Estonian Majority in Parliament"
