@@ -56,7 +56,6 @@ UK
 
 Livonia
 
-- Remember to change the goddamn VEF icon to show the VEF logo
 - Integration Path
 - Demand Soviet territories and then (willingly) leave USSR
 - Polish path that declares war with soviet union with pink faction 
