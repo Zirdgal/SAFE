@@ -424,7 +424,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 25
+			add_ideas = {
+				idea = DEN_northern_way_of_war_idea
+			}
 		}
 	}
 	
@@ -444,6 +446,12 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.50
+				uses = 1
+				category = cat_grand_battle_plan
+			}
 		}
 	}
 	
@@ -463,6 +471,12 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.50
+				uses = 1
+				category = cat_mobile_warfare
+			}
 		}
 	}
 	
@@ -482,6 +496,12 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.50
+				uses = 1
+				category = cat_superior_firepower
+			}
 		}
 	}
 	
@@ -492,7 +512,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = DEN_superior_firepower
 		prerequisite { focus = DEN_superior_firepower focus = DEN_mobile_warfare }
-		mutually_exclusive = { focus = DEN_mobile_warfare focus = DEN_mass_assault focus = DEN_grand_battleplan }
 		
 		cost = 5
 		search_filters = { FOCUS_FILTER_ARMY_XP }
@@ -500,7 +519,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 25
+			add_ideas = {
+				DEN_cheaper_car_manufacturing
+			}
 		}
 	}
 	
@@ -518,7 +539,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
 		}
 	}
 	
@@ -556,6 +581,12 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.50
+				uses = 1
+				category = cat_mass_assault
+			}
 		}
 	}
 	
@@ -573,7 +604,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = infantry_tech
+			}
 		}
 	}
 	
@@ -591,7 +626,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = mio_cat_all_artillery_equipment
+			}
 		}
 	}
 	
@@ -609,7 +648,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = DEN_northern_way_of_war_idea
+				add_idea = DEN_northern_way_of_war_idea_2
+			}
 		}
 	}
 	
@@ -621,6 +663,7 @@ focus_tree = {
 		x = 34
 		y = 2
 		relative_position_id = DEN_the_fate_of_the_king
+		prerequisite { focus = DEN_superior_firepower focus = DEN_mobile_warfare focus = DEN_grand_battleplan focus = DEN_mass_assault }
 		
 		cost = 5
 		search_filters = { FOCUS_FILTER_ARMY_XP }
@@ -629,6 +672,10 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 25
+			swap_ideas = {
+				remove_idea = DEN_the_haer_idea
+				add_idea = DEN_the_haer_idea_2
+			}
 		}
 	}
 	
@@ -646,7 +693,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = DEN_the_haer_idea_2
+				add_idea = DEN_the_haer_idea_3
+			}
 		}
 	}
 	
@@ -664,7 +714,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = {
+				DEN_unified_internal_command_idea
+			}
 		}
 	}
 	
@@ -679,10 +731,45 @@ focus_tree = {
 		cost = 5
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 		
+		bypass = {
+			143 = { 
+				NOT = { 
+					is_owned_by = DEN
+				}
+			}
+			
+			923 = { 
+				NOT = { 
+					is_owned_by = DEN
+				}
+			}
+			
+			144 = { 
+				NOT = { 
+					is_owned_by = DEN
+				}
+			}
+			
+			924 = { 
+				NOT = { 
+					is_owned_by = DEN
+				}
+			}
+			
+			925 = { 
+				NOT = { 
+					is_owned_by = DEN
+				}
+			}
+		}
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = DEN_the_sami_idea
+				add_idea = DEN_the_sami_idea_2
+			}
 		}
 	}
 	
@@ -699,8 +786,43 @@ focus_tree = {
 		
 		available_if_capitulated = yes
 
-		completion_reward = {
+		bypass = {
+			143 = { 
+				NOT = { 
+					is_owned_by = DEN
+				}
+			}
 			
+			923 = { 
+				NOT = { 
+					is_owned_by = DEN
+				}
+			}
+			
+			144 = { 
+				NOT = { 
+					is_owned_by = DEN
+				}
+			}
+			
+			924 = { 
+				NOT = { 
+					is_owned_by = DEN
+				}
+			}
+			
+			925 = { 
+				NOT = { 
+					is_owned_by = DEN
+				}
+			}
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = DEN_the_sami_idea_2
+				add_idea = DEN_the_sami_idea_3
+			}
 		}
 	}
 	
@@ -721,7 +843,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = {
+				DEN_an_army_of_men
+			}
 		}
 	}
 	
@@ -740,7 +864,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_mechanized_equipment
+			}
 		}
 	}
 	
@@ -760,7 +888,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_ideas = {
+				DEN_an_army_on_wheels
+			}
 		}
 	}
 	

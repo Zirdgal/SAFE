@@ -33,6 +33,11 @@ add_ideas = {
 	limited_exports
 	voulenteer_only
 	partial_economic_mobilisation
+	DEN_the_sami_idea
+	DEN_norweigan_partisans_idea
+	DEN_the_haer_idea
+	DEN_danish_norweigan_industrial_capabilities_idea
+	DEN_a_divided_nation_idea
 }
 
 # Starting tech
