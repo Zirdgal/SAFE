@@ -17,7 +17,7 @@ focus_tree = {
 
 	focus = {
 		id = "State Of Emegency"
-		icon = GFX_focus_SAX_Emergency
+		icon = GFX_focus_SAX_emergency
 		x = 0
 		y = 0
 		#relative_position_id = LIV_stay_eastward

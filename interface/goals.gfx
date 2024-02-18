@@ -1,6 +1,35 @@
 spriteTypes = {	
 
 
+	#	██╗     ██╗██╗   ██╗ ██████╗ ███╗   ██╗██╗ █████╗ 
+	#	██║     ██║██║   ██║██╔═══██╗████╗  ██║██║██╔══██╗
+	#	██║     ██║██║   ██║██║   ██║██╔██╗ ██║██║███████║	
+	#	██║     ██║╚██╗ ██╔╝██║   ██║██║╚██╗██║██║██╔══██║
+	#	███████╗██║ ╚████╔╝ ╚██████╔╝██║ ╚████║██║██║  ██║
+	#	╚══════╝╚═╝  ╚═══╝   ╚═════╝ ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝
+
+
+
+	SpriteType = {
+	name = "GFX_focus_LIV_militarize_riga"
+	texturefile = "gfx/interface/goals/focus_LIV_militarize_riga.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_LIV_militarize_the_border_states"
+	texturefile = "gfx/interface/goals/focus_LIV_militarize_the_border_states.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_LIV_estonia_military"
+	texturefile = "gfx/interface/goals/focus_LIV_estonia_military.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_focus_LIV_latvia_military"
+	texturefile = "gfx/interface/goals/focus_LIV_latvia_military.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_focus_LIV_invest_in_vef"
+	texturefile = "gfx/interface/goals/focus_LIV_invest_in_vef.dds"			
+	}	
 	SpriteType = {
 	name = "GFX_focus_LIV_courish_industrialization"
 	texturefile = "gfx/interface/goals/focus_LIV_courish_industrialization.dds"			
@@ -60,16 +89,6 @@ spriteTypes = {
 	name = "GFX_focus_FRA_counter_terrorism_bureau"
 	texturefile = "gfx/interface/goals/focus_FRA_counter_terrorism_bureau.dds"			
 	}	
-
-
-
-
-
-
-
-
-
-
 
 
 	#### Generic continuous goal icons
@@ -302,37 +321,6 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/goal_generic_production.dds"
 			
 	}		
-	
-	SpriteType = {
-		name = "GFX_goal_shine_test"
-		texturefile = "gfx/interface/goals/goal_generic_production.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_generic_production.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 1.0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_generic_production.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
-			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
-			animationlooping = yes			# yes or no ;)
-			animationtime = 0.75				# in seconds
-			animationdelay = 1.0			# in seconds
-			animationblendmode = "add"       #add, multiply, overlay
-			animationtype = "scrolling"      #scrolling, rotating, pulsing
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
 
 	SpriteType = {
 	name = "GFX_goal_generic_attack_allies"

@@ -888,7 +888,7 @@ focus_tree = {
     }
 	focus = {
 		id = LIV_latvia_effort
-		icon = GFX_focus_LIV_latvia
+		icon = GFX_focus_LIV_latvia_military
 		x = 1
 		y = 1
 		relative_position_id = LIV_the_industrial_problem
@@ -909,7 +909,7 @@ focus_tree = {
     }
 	focus = {
 		id = LIV_militarize_riga
-		icon = GFX_
+		icon = GFX_focus_LIV_militarize_riga
 		x = 0
 		y = 1
 		relative_position_id = LIV_latvia_effort
@@ -951,7 +951,7 @@ focus_tree = {
     }
 	focus = {
 		id = LIV_estonia_effort
-		icon = GFX_focus_LIV_estonia
+		icon = GFX_focus_LIV_estonia_military
 		x = -1
 		y = 1
 		relative_position_id = LIV_the_industrial_problem
@@ -993,7 +993,7 @@ focus_tree = {
     }
 	focus = {
 		id = LIV_militarize_the_border_states
-		icon = GFX_
+		icon = GFX_focus_LIV_militarize_the_border_states
 		x = 0
 		y = 1
 		relative_position_id = LIV_expand_the_parnu_military_production
