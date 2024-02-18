@@ -35,13 +35,13 @@ Germany
 - Break the 2 Prussian states into smaller fragments for more palatable Poland/Soviet borders and overall map painting.
 - Make Stettin a state.
 - Germany and its usual dynamic in HOI4 mods will be flipped on it's head: it's going to be really weak and it's going to be VERY hard to unify Germany back.
-- Rename to Prussia? (Deutsches Republik)
+- Rename to Prussia? (Deutsche Republik)
 
 
 Austria
 
 - Austria-Hungary path for all the AH soyjaks. (I don't like Austria-Hungary as u can tell)
-
+- Austro-Bavarian Union mechanic (maybe)
 
 FRANCIA!!!!!
 
@@ -68,3 +68,12 @@ Yugoslavia
 
 - Clash of Clans path. Canonically Clash of Clans was set in 1930s Yugoslavia.
 - Jackets normal historical path.
+
+Bulgaria
+
+- Macedonian Crisis
+- Yugo-War intervention
+- National crisis if macedonian crisis outcome is unfavourable
+- Demand Thrace, Dobrudja, Constantinople via foci
+- Monarchist path/Military Gov path/Restoration of Byz
+- HRE (or Rome) path for the lols

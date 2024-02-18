@@ -1,0 +1,94 @@
+focus_tree = {
+	id = den_nor_focus
+	
+    country = {
+	    factor = 10
+		
+		modifier = {
+		    add = 100
+		    tag = DEN
+		}
+	}
+	
+    default = no
+	reset_on_civilwar = no
+	
+	###POLITICAL FOCUSES
+	
+	focus = {
+		id = DEN_the_fate_of_the_king
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		x = 12
+		y = 0
+		cost = 2
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 25
+			DEN = { country_event = den_focus_events.1 }
+		}
+	}
+	
+	focus = {
+		id = DEN_the_king_lives
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_the_fate_of_the_king }
+		mutually_exclusive = { focus = DEN_the_death_of_the_king }
+		x = -6
+		y = 1
+		relative_position_id = DEN_the_fate_of_the_king
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.1
+			
+		}
+	
+	}
+	
+	focus = {
+		id = DEN_the_death_of_the_king
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_the_fate_of_the_king }
+		mutually_exclusive = { focus = DEN_the_king_lives }
+		x = 6
+		y = 1
+		relative_position_id = DEN_the_fate_of_the_king
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	###ARMY FOCUSES
+	
+	focus = {
+		id = DEN_state_of_the_haer
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		x = 26
+		y = 0
+		relative_position_id = DEN_the_fate_of_the_king
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	
+}
