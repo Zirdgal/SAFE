@@ -18,7 +18,7 @@ focus_tree = {
 	focus = {
 		id = DEN_the_fate_of_the_king
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
-		x = 12
+		x = 16
 		y = 0
 		cost = 2
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -31,12 +31,14 @@ focus_tree = {
 		}
 	}
 	
+	###DEMOCRATIC & MEME PATHS
+	
 	focus = {
 		id = DEN_the_king_lives
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = DEN_the_fate_of_the_king }
 		mutually_exclusive = { focus = DEN_the_death_of_the_king }
-		x = -6
+		x = 12
 		y = 1
 		relative_position_id = DEN_the_fate_of_the_king
 		
@@ -57,7 +59,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = DEN_the_fate_of_the_king }
 		mutually_exclusive = { focus = DEN_the_king_lives }
-		x = 6
+		x = -6
 		y = 1
 		relative_position_id = DEN_the_fate_of_the_king
 		
@@ -72,12 +74,202 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = DEN_reassure_the_populus
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_the_death_of_the_king }
+		x = 0
+		y = 1
+		relative_position_id = DEN_the_death_of_the_king
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = 0.05
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_deal_with_norweigan_seperatists
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_the_king_lives }
+		mutually_exclusive = { focus = DEN_allow_for_greater_norweigan_autonomy }
+		x = -5
+		y = 1
+		relative_position_id = DEN_the_king_lives
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_stabilize_the_regime
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_the_king_lives }
+		mutually_exclusive = { focus = DEN_allow_for_greater_norweigan_autonomy focus = DEN_deal_with_norweigan_seperatists }
+		x = -10
+		y = 1
+		relative_position_id = DEN_the_king_lives
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_allow_for_greater_norweigan_autonomy
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_the_king_lives }
+		mutually_exclusive = { focus = DEN_deal_with_norweigan_seperatists focus = DEN_stabilize_the_regime }
+		x = 5
+		y = 1
+		relative_position_id = DEN_the_king_lives
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_privatise_nationalised_industry
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_allow_for_greater_norweigan_autonomy }
+		mutually_exclusive = { focus = DEN_establish_free_elections }
+		x = 5
+		y = 1
+		relative_position_id = DEN_allow_for_greater_norweigan_autonomy
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_establish_free_elections
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_allow_for_greater_norweigan_autonomy focus = DEN_deal_with_norweigan_seperatists }
+		x = -5
+		y = 1
+		relative_position_id = DEN_allow_for_greater_norweigan_autonomy
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	###BORING NEUTRAL PATH
+	
+	focus = {
+		id = DEN_a_neutral_state
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_establish_free_elections }
+		mutually_exclusive = { focus = DEN_introduce_socialist_ideas }
+		mutually_exclusive = { focus = DEN_ban_extremists_parties }
+		x = 5
+		y = 1
+		relative_position_id = DEN_establish_free_elections
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	###SOCIAL-DEMOCRACY PATH
+	
+	focus = {
+		id = DEN_introduce_socialist_ideas
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_establish_free_elections }
+		mutually_exclusive = { focus = DEN_a_neutral_state }
+		mutually_exclusive = { focus = DEN_ban_extremists_parties }
+		x = 0
+		y = 1
+		relative_position_id = DEN_establish_free_elections
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	###DEMOCRATIC SCANDINAVIAN UNION PATH/PROTECTOR OF EUROPE PATH/EUROPEAN UNION PATH
+	
+	focus = {
+		id = DEN_ban_extremists_parties
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_establish_free_elections }
+		prerequisite = { focus = DEN_deal_with_norweigan_seperatists }
+		mutually_exclusive = { focus = DEN_a_neutral_state }
+		mutually_exclusive = { focus = DEN_introduce_socialist_ideas }
+		x = -5
+		y = 1
+		relative_position_id = DEN_establish_free_elections
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	
+	
 	###ARMY FOCUSES
 	
 	focus = {
 		id = DEN_state_of_the_haer
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
-		x = 26
+		x = 36
 		y = 0
 		relative_position_id = DEN_the_fate_of_the_king
 		
@@ -91,4 +283,60 @@ focus_tree = {
 		}
 	}
 	
+	###NAVY FOCUSES
+	
+	focus = {
+		id = DEN_state_of_the_navy
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		x = 30
+		y = 0
+		relative_position_id = DEN_the_fate_of_the_king
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_NAVY_XP }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 25
+		}
+	}
+	
+	###AIRFORCE FOCUSES
+	
+	focus = {
+		id = DEN_state_of_the_airforce
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		x = 42
+		y = 0
+		relative_position_id = DEN_the_fate_of_the_king
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	
+	###ECONOMIC FOCUSES
+	
+	focus = {
+		id = DEN_adressing_our_economic_situation
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		x = 20
+		y = 0
+		relative_position_id = DEN_the_fate_of_the_king
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
 }
