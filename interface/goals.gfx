@@ -9,6 +9,15 @@ spriteTypes = {
 	#	╚══════╝╚═╝  ╚═══╝   ╚═════╝ ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝
 
 
+
+	SpriteType = {
+	name = "GFX_focus_LIV_militarize_riga"
+	texturefile = "gfx/interface/goals/focus_LIV_militarize_riga.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_LIV_militarize_the_border_states"
+	texturefile = "gfx/interface/goals/focus_LIV_militarize_the_border_states.dds"			
+	}
 	SpriteType = {
 	name = "GFX_focus_LIV_estonia_military"
 	texturefile = "gfx/interface/goals/focus_LIV_estonia_military.dds"			
