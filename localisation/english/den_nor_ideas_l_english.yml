@@ -36,3 +36,7 @@
  
  DEN_the_sami_idea_3:0 "The Sami"
  DEN_the_sami_idea_3_desc:0 "Placeholder"
+ 
+ ####TOOLTIPS
+ lose_all_cores_on_norway_tooltip:0 "Lose cores on §Yall Norweigan states§!"
+ lose_the_sami_tooltip:0 "Lose any §RSami buff/debuff§!"

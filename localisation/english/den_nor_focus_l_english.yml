@@ -1,4 +1,7 @@
 ﻿l_english:
+
+####POLITICAL
+
  DEN_the_fate_of_the_king:0 "The Fate of the King"
  DEN_the_fate_of_the_king_desc:0 "Denmark-Norway has ever since the German war been an unstable union. In the situation that the current king lives, or if he dies of his liver infection will tell the future of our nation."
  
@@ -7,6 +10,8 @@
  
  DEN_the_death_of_the_king:0 "The Death of the King"
  DEN_the_death_of_the_king_desc:0 "Our king, having fought valiantly has sadly lost the battle. Recent new indicate his passing, and a political shift is about to take place in the shattering union."
+ 
+ ####Army
  
  DEN_state_of_the_haer:0 "State of the Hær"
  DEN_state_of_the_haer_desc:0 "We have long neglected our military ever since the German war, valuing allies over military might. Times are changing, and so we must too."
