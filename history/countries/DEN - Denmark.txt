@@ -18,7 +18,7 @@ create_country_leader = {
 	picture = "portrait_large_christian_the_x.dds"
 	expire = "1954.2.17"
 	ideology = despotism
-	traits = {
+	traits = { humble
 	}
 }
 
@@ -31,12 +31,12 @@ set_popularities = {
 
 add_ideas = {
 	limited_exports
-	voulenteer_only
+	limited_conscription
 	partial_economic_mobilisation
 	DEN_the_sami_idea
-	DEN_norweigan_partisans_idea
+	DEN_norwegian_partisans_idea
 	DEN_the_haer_idea
-	DEN_danish_norweigan_industrial_capabilities_idea
+	DEN_danish_norwegian_industrial_capabilities_idea
 	DEN_a_divided_nation_idea
 }
 
