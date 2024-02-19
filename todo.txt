@@ -67,12 +67,26 @@ Yugoslavia
 
 - Clash of Clans path. Canonically Clash of Clans was set in 1930s Yugoslavia.
 - Jackets normal historical path.
+- Civil war
 
 Bulgaria
 
-- Macedonian Crisis
-- Yugo-War intervention
-- National crisis if macedonian crisis outcome is unfavourable
+diplo:
+- Macedonian Crisis (high priority)
+- Yugo-War intervention (high priority)
+- National crisis (and civil war) if macedonian crisis outcome is unfavourable (high priority)
+- Influence mechanic to counter french/austrian/polish/soviet influence in the balkans
 - Demand Thrace, Dobrudja, Constantinople via foci
+
+paths:
+- finish Centrist Democratic path (high priority)
 - Monarchist path/Military Gov path/Restoration of Byz
 - HRE (or Rome) path for the lols
+- add events (high priority)
+
+industry:
+- finish military industrial branch
+- start civ industrial branch
+
+army:
+- start army tree
