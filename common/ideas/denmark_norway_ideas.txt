@@ -179,7 +179,7 @@ ideas = {
 			}
 		}
 		
-		DEN_norweigan_partisans_idea = {
+		DEN_norwegian_partisans_idea = {
 		
 			picture = great_depression ###PLACEHOLDER
 			
@@ -201,7 +201,7 @@ ideas = {
 	
 		}
 		
-		DEN_pacifying_norweigan_recistance = {
+		DEN_pacifying_norwegian_recistance = {
 		
 			picture = great_depression ###PLACEHOLDER
 			
@@ -214,7 +214,7 @@ ideas = {
 		
 		###ECONOMIC
 		
-		DEN_danish_norweigan_industrial_capabilities_idea = {
+		DEN_danish_norwegian_industrial_capabilities_idea = {
 			picture = great_depression ###PLACEHOLDER
 			
 			available = {
