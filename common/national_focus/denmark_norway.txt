@@ -108,8 +108,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
-			
+			add_timed_idea = {
+				idea = DEN_pacifying_norweigan_recistance
+				days = 140
+			}
 		}
 	}
 	
@@ -148,8 +150,46 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			release = NOR
+			if = {
+				limit = { has_dlc = "Together for Victory" }
+				set_autonomy = {
+					target = NOR
+					autonomous_state = autonomy_dominion
+					freedom_level = 0.5
+				}
+			}
+			remove_ideas = {
+				DEN_norweigan_partisans_idea
+			}
+			remove_ideas = {
+				DEN_a_divided_nation_idea
+			}
+			custom_effect_tooltip = lose_all_cores_on_norway_tooltip
+			custom_effect_tooltip = lose_the_sami_tooltip
+			hidden_effect = {
+				remove_state_core = 110
+				remove_state_core = 921
+				remove_state_core = 922
+				remove_state_core = 142
+				remove_state_core = 143
+				remove_state_core = 920
+				remove_state_core = 923
+				remove_state_core = 144
+				remove_state_core = 924
+				remove_state_core = 925
+				remove_ideas = {
+					DEN_the_sami_idea
+					DEN_the_sami_idea_2
+					DEN_the_sami_idea_3
+				}
+				swap_ideas = {
+					remove_idea = DEN_danish_norweigan_industrial_capabilities_idea
+					add_idea = DEN_danish_industrial_capabilities_idea
+				}
+			}
 			
+			set_cosmetic_tag = DEN2
 		}
 	}
 	
@@ -359,6 +399,82 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = DEN_establish_free_elections
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_democratic_education
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_ban_extremists_parties }
+		x = 0
+		y = 1
+		relative_position_id = DEN_ban_extremists_parties
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_expand_norweigan_highways
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_democratic_education }
+		x = -1
+		y = 1
+		relative_position_id = DEN_democratic_education
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_improve_danish_infrastructure
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_democratic_education }
+		x = 1
+		y = 1
+		relative_position_id = DEN_democratic_education
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_expand_the_university_of_copenhagen
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_democratic_education }
+		x = -3
+		y = 1
+		relative_position_id = DEN_democratic_education
 		
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
