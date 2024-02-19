@@ -148,7 +148,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
-
+		
 		completion_reward = {
 			release = NOR
 			if = {
@@ -197,10 +197,15 @@ focus_tree = {
 		id = DEN_privatise_nationalised_industry
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = DEN_allow_for_greater_norweigan_autonomy }
-		mutually_exclusive = { focus = DEN_establish_free_elections focus = DEN_nationalise_orsted }
+		mutually_exclusive = { focus = DEN_nationalise_orsted }
 		x = 5
 		y = 1
 		relative_position_id = DEN_allow_for_greater_norweigan_autonomy
+		
+		available = {
+			NOT = { has_completed_focus = DEN_cooperate_with_the_communists }
+			NOT = { has_completed_focus = DEN_introduce_socialist_ideas }
+		}
 		
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -469,12 +474,379 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = DEN_consolidate_political_parties
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_improve_danish_infrastructure }
+		x = 0
+		y = 1
+		relative_position_id = DEN_improve_danish_infrastructure
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_exile_the_fascists
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_consolidate_political_parties }
+		x = 0
+		y = 1
+		relative_position_id = DEN_consolidate_political_parties
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_preach_racial_equality
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_expand_norweigan_highways }
+		x = 0
+		y = 1
+		relative_position_id = DEN_expand_norweigan_highways
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
 		id = DEN_expand_the_university_of_copenhagen
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = DEN_democratic_education }
 		x = -3
 		y = 1
 		relative_position_id = DEN_democratic_education
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_exile_the_communists
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_preach_racial_equality }
+		x = 0
+		y = 1
+		relative_position_id = DEN_preach_racial_equality
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_total_unity_of_state
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_exile_the_communists }
+		prerequisite = { focus = DEN_exile_the_fascists }
+		x = 1
+		y = 1
+		relative_position_id = DEN_exile_the_communists
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_protector_of_democracy
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_total_unity_of_state }
+		x = 0
+		y = 1
+		relative_position_id = DEN_total_unity_of_state
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_beyond_our_borders
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_protector_of_democracy }
+		x = 0
+		y = 1
+		relative_position_id = DEN_protector_of_democracy
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_the_swedish_menace
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_beyond_our_borders }
+		mutually_exclusive = { focus = DEN_approach_sweden }
+		x = -3
+		y = 1
+		relative_position_id = DEN_beyond_our_borders
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_a_new_democratic_scandinavia
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_the_swedish_menace }
+		x = 0
+		y = 1
+		relative_position_id = DEN_the_swedish_menace
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_approach_sweden
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_beyond_our_borders }
+		mutually_exclusive = { focus = DEN_the_swedish_menace }
+		x = -5
+		y = 1
+		relative_position_id = DEN_beyond_our_borders
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_a_northern_allience
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_approach_sweden }
+		x = 0
+		y = 1
+		relative_position_id = DEN_approach_sweden
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_invite_livonia
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_a_northern_allience }
+		x = -1
+		y = 1
+		relative_position_id = DEN_a_northern_allience
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_invite_finland
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_a_northern_allience }
+		x = 1
+		y = 1
+		relative_position_id = DEN_a_northern_allience
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_the_slesvig_question
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_beyond_our_borders }
+		x = 0
+		y = 1
+		relative_position_id = DEN_beyond_our_borders
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_war_with_germany
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_the_slesvig_question }
+		mutually_exclusive = { focus = DEN_approach_the_germans }
+		x = -1
+		y = 1
+		relative_position_id = DEN_the_slesvig_question
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_approach_the_germans
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_the_slesvig_question }
+		mutually_exclusive = { focus = DEN_slesvig_or_war }
+		x = 1
+		y = 1
+		relative_position_id = DEN_the_slesvig_question
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_visions_of_a_new_europe
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_war_with_germany }
+		prerequisite = { focus = DEN_a_new_democratic_scandinavia }
+		x = -1
+		y = 1
+		relative_position_id = DEN_war_with_germany
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_move_west
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_visions_of_a_new_europe }
+		x = 0
+		y = 1
+		relative_position_id = DEN_visions_of_a_new_europe
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_pacify_the_east
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_visions_of_a_new_europe focus = DEN_invite_finland focus = DEN_invite_livonia }
+		x = -2
+		y = 1
+		relative_position_id = DEN_visions_of_a_new_europe
 		
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
