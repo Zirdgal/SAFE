@@ -1,0 +1,714 @@
+focus_tree = {
+	id = BUL
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BUL
+		}
+	}
+	##################
+	##Political Tree##
+	##################
+	
+	#Search filter
+	#FOCUS_FILTER_POLITICAL
+	
+	focus = {
+		id = BUL_political
+		icon = GFX_none
+		x = 10
+		y = 0
+		cost = 5
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		completion_reward = {
+		add_political_power = 75
+		}
+	}
+	
+    focus = {
+		id = BUL_macedonian_crisis
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 0
+		y = 1
+		cost = 2
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		relative_position_id = BUL_political
+		prerequisite = { focus = BUL_political }
+		completion_reward = {
+		#unlocks decisions
+		add_named_threat = { threat = 2 name = BUL_macedonian_crisis }
+		}
+	}
+	
+    focus = {
+		id = BUL_aftermath_of_the_protests
+		icon = GFX_none
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_POLITICAL}
+		relative_position_id = BUL_macedonian_crisis
+		prerequisite = { focus = BUL_macedonian_crisis }
+		completion_reward = {
+        #event for auth path or dem path
+		}
+	}
+	
+	focus = {
+        id = BUL_authoritarian
+        icon = GFX_none
+        x = -5
+        y = 3
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_aftermath_of_the_protests
+        completion_reward = {
+        #add popularity for parties
+        }
+    }
+	
+	focus = {
+        id = BUL_maintain_military_dictatorship
+        icon = GFX_none
+        x = -3
+        y = 1
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_authoritarian
+        prerequisite = { focus = BUL_authoritarian }
+        completion_reward = {
+        #military path 
+        }
+    }
+	
+	focus = {
+        id = BUL_absolute_monarchy
+        icon = GFX_none
+        x = 3
+        y = 1
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_authoritarian
+        prerequisite = { focus = BUL_authoritarian }
+        completion_reward = {
+        #absolute monarchy path
+        }
+    }
+	
+	focus = {
+        id = BUL_democratic
+        icon = GFX_none
+        x = 5
+        y = 3
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_aftermath_of_the_protests
+        prerequisite = { focus = BUL_aftermath_of_the_protests }
+        completion_reward = {
+        #add popularity for parties + allow elections
+        }
+    }
+	
+	focus = {
+        id = BUL_socialists
+        icon = GFX_none
+        x = -7
+        y = 1
+        cost = 10
+		#available = {}
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_democratic
+        prerequisite = { focus = BUL_democratic }
+        completion_reward = {
+        #socialist democracy path 
+        }
+    }
+	
+	focus = {
+        id = BUL_democratic_coalition
+        icon = GFX_none
+        x = 0
+        y = 1
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_democratic
+        prerequisite = { focus = BUL_democratic }
+        completion_reward = {
+        #democratic path
+        }
+    }
+	
+	focus = {
+        id = BUL_the_social_democrats
+        icon = GFX_none
+        x = -2
+        y = 1
+        cost = 5
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_democratic_coalition
+        prerequisite = { focus = BUL_democratic_coalition }
+        completion_reward = {
+        #social democrats branch of centrist democrats
+        }
+    }
+	
+    focus = {
+        id = BUL_strenghten_the_mining_unions
+        icon = GFX_none
+        x = -2
+        y = 1
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_the_social_democrats
+        prerequisite = { focus = BUL_the_social_democrats }
+        completion_reward = {
+        #add extra resources 
+        }
+    }
+	
+    focus = {
+        id = BUL_work_regulations
+        icon = GFX_none
+        x = 2
+        y = 1
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_the_social_democrats
+        prerequisite = { focus = BUL_the_social_democrats }
+        completion_reward = {
+        #add nat spirit; -5% production effiecency, +5% pp gain, +5% stability
+        }
+    }
+	
+    focus = {
+        id = BUL_healthcare
+        icon = GFX_none
+        x = 0
+        y = 2
+        cost = 5
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_the_social_democrats
+        prerequisite = { focus = BUL_work_regulations focus = BUL_strenghten_the_mining_unions }
+        completion_reward = {
+        #add nat spirit with pop growth 
+        }
+    }
+	
+    focus = {
+        id = BUL_public_works
+        icon = GFX_none
+        x = 0
+        y = 1
+        cost = 5
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_healthcare
+        prerequisite = { focus = BUL_healthcare }
+        completion_reward = {
+        #add +5% construction speed and +15% repair speed to BUL_work_regulations nat spirit
+        }
+    }
+	
+#    focus = {
+#        id = 
+#        icon = 
+#        x = 
+#        y = 
+#        cost = 
+#        search_filters = { }
+#        relative_position_id = 
+#        prerequisite = { focus =  }
+#        completion_reward = {
+#        
+#        }
+#    }
+	
+	focus = {
+        id = BUL_liberals
+        icon = GFX_none
+        x = 0
+        y = 1
+        cost = 5
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_democratic_coalition
+        prerequisite = { focus = BUL_democratic_coalition }
+        completion_reward = {
+        #liberal branch of the centrist democrats
+        }
+    }
+	
+    focus = {
+        id = BUL_open_up_the_economy
+        icon = GFX_none
+        x = 0
+        y = 1
+        cost = 5
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_liberals
+        prerequisite = { focus = BUL_liberals }
+        completion_reward = {
+		#add nat spirit, -15% consumer goods, +10% construction speed 
+        #change trade law to free trade 
+        }
+    }
+	
+    focus = {
+        id = BUL_womens_rights
+        icon = GFX_none
+        x = -2
+        y = 1
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_open_up_the_economy
+        prerequisite = { focus = BUL_open_up_the_economy }
+        completion_reward = {
+        add_political_power = 75
+		#make political advisor available
+        }
+    }
+	
+    focus = {
+        id = BUL_attract_foreign_investors
+        icon = GFX_none
+        x = 2
+        y = 1
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_open_up_the_economy
+        prerequisite = { focus = BUL_open_up_the_economy }
+        completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 1 }
+		48 = {
+		add_extra_state_shared_building_slots = 1
+        add_building_construction = {
+		type = industrial_complex
+		level = 1
+		instant_build = yes
+		}
+	    }
+        }
+    }
+	
+    focus = {
+        id = BUL_economic_uproar
+        icon = GFX_none
+        x = 0
+        y = 2
+        cost = 14.3
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_open_up_the_economy
+        prerequisite = { focus = BUL_attract_foreign_investors focus = BUL_womens_rights }
+        completion_reward = {
+        add_stability = 0.05
+		add_political_power = 50
+		add_popularity = {
+		    ideology = democratic
+			popularity = 0.1
+		}
+		#add -15% consumer goods to BUL_open_up_the_economy nat spirit 
+        }
+    }
+	
+	focus = {
+        id = BUL_conservatives
+        icon = GFX_none
+        x = 2
+        y = 1
+        cost = 5
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_democratic_coalition
+        prerequisite = { focus = BUL_democratic_coalition }
+        completion_reward = {
+        #conservative branch of the centrist democrats
+        }
+    }
+	
+    focus = {
+        id = BUL_fund_the_orthodox_church
+        icon = GFX_none
+        x = 2
+        y = 1
+        cost = 5
+        search_filters = {FOCUS_FILTER_POLITICAL}
+		relative_position_id = BUL_conservatives
+        prerequisite = { focus = BUL_conservatives }
+        completion_reward = {
+        add_stability = 0.1
+        }
+    }
+	
+    focus = {
+        id = BUL_promote_rural_life
+        icon = GFX_none
+        x = -2
+        y = 1
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_conservatives
+        prerequisite = { focus = BUL_conservatives }
+        completion_reward = {
+        #National Spirit for pop growth + recruitable pop
+        }
+    }
+	
+    focus = {
+        id = BUL_compromise_with_the_monarchists
+        icon = GFX_none
+        x = 0
+        y = 2
+        cost = 14.3
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_conservatives
+        prerequisite = { focus = BUL_promote_rural_life focus = BUL_fund_the_orthodox_church }
+        completion_reward = {
+        add_political_power = 100
+		add_popularity = {
+		ideology = democratic
+		popularity = 0.05
+		}
+		add_popularity = {
+		ideology = neutrality
+		popularity = 0.05
+		}
+		#add Tsar ferdinand as nat spirit; +10% stability and +0.1 daily pp
+		#events for negotiations with monarchists, strenght of nat spirit depends on outcome
+        }
+    }
+	
+    focus = {
+        id = BUL_patriotism
+        icon = GFX_none
+        x = 1
+        y = 1
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_compromise_with_the_monarchists
+        prerequisite = { focus = BUL_compromise_with_the_monarchists }
+        completion_reward = {
+        #adds nat spirit; + 0.5% recruitable pop, + 5% atk and def on core territory
+        }
+    }
+	
+    focus = {
+        id = BUL_a_social_market
+        icon = GFX_none
+        x = 1
+        y = 1
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_public_works
+        prerequisite = { focus = BUL_public_works }
+		prerequisite = { focus = BUL_economic_uproar }
+        completion_reward = {  
+		#add +5% consumer goods, pop growth, +%pp gain, +%weekly stability to nat spirit
+        }
+    }
+	
+    focus = {
+        id = BUL_a_democratic_society
+        icon = GFX_none
+        x = -1
+        y = 1
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_patriotism
+        prerequisite = { focus = BUL_patriotism }
+		prerequisite = { focus = BUL_economic_uproar }
+        completion_reward = {  
+		#add recruitable pop, pop growth, +daily democratic drift, +construction speed, +repair speed, +atk/def on core 
+        }
+    }
+	
+    focus = {
+        id = BUL_we_earn_what_we_sow
+        icon = GFX_none
+        x = 1
+        y = 1
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_a_social_market
+        prerequisite = { focus = BUL_a_social_market }
+		prerequisite = { focus = BUL_a_democratic_society }
+        completion_reward = {
+		add_stability = 0.2
+		#merge all nat spirits
+        }
+    }
+	
+    focus = {
+        id = BUL_the_light_of_democracy_shines_bright
+        icon = GFX_none
+        x = 0
+        y = 2
+        cost = 14.3
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_we_earn_what_we_sow
+        prerequisite = { focus = BUL_we_earn_what_we_sow }
+        completion_reward = {  
+		#buff the nat spirit
+		#event 
+        }
+    }
+	
+	focus = {
+        id = BUL_the_monarchist_cause
+        icon = GFX_none
+        x = 7
+        y = 1
+        cost = 10
+        search_filters = {FOCUS_FILTER_POLITICAL}
+        relative_position_id = BUL_democratic
+        prerequisite = { focus = BUL_democratic }
+        completion_reward = {
+        #Constitutional Monarchy Path
+        }
+    }
+	
+	###################
+	##Industrial Tree##
+    ###################
+	
+	#Mil Factory
+	#add_building_construction = {
+	#	type = arms_factory
+	#	level = 1
+	#	instant_build = yes
+	#}
+	
+	#Civ Factory
+	#add_building_construction = {
+	#	type = industrial_complex
+	#	level = 1
+	#	instant_build = yes
+	#}
+	
+	#Search filter
+	#FOCUS_FILTER_INDUSTRY
+
+    focus = {
+		id = BUL_industry
+		icon = GFX_goal_generic_production2
+		x = 
+		y = 
+		cost = 
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		relative_position_id = 
+		prerequisite = { focus =  }
+		completion_reward = {
+            48 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}        
+		}
+	}
+	
+	focus = {
+        id = BUL_military_contracts
+        icon = GFX_none
+        x = 5
+        y = 1
+        cost = 5
+        search_filters = {FOCUS_FILTER_INDUSTRY}
+        relative_position_id = BUL_industry
+        prerequisite = { focus = BUL_industry }
+        completion_reward = {
+            48 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				
+				add_building_construction = {
+				    type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+			
+			212 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			211 = {
+			    add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				    type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+        }
+    }
+	
+	focus = {
+        id = BUL_air_designer
+        icon = GFX_none
+        x = -2
+        y = 1
+        cost = 5
+        search_filters = {FOCUS_FILTER_INDUSTRY}
+        relative_position_id = BUL_military_contracts
+        prerequisite = { focus = BUL_military_contracts }
+        completion_reward = {
+        #add boost for MIO
+			add_tech_bonus = {
+				name = BUL_air_designer_contract_fighter
+			    bonus = 1.0
+			    uses = 2
+				category = light_air
+			}
+        }
+    }
+
+	focus = {
+        id = BUL_army_designer
+        icon = GFX_none
+        x = 0
+        y = 1
+        cost = 5
+        search_filters = {FOCUS_FILTER_INDUSTRY}
+        relative_position_id = BUL_military_contracts
+        prerequisite = { focus = BUL_military_contracts }
+        completion_reward = {
+        #add boost for MIO + tech bonus for Infantry Equipment
+        }
+    }
+	
+	focus = {
+        id = BUL_navy_designer
+        icon = GFX_none
+        x = 2
+        y = 1
+        cost = 5
+        search_filters = {FOCUS_FILTER_INDUSTRY}
+        relative_position_id = BUL_military_contracts
+        prerequisite = { focus = BUL_military_contracts }
+        completion_reward = {
+        #add boost for MIO + tech bonus for Destroyers
+        }
+    }
+	
+	focus = {
+        id = BUL_air_support_and_artillery
+        icon = GFX_none
+        x = 1
+        y = 1
+        cost = 5
+        search_filters = {FOCUS_FILTER_INDUSTRY}
+        relative_position_id = BUL_air_designer
+        prerequisite = { focus = BUL_air_designer }
+		prerequisite = { focus = BUL_army_designer }
+        completion_reward = {
+        	add_tech_bonus = {
+				name = BUL_darzhavna_samoletna_fabrika
+			    bonus = 1.0
+			    uses = 2
+				category = cas_bomber
+			}
+			add_tech_bonus = {
+				name = BUL_found_dvf_sopot
+			    bonus = 1.0
+			    uses = 2
+				category = artillery
+			}
+        }
+    }
+	
+	focus = {
+        id = BUL_marines
+        icon = GFX_none	
+        x = 1
+        y = 1
+        cost = 5
+        search_filters = {FOCUS_FILTER_INDUSTRY}
+        relative_position_id = BUL_army_designer
+        prerequisite = { focus = BUL_army_designer focus = BUL_navy_designer }
+        completion_reward = {
+        #add research bonus for landing craft
+        }
+    }
+	
+    focus = {
+        id = BUL_militarize_the_industry
+        icon = GFX_none
+        x = 0
+        y = 3
+        cost = 10
+        search_filters = {FOCUS_FILTER_INDUSTRY}
+        relative_position_id = BUL_military_contracts
+        prerequisite = { focus = BUL_air_designer focus = BUL_army_designer focus = BUL_navy_designer }
+        completion_reward = {
+        add_ideas = war_economy	
+		212 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		801 = {
+		    add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+		        type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+        }
+    }
+	
+	focus = {
+        id = BUL_increase_the_war_tax
+        icon = GFX_none
+        x = 0
+        y = 1
+        cost = 10
+        search_filters = {FOCUS_FILTER_INDUSTRY}
+        relative_position_id = BUL_militarize_the_industry
+        prerequisite = { focus = BUL_militarize_the_industry }
+		available = {
+		    has_war = yes
+			has_war_support = > 0.3
+		}
+        completion_reward = {
+		add_political_power = -50
+        	48 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		    }
+        	48 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		    }
+        }
+    }
+}

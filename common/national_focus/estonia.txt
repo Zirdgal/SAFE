@@ -479,21 +479,19 @@ focus_tree = {
 		}
     }
 	focus = {
-		id = LIV_expansion_of_the_VEF # OI ZIRD REMEMBER TO REPLACE THIS ICON
-		icon = GFX_focus_generic_copy_plane_designs # OI ZIRD REMEMBER TO REPLACE THIS ICON
+		id = LIV_expansion_of_the_VEF 
+		icon = GFX_focus_LIV_invest_in_vef 
 		x = -1
 		y = 1
-		relative_position_id = LIV_the_technology_problem # OI ZIRD REMEMBER TO REPLACE THIS ICON
+		relative_position_id = LIV_the_technology_problem 
 
 		available = {
-			# OI ZIRD REMEMBER TO REPLACE THIS ICON
 		}
 		bypass = {
-			# OI ZIRD REMEMBER TO REPLACE THIS ICON
 		}
 
 		cost = 5
-		prerequisite = { focus = LIV_the_technology_problem } # OI ZIRD REMEMBER TO REPLACE THIS ICON
+		prerequisite = { focus = LIV_the_technology_problem } 
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -868,8 +866,8 @@ focus_tree = {
 		}
     }
 	focus = {
-		id = LIV_construction_effort_idfk
-		icon = GFX_
+		id = LIV_the_industrial_problem
+		icon = GFX_goal_generic_construct_mil_factory
 		x = -3
 		y = 1
 		relative_position_id = LIV_begin_militarization
@@ -890,10 +888,10 @@ focus_tree = {
     }
 	focus = {
 		id = LIV_latvia_effort
-		icon = GFX_
+		icon = GFX_focus_LIV_latvia_military
 		x = 1
 		y = 1
-		relative_position_id = LIV_construction_effort_idfk
+		relative_position_id = LIV_the_industrial_problem
 
 		available = {
 
@@ -903,7 +901,7 @@ focus_tree = {
 		}
 
 		cost = 5
-		prerequisite = { focus = LIV_construction_effort_idfk }
+		prerequisite = { focus = LIV_the_industrial_problem }
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -911,7 +909,7 @@ focus_tree = {
     }
 	focus = {
 		id = LIV_militarize_riga
-		icon = GFX_
+		icon = GFX_focus_LIV_militarize_riga
 		x = 0
 		y = 1
 		relative_position_id = LIV_latvia_effort
@@ -931,7 +929,7 @@ focus_tree = {
 		}
     }
 	focus = {
-		id = LIV_expand_the_courish_military_bases
+		id = LIV_the_courish_military_plan
 		icon = GFX_
 		x = 0
 		y = 1
@@ -953,10 +951,10 @@ focus_tree = {
     }
 	focus = {
 		id = LIV_estonia_effort
-		icon = GFX_
+		icon = GFX_focus_LIV_estonia_military
 		x = -1
 		y = 1
-		relative_position_id = LIV_construction_effort_idfk
+		relative_position_id = LIV_the_industrial_problem
 
 		available = {
 
@@ -966,7 +964,7 @@ focus_tree = {
 		}
 
 		cost = 5
-		prerequisite = { focus = LIV_construction_effort_idfk }
+		prerequisite = { focus = LIV_the_industrial_problem }
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -995,7 +993,7 @@ focus_tree = {
     }
 	focus = {
 		id = LIV_militarize_the_border_states
-		icon = GFX_
+		icon = GFX_focus_LIV_militarize_the_border_states
 		x = 0
 		y = 1
 		relative_position_id = LIV_expand_the_parnu_military_production
@@ -1012,6 +1010,30 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		}
+    }
+
+	focus = {
+		id = LIV_livonian_mobilization
+		icon = GFX_focus_generic_limited_social_mobilization
+		x = 1
+		y = 1
+		relative_position_id = LIV_militarize_the_border_states
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_militarize_the_border_states }
+		prerequisite = { focus = LIV_the_courish_military_plan }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = LIV_livonian_mobilization_idea
 		}
     }
 	

@@ -70,5 +70,24 @@ ideas = {
 				defense_bonus_against = 0.25
 			}
 		}
+		LIV_livonian_mobilization_idea = {
+
+			picture = LIV
+			
+			allowed = {
+				tag = EST
+			}
+			available = {
+
+			}
+			cancel = {
+
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			}
+		}
 	}
 }

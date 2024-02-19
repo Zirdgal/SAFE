@@ -1,0 +1,22 @@
+spriteTypes = {	
+
+
+	#	██╗     ██╗██╗   ██╗ ██████╗ ███╗   ██╗██╗ █████╗ 
+	#	██║     ██║██║   ██║██╔═══██╗████╗  ██║██║██╔══██╗
+	#	██║     ██║██║   ██║██║   ██║██╔██╗ ██║██║███████║	
+	#	██║     ██║╚██╗ ██╔╝██║   ██║██║╚██╗██║██║██╔══██║
+	#	███████╗██║ ╚████╔╝ ╚██████╔╝██║ ╚████║██║██║  ██║
+	#	╚══════╝╚═╝  ╚═══╝   ╚═════╝ ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝
+
+	spriteType = {
+		name = "GFX_idea_LIV_bop_estonia"
+		texturefile = "gfx/interface/ideas/idea_LIV_bop_estonia.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LIV_bop_latvia"
+		texturefile = "gfx/interface/ideas/idea_LIV_bop_latvia.dds"
+	}
+
+
+
+}

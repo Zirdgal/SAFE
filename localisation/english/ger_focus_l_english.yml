@@ -3,10 +3,37 @@
  GER_aftermath_of_elections_desc:0 "After the 1931 elections the Reichstag has found itself in a deadlock between a democratic majority and a socialist coalition. Unable to pass any significant laws, the country has stagnated. Without resolving this there is no future for the Deutsches Republik."
  
  GER_a_cornered_eagle:0 "A cornered eagle"
- GER_a_cornered_eagle_desc:0 "The Deutsches Republik is in a difficult situation, with larger powers to almost every single direction. The need for self defense has led to a high fervor and austerity within the german populous. This translates into strong defensive doctrines ruling the german military."
+ GER_a_cornered_eagle_desc:0 "The Deutsche Republik is in a difficult situation, with larger powers to almost every single direction. The need for self defense has led to a high fervor and austerity within the german populous. This translates into strong defensive doctrines ruling the german military."
+ 
+ GER_acknowledge_military:0 "Acknowledge our failing military"
+ GER_acknowledge_military_desc:0 "It is time that someone acknowledges our lack of national defense."
+ 
+ GER_minor_ultranationalist_campaigning:0 "Ultranationalist Campaigning"
+ GER_minor_ultranationalist_campaigning_desc:0 "The political campaigns by the ultranationalist is starting to change public perception. The people is repeating various rethorics, for example that the government deadlock has been caused by interference from dubious minorities with the purpose to steal the strength of the people. Whether this is actually true, noone knows."
+ 
+ GER_major_ultranationalist_campaigning:0 "Successful Ultranationalist Campaigning"
+ GER_major_ultranationalist_campaigning_desc:0 "The campaigning by the ultranationalists is gaining a large amount of traction and their rethoric is spreading like wildfire within the masses. The ultranationalists will be able to influence the deadlock, either assisting a major party or trying for a takeover, democratic or not."
  
  GER_minor_socialist_campaigning:0 "Socialist Campaigning"
  GER_minor_socialist_campaigning_desc:0 "The political campaigns by the socialists has started to change public perception. The people is starting to repeat various rethorics, for example that the government deadlock has been caused by interference from the rich with the purpose to stop the will of the people. Whether this is actually true, noone knows."
  
  GER_major_socialist_campaigning:0 "Continued Socialist Campaigning"
  GER_major_socialist_campaigning_desc:0 "The campaigning by the socialist coalition has gained a large amount of traction and their rethoric is spreading like wildfire within the masses. It is now highly likely that the socialist coalition will win the deadlock."
+ 
+ GER_minor_liberal_campaigning:0 "Liberal Campaigning"
+ GER_minor_liberal_campaigning_desc:0 "The political campaigns by the liberal majority has started to change public perception. The people is starting to repeat various rethorics, for example that the government deadlock has been caused by interference from the rich with the purpose to stop the will of the people. Whether this is actually true, noone knows."
+ 
+ GER_major_liberal_campaigning:0 "Continued Liberal Campaigning"
+ GER_major_liberal_campaigning_desc:0 "The campaigning by the liberal majority has gained a large amount of traction and their rethoric is spreading like wildfire within the masses. It is now highly likely that the democratic majority will win the deadlock."
+ 
+ GER_minor_conservative_campaigning:0 "Conservative Campaigning"
+ GER_minor_conservative_campaigning_desc:0 "The political campaigns by the conservatives has started to change public perception. The people is starting to repeat various rethorics, for example that the government deadlock has been caused by interference from the rich with the purpose to stop the will of the people. Whether this is actually true, noone knows."
+ 
+ GER_major_conservative_campaigning:0 "Continued Conservative Campaigning"
+ GER_major_conservative_campaigning_desc:0 "The campaigning by the conservatives has gained a large amount of traction and their rethoric is spreading like wildfire within the masses. It is now highly likely that the democratic majority will win the deadlock."
+ 
+ GER_minor_monarchist_campaigning:0 "Monarchist Campaigning"
+ GER_minor_monarchist_campaigning_desc:0 "The political campaigns by the monarchist has started to change public perception. The people is starting to repeat various rethorics, for example that the government deadlock has been caused by the Republik being punished by god for removing their monarchs. Whether this is actually true, noone knows."
+ 
+ GER_major_monarchist_campaigning:0 "Successfull Monarchist Campaigning"
+ GER_major_monarchist_campaigning_desc:0 "The campaigning by the monarchists has gained a large amount of traction and their rethoric is spreading like wildfire within the masses. It is now highly likely that the people will demand a coronation, constitutional or absolute."
