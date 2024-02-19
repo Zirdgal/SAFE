@@ -746,7 +746,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_the_swedish_menace
-		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		icon = GFX_focus_generic_attack_sweden
 		prerequisite = { focus = DEN_beyond_our_borders }
 		mutually_exclusive = { focus = DEN_approach_sweden }
 		x = -3
@@ -785,7 +785,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_approach_sweden
-		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		icon = GFX_focus_generic_befriend_sweden
 		prerequisite = { focus = DEN_beyond_our_borders }
 		mutually_exclusive = { focus = DEN_the_swedish_menace }
 		x = -5
@@ -805,7 +805,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_a_northern_allience
-		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		icon = GFX_focus_DEN_northern_defense_alliance
 		prerequisite = { focus = DEN_approach_sweden }
 		x = 0
 		y = 1
@@ -960,7 +960,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_pacify_the_east
-		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		icon = GFX_focus_attack_soviet
 		prerequisite = { focus = DEN_visions_of_a_new_europe focus = DEN_invite_finland focus = DEN_invite_livonia }
 		x = -2
 		y = 1
@@ -1001,7 +1001,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_state_of_the_navy
-		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		icon = GFX_focus_DEN_sovaernets_operative_kommando
 		x = 40
 		y = 0
 		relative_position_id = DEN_the_fate_of_the_king
@@ -1020,7 +1020,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_state_of_the_airforce
-		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		icon = GFX_focus_DEN_unify_flyvevabnet
 		x = 42
 		y = 0
 		relative_position_id = DEN_the_fate_of_the_king
@@ -1039,7 +1039,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_northern_way_of_war
-		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		icon = GFX_focus_DEN_the_northern_way_of_war
 		x = 0
 		y = -2
 		relative_position_id = DEN_state_of_the_haer
@@ -1058,7 +1058,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_grand_battleplan
-		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		icon = GFX_goal_generic_army_doctrines
 		x = 2
 		y = 1
 		relative_position_id = DEN_northern_way_of_war
@@ -1083,7 +1083,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_mobile_warfare
-		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		icon = GFX_goal_generic_army_doctrines
 		x = -2
 		y = 1
 		relative_position_id = DEN_northern_way_of_war
@@ -1108,7 +1108,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_superior_firepower
-		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		icon = GFX_goal_generic_army_doctrines
 		x = -4
 		y = 1
 		relative_position_id = DEN_northern_way_of_war
@@ -1193,7 +1193,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_mass_assault
-		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		icon = GFX_goal_generic_army_doctrines
 		x = 4
 		y = 1
 		relative_position_id = DEN_northern_way_of_war
@@ -1285,7 +1285,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_state_of_the_haer
-		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		icon = GFX_focus_DEN_haeren_reorganization
 		x = 34
 		y = 2
 		relative_position_id = DEN_the_fate_of_the_king

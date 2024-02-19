@@ -68,10 +68,16 @@ spriteTypes = {
 	}	
 
 
+####DENMARK-NORWAY####
 
-
-
-
+	SpriteType = {
+	name = "GFX_focus_DEN_northern_defense_alliance"
+	texturefile = "gfx/interface/goals/focus_DEN_northern_defense_alliance.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_DEN_the_northern_way_of_war"
+	texturefile = "gfx/interface/goals/focus_DEN_the_northern_way_of_war.dds"			
+	}
 
 
 
