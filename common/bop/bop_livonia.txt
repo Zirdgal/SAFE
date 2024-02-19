@@ -13,7 +13,7 @@ LIV_balance_of_power = {
 
     side = {
         id = default_left_side
-        icon = GFX_idea_generic_agrarian_society
+        icon = GFX_idea_LIV_bop_latvia
         range = {
 			id = low_left_side_range
 			min = -0.3
@@ -45,7 +45,7 @@ LIV_balance_of_power = {
     }
     side = {
         id = default_right_side
-        icon = GFX_idea_generic_degauss_ship_hulls
+        icon = GFX_idea_LIV_bop_estonia
 		range = {
 			id = low_right_side_range
 			min = 0.05
