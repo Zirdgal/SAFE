@@ -17,8 +17,13 @@ set_research_slots = 3
 
 add_ideas = {
 	LIV_soviet_subordination_idea
-	LIV_latvian_distrust_idea
 	limited_conscription
+}
+set_power_balance = {
+    id = LIV_balance_of_power
+    left_side = default_left_side
+    right_side = default_right_side
+    set_value = 0.45
 }
 
 recruit_character = EST_konstantin_pats

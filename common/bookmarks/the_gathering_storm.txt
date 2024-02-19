@@ -584,7 +584,6 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				LIV_soviet_subordination_idea
-				LIV_latvian_distrust_idea
 			}
 			focuses = {
 
