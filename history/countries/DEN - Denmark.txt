@@ -18,7 +18,7 @@ create_country_leader = {
 	picture = "portrait_large_christian_the_x.dds"
 	expire = "1954.2.17"
 	ideology = despotism
-	traits = { humble
+	traits = { Humble
 	}
 }
 

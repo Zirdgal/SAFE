@@ -985,8 +985,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
-			
+		DEN = { country_event = den_focus_events.2_slesvig_holstein_question }
 		}
 	}
 	
@@ -1021,6 +1020,10 @@ focus_tree = {
 		
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available = {
+			is_in_faction_with = GER
+		}
 		
 		available_if_capitulated = yes
 
