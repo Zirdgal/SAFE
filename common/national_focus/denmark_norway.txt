@@ -828,7 +828,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			swap_ideas = {
+				remove_idea = DEN_protector_of_democracy_idea
+				add_idea = DEN_protector_of_democracy_idea_2
+			}
 			
 		}
 	}

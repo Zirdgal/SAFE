@@ -275,6 +275,19 @@ ideas = {
 	
 		}
 		
+		DEN_protector_of_democracy_idea_2 = {
+		
+			picture = great_depression ###PLACEHOLDER
+			
+			modifier = {
+				drift_defence_factor = 0.8
+				guarantee_cost = -0.5
+				guarantee_tension = -0.2
+				justify_war_goal_time = -0.4
+			}
+	
+		}
+		
 		###ECONOMIC
 		
 		DEN_danish_norwegian_industrial_capabilities_idea = {
