@@ -2,8 +2,8 @@
 
 set_research_slots = 3
 set_convoys = 153
-set_stability = 0.6
-set_war_support = 0.13
+set_stability = 0.5
+set_war_support = 0.34
 
 set_politics = {
 	ruling_party = neutrality
@@ -23,9 +23,9 @@ create_country_leader = {
 }
 
 set_popularities = {
-	democratic = 37
-	fascism = 5
-	communism = 3
+	democratic = 30
+	fascism = 1
+	communism = 14
 	neutrality = 55
 }
 
