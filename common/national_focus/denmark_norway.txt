@@ -17,7 +17,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_the_fate_of_the_king
-		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		icon = GFX_focus_DEN_fate_of_the_king
 		x = 16
 		y = 0
 		cost = 2
@@ -35,7 +35,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_the_king_lives
-		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		icon = GFX_focus_DEN_the_king_lives
 		prerequisite = { focus = DEN_the_fate_of_the_king }
 		mutually_exclusive = { focus = DEN_the_death_of_the_king }
 		x = 12
@@ -56,7 +56,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_the_death_of_the_king
-		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		icon = GFX_focus_DEN_the_death_of_the_king
 		prerequisite = { focus = DEN_the_fate_of_the_king }
 		mutually_exclusive = { focus = DEN_the_king_lives }
 		x = -6
