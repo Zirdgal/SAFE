@@ -111,6 +111,11 @@ focus_tree = {
 			add_timed_idea = {
 				idea = DEN_pacifying_norwegian_recistance
 				days = 140
+				on_remove = {
+					remove_ideas = {
+						DEN_norwegian_partisans_idea
+					}
+				}
 			}
 		}
 	}
@@ -150,15 +155,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			release = NOR
-			if = {
-				limit = { has_dlc = "Together for Victory" }
-				set_autonomy = {
-					target = NOR
-					autonomous_state = autonomy_dominion
-					freedom_level = 0.5
-				}
-			}
+			custom_effect_tooltip = release_norway_as_dominion_tooltip
+			set_cosmetic_tag = DEN2
 			remove_ideas = {
 				DEN_norwegian_partisans_idea
 			}
@@ -168,6 +166,15 @@ focus_tree = {
 			custom_effect_tooltip = lose_all_cores_on_norway_tooltip
 			custom_effect_tooltip = lose_the_sami_tooltip
 			hidden_effect = {
+				release = NOR
+				if = {
+					limit = { has_dlc = "Together for Victory" }
+					set_autonomy = {
+						target = NOR
+						autonomous_state = autonomy_dominion
+						freedom_level = 0.5
+					}
+				}
 				remove_state_core = 110
 				remove_state_core = 921
 				remove_state_core = 922
@@ -188,8 +195,6 @@ focus_tree = {
 					add_idea = DEN_danish_industrial_capabilities_idea
 				}
 			}
-			
-			set_cosmetic_tag = DEN2
 		}
 	}
 	
@@ -205,6 +210,7 @@ focus_tree = {
 		available = {
 			NOT = { has_completed_focus = DEN_cooperate_with_the_communists }
 			NOT = { has_completed_focus = DEN_introduce_socialist_ideas }
+			NOT = { has_completed_focus = DEN_cooperate_with_communist_ministers }
 		}
 		
 		cost = 4
@@ -243,6 +249,81 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = DEN_cooperate_with_communist_ministers
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_allow_for_greater_norwegian_autonomy focus = DEN_deal_with_norwegian_seperatists }
+		available = {
+			NOT = { has_completed_focus = DEN_ban_extremists_parties }
+		}
+		x = -1
+		y = 1
+		relative_position_id = DEN_allow_for_greater_norwegian_autonomy
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_cooperate_with_the_democratic_parties
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_allow_for_greater_norwegian_autonomy focus = DEN_deal_with_norwegian_seperatists }
+		available = {
+			NOT = { has_completed_focus = DEN_ban_extremists_parties }
+		}
+		x = -7
+		y = 1
+		relative_position_id = DEN_allow_for_greater_norwegian_autonomy
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_cooperate_with_democratic_ministers
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_allow_for_greater_norwegian_autonomy focus = DEN_deal_with_norwegian_seperatists }
+		available = {
+			NOT = { has_completed_focus = DEN_ban_extremists_parties }
+		}
+		x = -9
+		y = 1
+		relative_position_id = DEN_allow_for_greater_norwegian_autonomy
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			
+		}
+	}
+	
+	focus = {
 		id = DEN_establish_free_elections
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = DEN_allow_for_greater_norwegian_autonomy focus = DEN_deal_with_norwegian_seperatists }
@@ -258,11 +339,11 @@ focus_tree = {
 		completion_reward = {
 			add_popularity = {
 				ideology = democratic
-				popularity = 0.4
+				popularity = 0.2
 			}
 			add_popularity = {
 				ideology = neutrality
-				popularity = -0.2
+				popularity = -0.1
 			}
 		}
 	}
@@ -387,7 +468,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			add_stability = 0.20
 			
 		}
 	}
@@ -409,6 +490,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
+
+		available = {
+			OR = {
+				has_government = democratic
+			}
+		}
 
 		completion_reward = {
 			add_stability = -0.1
@@ -437,9 +524,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		add_popularity = {
+			add_popularity = {
 				ideology = democratic
-				popularity = 0.3
+				popularity = 0.1
+			}
+			add_ideas = {
+				DEN_democratic_education_idea
 			}
 		}
 	}
@@ -605,8 +695,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
-			
+		add_political_power = 100
 		}
 	}
 	
@@ -624,7 +713,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			add_stability = -0.05
 			
 		}
 	}
@@ -643,7 +732,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			add_stability = 0.05
+			remove_ideas = {
+				DEN_a_divided_nation_idea
+			}
 			
 		}
 	}
@@ -662,7 +754,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			add_research_slot = 1
 			
 		}
 	}
@@ -681,7 +773,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			add_stability = -0.05
 			
 		}
 	}
@@ -784,11 +876,30 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = DEN_the_kalmar_union
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_a_new_democratic_scandinavia }
+		x = -1
+		y = 1
+		relative_position_id = DEN_a_new_democratic_scandinavia
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
 		id = DEN_approach_sweden
 		icon = GFX_focus_generic_befriend_sweden
 		prerequisite = { focus = DEN_beyond_our_borders }
 		mutually_exclusive = { focus = DEN_the_swedish_menace }
-		x = -5
+		x = -6
 		y = 1
 		relative_position_id = DEN_beyond_our_borders
 		
@@ -808,7 +919,7 @@ focus_tree = {
 		icon = GFX_focus_DEN_northern_defense_alliance
 		prerequisite = { focus = DEN_approach_sweden }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = DEN_approach_sweden
 		
 		cost = 4
@@ -826,7 +937,7 @@ focus_tree = {
 		id = DEN_invite_livonia
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = DEN_a_northern_allience }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = DEN_a_northern_allience
 		
@@ -845,7 +956,7 @@ focus_tree = {
 		id = DEN_invite_finland
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = DEN_a_northern_allience }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = DEN_a_northern_allience
 		
@@ -920,13 +1031,34 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = DEN_visions_of_a_new_europe
+		id = DEN_preach_democratic_ideals
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = DEN_war_with_germany }
 		prerequisite = { focus = DEN_a_new_democratic_scandinavia }
 		x = -1
 		y = 1
 		relative_position_id = DEN_war_with_germany
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				DEN_preach_democratic_ideals
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_visions_of_a_new_europe
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = DEN_preach_democratic_ideals }
+		x = 0
+		y = 1
+		relative_position_id = DEN_preach_democratic_ideals
 		
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1167,7 +1299,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				bonus = 0.5
-				uses = 1
+				uses = 2
 				category = motorized_equipment
 			}
 		}
@@ -1187,7 +1319,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = cat_mechanized_equipment
+			}
 		}
 	}
 	
@@ -1231,8 +1367,8 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 0.5
-				uses = 2
+				bonus = 1
+				uses = 3
 				category = infantry_tech
 			}
 		}
