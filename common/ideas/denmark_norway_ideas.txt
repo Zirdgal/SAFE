@@ -228,22 +228,22 @@ ideas = {
 	
 		}
 		
-		DEN_cooperate_with_the_democratic_parties_idea = {
+		DEN_cooperate_with_democratic_ministers_idea = {
 		
 			picture = great_depression ###PLACEHOLDER
 			
 			modifier = {
-				democratic_drift = 0.002
+				democratic_drift = 0.05
 			}
 	
 		}
 		
-		DEN_cooperate_with_the_communists_idea = {
+		DEN_cooperate_with_communist_ministers_idea = {
 		
 			picture = great_depression ###PLACEHOLDER
 			
 			modifier = {
-				communism_drift = 0.002
+				communism_drift = 0.05
 			}
 	
 		}
@@ -259,6 +259,18 @@ ideas = {
 				democracy_drift = 0.02
 				compliance_gain = 0.2
 				resistance_growth = -0.1
+			}
+	
+		}
+		
+		DEN_protector_of_democracy_idea = {
+		
+			picture = great_depression ###PLACEHOLDER
+			
+			modifier = {
+				drift_defence_factor = 0.8
+				guarantee_cost = -0.5
+				guarantee_tension = -0.2
 			}
 	
 		}

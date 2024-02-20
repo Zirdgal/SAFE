@@ -111,11 +111,7 @@ focus_tree = {
 			add_timed_idea = {
 				idea = DEN_pacifying_norwegian_recistance
 				days = 140
-				on_remove = {
-					remove_ideas = {
-						DEN_norwegian_partisans_idea
-					}
-				}
+
 			}
 		}
 	}
@@ -265,11 +261,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_popularity = {
-				ideology = communism
-				popularity = 0.15
+			add_timed_idea = {
+				idea = DEN_cooperate_with_communist_ministers_idea
+				days = 180
 			}
-			
 		}
 	}
 	
@@ -315,9 +310,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.15
+			add_timed_idea = {
+				idea = DEN_cooperate_with_democratic_ministers_idea
+				days = 180
 			}
 			
 		}
@@ -793,7 +788,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			add_stability = 0.20
 			
 		}
 	}
@@ -812,7 +807,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			add_ideas = {
+				DEN_protector_of_democracy_idea
+			}
 			
 		}
 	}
