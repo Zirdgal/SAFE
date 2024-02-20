@@ -63,7 +63,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_minor_ultranationalist_campaigning }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_minor_ultranationalist_campaigning
 		
 		cost = 5
@@ -116,7 +116,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_minor_socialist_campaigning }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_minor_socialist_campaigning
 		
 		cost = 5
@@ -169,7 +169,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_minor_liberal_campaigning }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_minor_liberal_campaigning
 		
 		cost = 5
@@ -222,7 +222,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_minor_conservative_campaigning }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_minor_conservative_campaigning
 		
 		cost = 5
@@ -275,7 +275,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_minor_monarchist_campaigning }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_minor_monarchist_campaigning
 		
 		cost = 5
@@ -293,6 +293,56 @@ focus_tree = {
 			add_timed_idea = {
 				idea = GER_major_monarchist_campaigning_idea
 				days = 180
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_democratic_election_win
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		x = 0
+		y = 5
+		relative_position_id = GER_aftermath_of_elections
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			date < 1936.11.9
+			has_government = democratic
+			democratic > 0.5
+		}
+
+		completion_reward = {
+			GER = { country_event = ger_focus_event.4 }
+		}
+	}
+	
+	focus = {
+		id = GER_conservative_majority
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		x = 1
+		y = 1
+		relative_position_id = GER_democratic_election_win
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_government = democratic
+			democratic > 0.5
+			neutrality > 0.3
+		}
+
+		completion_reward = {
+			set_party_name = {
+				ideology = democratic
+				long_name = GER_democratic_party_conservative_long
+				name = GER_democratic_party_conservative
 			}
 		}
 	}
