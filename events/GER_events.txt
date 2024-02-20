@@ -55,3 +55,21 @@ country_event = {
 		ai_chance = { factor = 1}
 	}
 }
+
+country_event = {
+	id = ger_focus_events.4
+	title = ger_focus_events.4.title
+	desc = ger_focus_events.4.desc
+	
+	picture = GFX_report_event_german_troops ##PLACEHOLDER
+	is_triggered_only = yes
+	option = {
+		name = ger_focus_events.4.option
+		
+		add_ideas = {
+			GER_idea_democratic_deadlock_victory
+		}
+		
+		ai_chance = { factor = 1}
+	}
+}
