@@ -38,7 +38,8 @@
  DEN_the_sami_idea_3_desc:0 "Placeholder"
  
  ####TOOLTIPS
- lose_all_cores_on_norway_tooltip:0 "Lose cores on §Yall norwegian states§!"
+ lose_all_cores_on_norway_tooltip:0 "Lose cores on §Yall Norwegian states§!"
  lose_the_sami_tooltip:0 "Lose any §RSami buff/debuff§!"
  den_all_norwegian_infrastructure_tooltip:0 "§YAll Norwegian infrastructure§! increases by §Y1 level§!"
  den_all_danish_infrastructure_tooltip:0 "§YAll Danish infrastructure§! increases by §Y1 level§!"
+ release_norway_as_dominion_tooltip:0 "§YRelease Norway§! as a §YDominion§!"

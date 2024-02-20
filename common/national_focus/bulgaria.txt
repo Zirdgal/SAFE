@@ -14,29 +14,14 @@ focus_tree = {
 	#Search filter
 	#FOCUS_FILTER_POLITICAL
 	
-	focus = {
-		id = BUL_political
-		icon = GFX_none
-		x = 10
-		y = 0
-		cost = 5
-		available_if_capitulated = no
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-		add_political_power = 75
-		}
-	}
-	
     focus = {
 		id = BUL_macedonian_crisis
 		icon = GFX_focus_generic_provoke_border_clashes
-		x = 0
+		x = 20
 		y = 1
 		cost = 2
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_POLITICAL}
-		relative_position_id = BUL_political
-		prerequisite = { focus = BUL_political }
 		completion_reward = {
 		#unlocks decisions
 		add_named_threat = { threat = 2 name = BUL_macedonian_crisis }
@@ -61,7 +46,7 @@ focus_tree = {
 	focus = {
         id = BUL_authoritarian
         icon = GFX_none
-        x = -5
+        x = -7
         y = 3
         cost = 10
         search_filters = {FOCUS_FILTER_POLITICAL}
@@ -100,14 +85,13 @@ focus_tree = {
     }
 	
 	focus = {
-        id = BUL_democratic
+        id = BUL_democratic_revolution
         icon = GFX_none
-        x = 5
+        x = 7
         y = 3
         cost = 10
         search_filters = {FOCUS_FILTER_POLITICAL}
         relative_position_id = BUL_aftermath_of_the_protests
-        prerequisite = { focus = BUL_aftermath_of_the_protests }
         completion_reward = {
         #add popularity for parties + allow elections
         }
@@ -121,8 +105,8 @@ focus_tree = {
         cost = 10
 		#available = {}
         search_filters = {FOCUS_FILTER_POLITICAL}
-        relative_position_id = BUL_democratic
-        prerequisite = { focus = BUL_democratic }
+        relative_position_id = BUL_democratic_revolution
+        prerequisite = { focus = BUL_democratic_revolution }
         completion_reward = {
         #socialist democracy path 
         }
@@ -135,8 +119,8 @@ focus_tree = {
         y = 1
         cost = 10
         search_filters = {FOCUS_FILTER_POLITICAL}
-        relative_position_id = BUL_democratic
-        prerequisite = { focus = BUL_democratic }
+        relative_position_id = BUL_democratic_revolution
+        prerequisite = { focus = BUL_democratic_revolution }
         completion_reward = {
         #democratic path
         }
@@ -145,7 +129,7 @@ focus_tree = {
 	focus = {
         id = BUL_the_social_democrats
         icon = GFX_none
-        x = -2
+        x = -3
         y = 1
         cost = 5
         search_filters = {FOCUS_FILTER_POLITICAL}
@@ -159,7 +143,7 @@ focus_tree = {
     focus = {
         id = BUL_strenghten_the_mining_unions
         icon = GFX_none
-        x = -2
+        x = -1
         y = 1
         cost = 10
         search_filters = {FOCUS_FILTER_POLITICAL}
@@ -173,7 +157,7 @@ focus_tree = {
     focus = {
         id = BUL_work_regulations
         icon = GFX_none
-        x = 2
+        x = 1
         y = 1
         cost = 10
         search_filters = {FOCUS_FILTER_POLITICAL}
@@ -258,7 +242,7 @@ focus_tree = {
     focus = {
         id = BUL_womens_rights
         icon = GFX_none
-        x = -2
+        x = -1
         y = 1
         cost = 10
         search_filters = {FOCUS_FILTER_POLITICAL}
@@ -273,7 +257,7 @@ focus_tree = {
     focus = {
         id = BUL_attract_foreign_investors
         icon = GFX_none
-        x = 2
+        x = 1
         y = 1
         cost = 10
         search_filters = {FOCUS_FILTER_POLITICAL}
@@ -315,7 +299,7 @@ focus_tree = {
 	focus = {
         id = BUL_conservatives
         icon = GFX_none
-        x = 2
+        x = 3
         y = 1
         cost = 5
         search_filters = {FOCUS_FILTER_POLITICAL}
@@ -329,7 +313,7 @@ focus_tree = {
     focus = {
         id = BUL_fund_the_orthodox_church
         icon = GFX_none
-        x = 2
+        x = 1
         y = 1
         cost = 5
         search_filters = {FOCUS_FILTER_POLITICAL}
@@ -343,7 +327,7 @@ focus_tree = {
     focus = {
         id = BUL_promote_rural_life
         icon = GFX_none
-        x = -2
+        x = -1
         y = 1
         cost = 10
         search_filters = {FOCUS_FILTER_POLITICAL}
@@ -381,7 +365,7 @@ focus_tree = {
     focus = {
         id = BUL_patriotism
         icon = GFX_none
-        x = 1
+        x = 0
         y = 1
         cost = 10
         search_filters = {FOCUS_FILTER_POLITICAL}
@@ -423,9 +407,9 @@ focus_tree = {
     }
 	
     focus = {
-        id = BUL_we_earn_what_we_sow
+        id = BUL_we_reap_what_we_sow
         icon = GFX_none
-        x = 1
+        x = 2
         y = 1
         cost = 10
         search_filters = {FOCUS_FILTER_POLITICAL}
@@ -445,8 +429,8 @@ focus_tree = {
         y = 2
         cost = 14.3
         search_filters = {FOCUS_FILTER_POLITICAL}
-        relative_position_id = BUL_we_earn_what_we_sow
-        prerequisite = { focus = BUL_we_earn_what_we_sow }
+        relative_position_id = BUL_we_reap_what_we_sow
+        prerequisite = { focus = BUL_we_reap_what_we_sow }
         completion_reward = {  
 		#buff the nat spirit
 		#event 
@@ -460,8 +444,8 @@ focus_tree = {
         y = 1
         cost = 10
         search_filters = {FOCUS_FILTER_POLITICAL}
-        relative_position_id = BUL_democratic
-        prerequisite = { focus = BUL_democratic }
+        relative_position_id = BUL_democratic_revolution
+        prerequisite = { focus = BUL_democratic_revolution }
         completion_reward = {
         #Constitutional Monarchy Path
         }
@@ -491,13 +475,11 @@ focus_tree = {
     focus = {
 		id = BUL_industry
 		icon = GFX_goal_generic_production2
-		x = 
-		y = 
-		cost = 
+		x = 0
+		y = 0
+		cost = 10
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_INDUSTRY}
-		relative_position_id = 
-		prerequisite = { focus =  }
 		completion_reward = {
             48 = {
 				add_extra_state_shared_building_slots = 2
@@ -689,7 +671,7 @@ focus_tree = {
         prerequisite = { focus = BUL_militarize_the_industry }
 		available = {
 		    has_war = yes
-			has_war_support = > 0.3
+			has_war_support > 0.3
 		}
         completion_reward = {
 		add_political_power = -50

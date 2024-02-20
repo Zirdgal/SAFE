@@ -7,15 +7,8 @@ The people that worked on this mod directly:
  3. Kwazy - https://www.youtube.com/channel/UCGhGfJomWnLoc4FJlZIytxg (YouTube)
   L Developer for - Saxony
  4. Jacket08 - https://steamcommunity.com/profiles/76561198204369289/ (Steam) 
-  L Developer for - Deutsche Republik and Historical Yugo
- 5. Inverse - https://steamcommunity.com/id/iminverse/ (Steam)
-  L Developer for - Canada
- 6. Shizu - https://steamcommunity.com/id/9114206969/ (Steam)
-  L Developer for - Denmark-Norway(LegoLand), (possibly Sweden)
- 7. CheemsDEV - https://steamcommunity.com/id/kaiser-wilhelm/ (Steam)
-  L Developer for - Austria
- 8. Jules - https://steamcommunity.com/profiles/76561199093973149/ (Steam)
-  L Developer for - Bulgaria & Greece
+ 5. Inverse -https://steamcommunity.com/id/iminverse/
+ 6. Cheems Dev - https://www.youtube.com/@cheemsdev (YouTube)
 
 Baltic state GFX pack by u/PivotStories on reddit: https://www.reddit.com/r/hoi4modding/comments/qpc0hb/all_of_my_focusnational_spirit_gfx/
 Globvs' GFX ultimate pack on github: https://github.com/Globvs/Ultimate-HOI4-GFX
