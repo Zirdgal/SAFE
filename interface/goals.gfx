@@ -90,6 +90,10 @@ spriteTypes = {
 	name = "GFX_focus_DEN_the_king_lives"
 	texturefile = "gfx/interface/goals/focus_DEN_the_king_lives.dds"			
 	}
+	SpriteType = {
+	name = "GFX_focus_DEN_the_slesvig_question"
+	texturefile = "gfx/interface/goals/focus_DEN_the_slesvig_question.dds"			
+	}
 
 
 
