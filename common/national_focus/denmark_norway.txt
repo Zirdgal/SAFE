@@ -788,7 +788,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.20
+			add_stability = 0.10
+			remove_ideas = {
+				DEN_a_divided_nation_idea
+			}
 			
 		}
 	}
