@@ -1,6 +1,6 @@
 characters={
 	AUS_karl_seitz={
-		name="Karl Seitz"
+		name=AUS_CHARACTER_KARL_SEITZ
 		portraits={
 			civilian={
 				large="GFX_portrait_karl_seitz"
@@ -10,6 +10,19 @@ characters={
 			ideology=socialism
 			expire="2011.1.1.1"
 			desc = AUS_KARL_SEITZ_DESC
+		}
+	}
+	AUS_otto_habsburg={
+		name=AUS_CHARACTER_OTTO_HABSURG
+		portraits={
+			civilian={
+				large="GFX_portrait_otto_habsburg"
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			expire="2011.1.1.1"
+			desc = AUS_OTTO_HABSBURG_DESC
 		}
 	}
 }

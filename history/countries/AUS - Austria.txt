@@ -12,6 +12,7 @@ set_politics = {
 }
 
 recruit_character = AUS_karl_seitz
+recruit_character = AUS_otto_habsburg
 
 
 set_research_slots = 3
