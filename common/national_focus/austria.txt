@@ -18,7 +18,7 @@ focus_tree = {
 	focus = {
 		id = SAX_state_of_emergency
 		icon = GFX_focus_SAX_emergency
-		x = 10
+		x = 6
 		y = 0
 		#relative_position_id = LIV_stay_eastward
 		#mutually_exclusive = { focus = LIV_stay_eastward }
@@ -35,6 +35,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = -100
+			add_ideas = {
+				SAX_failed_state_idea
+			} 
 		}
     }
 	
@@ -58,14 +61,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas =	SAX_failed_sate
+			#add_ideas =	SAX_failed_state_idea
 		}
     }
 	
 	focus = {
 		id = SAX_concede_to_their_demands
 		icon = GFX_goal_LIV_look_westward
-		x = 7
+		x = -3
 		y = 1
 		relative_position_id = SAX_state_of_emergency
 		mutually_exclusive = { focus = SAX_remain_calm }

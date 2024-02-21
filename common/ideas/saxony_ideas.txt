@@ -7,7 +7,7 @@ ideas = {
 		
 		###MILITARY
 		
-		SAX_failed_state = {
+		SAX_failed_state_idea = {
 		
 			picture = great_depression ###PLACEHOLDER
 			
