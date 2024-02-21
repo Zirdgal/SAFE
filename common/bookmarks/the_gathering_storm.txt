@@ -694,17 +694,16 @@ bookmarks = {
 		}
 		"DEN"={
 			minor = yes
-			history = DEN_GATHERING_STORM_DESC
+			history = DEN_POLITICS_STORM_DESC
 			ideology = neutrality
 			ideas = {
 				DEN_the_haer_idea
 				DEN_norwegian_partisans_idea
 				DEN_danish_norwegian_industrial_capabilities_idea
-				DEN_the_sami_idea
 			}
 			focuses = {
 				DEN_the_fate_of_the_king
-				DEN_visions_of_a_new_europe
+				DEN_northern_way_of_war
 				DEN_the_slesvig_question
 			}
 		}
