@@ -1,17 +1,37 @@
 ﻿l_english:
+ ###STARTING IDEAS
+        
+    ###MILITARY
+        
+        GER_decadent_army:0 "Decadent Army"
+        GER_decadent_army_desc:0 "From high command to common soldier to the guns in use the Deutsches Armee is in a bad shape. The lack of initiative from a stagnant government has led to a less than modern military. Without modernizing the army the safety of the Republik can not be guaranteed."
+        
+        GER_untrained_navy:0 "Untrained Navy"
+        GER_untrained_navy_desc:0 "The navy of the Deutsche Republik has in the latest generations fallen to a disinterest in the government, who favoured investing in the army and airforce. This led to the navy getting a lack of resources, and every recruit which showed potential was led to the army of the airforce."
+        
+        GER_devastated_airforce:0 "A Devastated Airforce"
+        GER_devastated_airforce_desc:0 "During the Great War of 1925 the airplane technologies, previously seen as exclusively commercial inventions, were quickly utilized for military goals. The Republik's high command decided to heavily invest in these new inventions. It was a good decision, but when the Frankish war machine cought up with the invention our airforce was completely devastated. This devastation has still not been completely recovered from."
+        
+    ###POLITICAL
+        
+        GER_government_deadlock_1:0 "Government Deadlock"
+        GER_government_deadlock_1_desc:0 "The rise of the socialist coalition has left the government in peril. Progress has stagnated and infighting is common. Germany cannot keep functioning in this state. Can anyone save it?"
+        
+        GER_international_humiliation:0 "International Humiliation"
+        GER_international_humiliation_desc:0 "During the Great War of 1925 the Frankish Empire and the Pink Union completely internationally humiliated the Deutsche Republik. Within the international community the Deutsche Republik is frowned upon and isolated. Finding any allies is highly unlikely."
+        
+        GER_inefficient_administration:0 "Inefficient Administration"
+        GER_inefficient_administration_desc:0 "The administrative capabilities of the Deutsche Republik has largely collapsed after the Great War of 1925. The loss of large amounts of territories meant that the administrative system had to be reorganized. But due to the extremely incompetent leadership of the time the reorganization only left the administration in a much worse state than before."
+        
+        
+
  ###FOCUS TREE IDEAS
  
     ###MILITARY
         GER_cornered_eagle:0 "Fervor of a Cornered Eagle"
         GER_cornered_eagle_desc:0 "The might of the surrounding empires has whipped citizens and soldiers alike into a strong and resilient mass, designed to protect their homeland."
         
-        GER_decadent_army:0 "Decadent Army"
-        GER_decadent_army_desc:0 "From high command to common soldier to the guns in use the Deutsches Armee is in a bad shape. The lack of initiative from a stagnant government has led to a less than modern military. Without modernizing the army the safety of the Republik can not be guaranteed."
-        
     ###POLITICAL
-        
-        GER_government_deadlock_1:0 "Government Deadlock"
-        GER_government_deadlock_1_desc:0 "The rise of the socialist coalition has left the government in peril. Progress has stagnated and infighting is common. Germany cannot keep functioning in this state. Can anyone save it?"
  
         GER_government_deadlock_2:0 "Government Deadlock"
         GER_government_deadlock_2_desc:0 "The rise of the socialist coalition has left the government in peril. Progress has stagnated and infighting is common. Germany cannot keep functioning in this state. But who will save it?"
