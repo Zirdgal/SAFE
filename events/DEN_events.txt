@@ -3,6 +3,8 @@
 
 add_namespace = den_focus_events
 
+
+####THE FATE OF THE KING
 country_event = {
 	id = den_focus_events.1
 	title = den_focus_events.1.title
@@ -11,38 +13,72 @@ country_event = {
 	picture = GFX_report_event_german_reichstag_gathering ##PLACEHOLDER
 	is_triggered_only = yes
 	option = {
-		name = den_focus_events.1.a.option
+		name = den_focus_events.1.option.a
 		
 		swap_ideas = {
 		}
 		
-		add_stability = -0.1
+		complete_national_focus = DEN_the_king_lives
+		
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = den_focus_events.1.option_b
+		
+		swap_ideas = {
+		}
+		
+		complete_national_focus = DEN_the_death_of_the_king
 		
 		ai_chance = { factor = 1}
 	}
 }
 
+####THE GERMAN ULTIMATUM (CHAIN)
 country_event = {
-	id = den_focus_events.2
-	title = den_focus_events.2.title
-	desc = den_focus_events.2.desc
+	id = den_focus_events.2_slesvig_holstein_question
+	title = den_focus_events.2_slesvig_holstein_question.title
+	desc = den_focus_events.2_slesvig_holstein_question.desc
 	
 	picture = GFX_report_event_german_reichstag_gathering ##PLACEHOLDER
 	is_triggered_only = yes
 	option = {
-		name = den_focus_events.2.a.option
-		
-		swap_ideas = {
-		}
-		
-		add_stability = -0.1
+		name = den_focus_events.2.a.option.war
 		
 		ai_chance = { factor = 1}
+		
+		create_wargoal = {
+			type = take_state_focus
+			target = GER
+			generator = { 909 58 }
+			expire = 0
+		}
+	}
+	option = {
+		name = den_focus_events.2_slesvig_holstein_question.a.option.slesvig_only
+		
+		ai_chance = { factor = 1}
+		
+		GER = { country_event = den_focus_events.3 }
+	}
+	option = {
+		name = den_focus_events.2_slesvig_holstein_question.a.option.slesvig_holstein
+	
+		ai_chance = { factor = 1}
+		
+		GER = { country_event = den_focus_events.4 }
+	}
+	option = {
+		name = den_focus_events.2_slesvig_holstein_question.a.option.alliance
+		
+		ai_chance = { factor = 1}
+		
+		GER = { country_event = den_focus_events.5 }
 	}
 }
 
 country_event = {
-	id = den_focus_events.3
+	id = den_focus_events.3_slesvig
 	title = den_focus_events.3.title
 	desc = den_focus_events.3.desc
 	
@@ -50,6 +86,42 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = den_focus_events.3.a.option
+		
+		swap_ideas = {
+		}
+		
+		ai_chance = { factor = 1}
+	}
+}
+
+country_event = {
+	id = den_focus_events.4_slesvig_holstein
+	title = den_focus_events.4.title
+	desc = den_focus_events.4.desc
+	
+	picture = GFX_report_event_german_reichstag_gathering ##PLACEHOLDER
+	is_triggered_only = yes
+	option = {
+		name = den_focus_events.4.a.option
+		
+		swap_ideas = {
+		}
+		
+		add_stability = -0.1
+		
+		ai_chance = { factor = 1}
+	}
+}
+
+country_event = {
+	id = den_focus_events.5_alliance
+	title = den_focus_events.5.title
+	desc = den_focus_events.5.desc
+	
+	picture = GFX_report_event_german_reichstag_gathering ##PLACEHOLDER
+	is_triggered_only = yes
+	option = {
+		name = den_focus_events.5.a.option
 		
 		swap_ideas = {
 		}

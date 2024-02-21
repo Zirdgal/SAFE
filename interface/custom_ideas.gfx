@@ -1,0 +1,40 @@
+spriteTypes = {	
+
+
+	#	██╗     ██╗██╗   ██╗ ██████╗ ███╗   ██╗██╗ █████╗ 
+	#	██║     ██║██║   ██║██╔═══██╗████╗  ██║██║██╔══██╗
+	#	██║     ██║██║   ██║██║   ██║██╔██╗ ██║██║███████║	
+	#	██║     ██║╚██╗ ██╔╝██║   ██║██║╚██╗██║██║██╔══██║
+	#	███████╗██║ ╚████╔╝ ╚██████╔╝██║ ╚████║██║██║  ██║
+	#	╚══════╝╚═╝  ╚═══╝   ╚═════╝ ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝
+
+	spriteType = {
+		name = "GFX_idea_LIV_bop_estonia"
+		texturefile = "gfx/interface/ideas/idea_LIV_bop_estonia.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LIV_bop_latvia"
+		texturefile = "gfx/interface/ideas/idea_LIV_bop_latvia.dds"
+	}
+	
+	#######################################
+	# AUSTRIA I'll do the cool text later #
+	#######################################
+	
+	SpriteType = {
+		name = "GFX_idea_AUS_disemboweled_army"
+		texturefile = "gfx/interface/ideas/aus_disemboweled_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_AUS_habsburg_law_debate"
+		texturefile = "gfx/interface/ideas/aus_habsburg_law_debate.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_AUS_constituent_national_assembly"
+		texturefile = "gfx/interface/ideas/aus_constituent_national_assembly.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_AUS_fallout_agrarian_subsidy_cuts"
+		texturefile = "gfx/interface/ideas/aus_fallout_agrarian_subsidy_cuts.dds"
+	}
+}

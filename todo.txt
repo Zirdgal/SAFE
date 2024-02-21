@@ -40,8 +40,31 @@ Germany
 
 Austria
 
-- Austria-Hungary path for all the AH soyjaks. (I don't like Austria-Hungary as u can tell)
-- Austro-Bavarian Union mechanic (maybe)
+National Spirits to do:
+- Unsatisfying Conclusion to the Habsburg Law Debate: (may rework name, bit of a mouthful) probably gives -20% stab (maybe -15%?), 1.5 pp cost, but only 0.01 neutrality drift, all only for maybe 120 days? happens if player says no to the habsburg law repeal.
+
+March Crisis - Series of events regarding the resignation of the president Karl Seitz, the "Great Compromiser" who held together the center-left and far left wings of the SocDem Party, essentially results in a party schism (and therefore debatably illegitimate govt.). The SocDem Party scrambles to find another president, while the Fatherland Front (fascist party) pressures the govt to hold snap elections.
+	- At the crisis's opening, the Constituent National Assembly holds a vote on whether or not to repeal the Habsburg Law. Voting to repeal it removes the national spirit and allows for the Otto von Habsburg path; voting against repealing it results in the spirit being replaced by a worse spirit (that goes away later)
+		- If the law is repealed, then Otto forms his own party instead of joining the FF like the FF had hoped, making them mald
+	- The SocDem Party holds an emergency meeting to find a new leader. There are three options:
+		- Adolf Schicklgruber (see Schicklgruber Faction below)
+		- some establishment guy (idk haven't thought much about this yet)
+		- some far left guy (probably leads into the commie path, haven't decided)
+	- If the establishment guy is chosen, the far left faction officially secedes from the party and forms their own party. This deligitmizes the government enough to warrant snap elections, which only gives the option for either the Fatherland Front or the Pan-European League (if Habsburg Law was repealed)
+
+- Pan-European League - Otto von Habsburg - basically Otto forms the European Union
+	- Subpath: A European Federation - Otto settles on a "live and let live" policy for a united Europe, basically giving every state near total autonomy, only enforcing democracy on each state. (democratic path)
+	- Subpath: A European Empire - Otto decides to install monarchical rulers in every state, while also centralizing rule to a greater degree than the Federation path. Each state is still run as a constitutional monarchy (and therefore people vote and whatnot) but the states themselves have much less of a say on the federal level. (non-aligned path)
+
+- Social Democratic Workers' Party of Austria - Schicklgruber Faction - The angry mustache man but he's a heckin wholesome 100 chungus socdem!!!! (Also his father's request to change his surname was denied) But he's still a nationalist, this time for Austria, so he forms an Austro-centric Danubian Federation.
+
+--- not thought out paths ---
+
+- Commie path - probably a result from choosing the far left guy for the sdapo
+- Fatherland Front path - haven't thought much about this one yet, probably makes Austria an ally of Frankia since they're fascist too
+	- possibly uniting Germany as Francia-aligned under this path?
+
+OH and also include some bavaria stuff - maybe bavarian resistance? otto could just give them autonomy, ff could try to like idk "austrianize" them or smth, idk I'll think about this more later
 
 FRANCIA!!!!!
 
@@ -67,12 +90,26 @@ Yugoslavia
 
 - Clash of Clans path. Canonically Clash of Clans was set in 1930s Yugoslavia.
 - Jackets normal historical path.
+- Civil war
 
 Bulgaria
 
-- Macedonian Crisis
-- Yugo-War intervention
-- National crisis if macedonian crisis outcome is unfavourable
+diplo:
+- Macedonian Crisis (high priority)
+- Yugo-War intervention (high priority)
+- National crisis (and civil war) if macedonian crisis outcome is unfavourable (high priority)
+- Influence mechanic to counter french/austrian/polish/soviet influence in the balkans
 - Demand Thrace, Dobrudja, Constantinople via foci
+
+paths:
+- finish Centrist Democratic path (high priority)
 - Monarchist path/Military Gov path/Restoration of Byz
 - HRE (or Rome) path for the lols
+- add events (high priority)
+
+industry:
+- finish military industrial branch
+- start civ industrial branch
+
+army:
+- start army tree

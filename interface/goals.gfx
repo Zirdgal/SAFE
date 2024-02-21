@@ -68,10 +68,32 @@ spriteTypes = {
 	}	
 
 
+####DENMARK-NORWAY####
 
-
-
-
+	SpriteType = {
+	name = "GFX_focus_DEN_northern_defense_alliance"
+	texturefile = "gfx/interface/goals/focus_DEN_northern_defense_alliance.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_DEN_the_northern_way_of_war"
+	texturefile = "gfx/interface/goals/focus_DEN_the_northern_way_of_war.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_DEN_fate_of_the_king"
+	texturefile = "gfx/interface/goals/focus_DEN_fate_of_the_king.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_DEN_the_death_of_the_king"
+	texturefile = "gfx/interface/goals/focus_DEN_the_death_of_the_king.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_DEN_the_king_lives"
+	texturefile = "gfx/interface/goals/focus_DEN_the_king_lives.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_DEN_the_slesvig_question"
+	texturefile = "gfx/interface/goals/focus_DEN_the_slesvig_question.dds"			
+	}
 
 
 

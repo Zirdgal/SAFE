@@ -2,8 +2,8 @@
 
 set_research_slots = 3
 set_convoys = 153
-set_stability = 0.6
-set_war_support = 0.13
+set_stability = 0.5
+set_war_support = 0.34
 
 set_politics = {
 	ruling_party = neutrality
@@ -18,25 +18,25 @@ create_country_leader = {
 	picture = "portrait_large_christian_the_x.dds"
 	expire = "1954.2.17"
 	ideology = despotism
-	traits = {
+	traits = { Humble
 	}
 }
 
 set_popularities = {
-	democratic = 37
-	fascism = 5
-	communism = 3
+	democratic = 30
+	fascism = 1
+	communism = 14
 	neutrality = 55
 }
 
 add_ideas = {
 	limited_exports
-	voulenteer_only
+	limited_conscription
 	partial_economic_mobilisation
 	DEN_the_sami_idea
-	DEN_norweigan_partisans_idea
+	DEN_norwegian_partisans_idea
 	DEN_the_haer_idea
-	DEN_danish_norweigan_industrial_capabilities_idea
+	DEN_danish_norwegian_industrial_capabilities_idea
 	DEN_a_divided_nation_idea
 }
 
@@ -60,3 +60,7 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
+
+oob = "DEN_1936"
+set_naval_oob = "DEN_1936_naval_mtg"
+set_air_oob = "DEN_1936_air_bba"

@@ -1,0 +1,71 @@
+﻿l_english:
+ 
+ ####ARMY
+ DEN_the_haer_idea:0 "The Hær"
+ DEN_the_haer_idea_desc:0 "Placeholder"
+ 
+ DEN_the_haer_idea_2:0 "The Hær"
+ DEN_the_haer_idea_2_desc:0 "Placeholder"
+ 
+ DEN_the_haer_idea_3:0 "The Hær"
+ DEN_the_haer_idea_3_desc:0 "Placeholder"
+ 
+ DEN_unified_internal_command_idea:0 "Unified Internal Command"
+ DEN_unified_internal_command_idea_desc:0 "Placeholder"
+ 
+ DEN_northern_way_of_war_idea:0 "Northern Way of War"
+ DEN_northern_way_of_war_idea_desc:0 "Placeholder"
+ 
+ DEN_northern_way_of_war_idea_2:0 "Northern Way of War"
+ DEN_northern_way_of_war_idea_2_desc:0 "Placeholder"
+ 
+ DEN_cheaper_car_manufacturing:0 "Cheaper Car Manufacturing"
+ DEN_cheaper_car_manufacturing_desc:0 "Placeholder"
+ 
+ DEN_an_army_on_wheels:0 "An Army on Wheels"
+ DEN_an_army_on_wheels_desc:0 "Placeholder"
+ 
+ DEN_an_army_of_men:0 "An Army of Men"
+ DEN_an_army_of_men_desc:0 "Placeholder"
+ 
+ DEN_the_sami_idea:0 "The Sami"
+ DEN_the_sami_idea_desc:0 "Placeholder"
+ 
+ DEN_the_sami_idea_2:0 "The Sami"
+ DEN_the_sami_idea_2_desc:0 "Placeholder"
+ 
+ DEN_the_sami_idea_3:0 "The Sami"
+ DEN_the_sami_idea_3_desc:0 "Placeholder"
+ 
+ DEN_a_divided_nation_idea:0 "A Divided Nation"
+ DEN_a_divided_nation_idea_desc:0 "Our Nation is divided between different ethnic groups and peoples. We must unite them under a single nationality or country in order to make cooperation easier."
+ 
+ DEN_norwegian_partisans_idea:0 "Norwegian Partisans"
+ DEN_norwegian_partisans_idea_desc:0 "Our nation is as divided as it's been in centuries. The Norwegians feel that they do not have an equal place in our union. We should find a way to pacify them soon."
+ 
+ DEN_pacifying_norwegian_recistance:0 "Pacifying Norweigan Resistance"
+ DEN_pacifying_norwegian_recistance_desc:0 "The rowdy Norwegians on the west coast have long been a thorn in our side. We have finally decided to take a more proactive approach to shutting down their resistance activities."
+ 
+ DEN_democratic_education_idea:0 "Democratic Education"
+ DEN_democratic_education_idea_desc:0 "With the best education being democratic education, our scholars and students have truly thrived in their places of education. This has aided the free minds of our country into their research to better our nation."
+ 
+ DEN_cooperate_with_democratic_ministers_idea:0 "Cooperate with Democratic Ministers"
+ DEN_cooperate_with_democratic_ministers_idea_desc:0 "With political tides changing, we see it best that we start cooperating with ministers deep within democratic politics."
+ 
+ DEN_cooperate_with_communist_ministers_idea:0 "Cooperate with Communist Ministers"
+ DEN_cooperate_with_communist_ministers_idea_desc:0 "With political tides changing, we see it best that we start cooperating with ministers deep within communist politics."
+ 
+ DEN_preach_democratic_ideals:0 "Preach Democratic Ideals"
+ DEN_preach_democratic_ideals_desc:0 "Both people of our country, and people foreign in origin deserve to know the truly fantastic ways of democracy."
+ 
+ DEN_protector_of_democracy_idea:0 "Protector of Democracy"
+ DEN_protector_of_democracy_idea_desc:0 "We have declared ourselves the true european-wide protectors of democracy! Others dare not harm other european democracies while our nation still exists."
+ DEN_protector_of_democracy_idea_2:0 "Protector of Democracy"
+ DEN_protector_of_democracy_idea_desc_2:0 "We have declared ourselves the true european-wide protectors of democracy! Others dare not harm other european democracies while our nation still exists."
+ 
+ ####TOOLTIPS
+ lose_all_cores_on_norway_tooltip:0 "Lose cores on §Yall Norwegian states§!"
+ lose_the_sami_tooltip:0 "Lose any §RSami buff/debuff§!"
+ den_all_norwegian_infrastructure_tooltip:0 "§YAll Norwegian infrastructure§! increases by §Y1 level§!"
+ den_all_danish_infrastructure_tooltip:0 "§YAll Danish infrastructure§! increases by §Y1 level§!"
+ release_norway_as_dominion_tooltip:0 "§YRelease Norway§! as a §YDominion§!"

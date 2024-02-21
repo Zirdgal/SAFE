@@ -19,7 +19,7 @@ focus_tree = {
 	focus = {
 		id = GER_aftermath_of_elections
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
-		x = 4
+		x = 8
 		y = 0
 		cost = 2
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -36,8 +36,8 @@ focus_tree = {
 		id = GER_minor_ultranationalist_campaigning
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
-		x = -4
-		y = 1
+		x = -8
+		y = 2
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -89,8 +89,8 @@ focus_tree = {
 		id = GER_minor_socialist_campaigning
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
-		x = -2
-		y = 1
+		x = -4
+		y = 2
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -143,7 +143,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -195,8 +195,8 @@ focus_tree = {
 		id = GER_minor_conservative_campaigning
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
-		x = 2
-		y = 1
+		x = 4
+		y = 2
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -248,8 +248,8 @@ focus_tree = {
 		id = GER_minor_monarchist_campaigning
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
-		x = 4
-		y = 1
+		x = 8
+		y = 2
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -297,13 +297,64 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = GER_democratic_election_win
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		x = 0
+		y = 5
+		relative_position_id = GER_aftermath_of_elections
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			date < 1936.11.9
+			has_government = democratic
+			democratic > 0.5
+		}
+
+		completion_reward = {
+			GER = { country_event = ger_focus_event.4 }
+		}
+	}
+	
+	focus = {
+		id = GER_conservative_majority
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		x = 1
+		y = 1
+		relative_position_id = GER_democratic_election_win
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_government = democratic
+			democratic > 0.5
+			neutrality > 0.3
+		}
+
+		completion_reward = {
+			set_party_name = {
+				ideology = democratic
+				long_name = GER_democratic_party_conservative_long
+				name = GER_democratic_party_conservative
+			}
+		}
+	}
+	
+	
 	
 	###ARMY FOCUSES
 	
 	focus = {
 		id = GER_acknowledge_military
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
-		x = 12
+		x = 20
 		y = 0
 		cost = 5
 		search_filters = { FOCUS_FILTER_ARMY_XP }

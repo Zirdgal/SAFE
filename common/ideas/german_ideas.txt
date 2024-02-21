@@ -148,5 +148,15 @@ ideas = {
 				neutrality_drift = 0.15
 			}
 		}
+	
+		GER_idea_democratic_deadlock_victory = {
+		
+			picture = generic_democratic_drift_bonus ###PLACEHOLDER
+			
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.1
+			}
+		}
 	}
 }
