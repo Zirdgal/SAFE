@@ -40,7 +40,8 @@ Germany
 
 Austria
 
-(starting) National spirits - Disemboweled Army (gives bad debuffs to the military); Habsburg Law Debate (gives bad debuffs to pp gain and similar); Resurgent Right (gives daily fascism support, stab penalty, but war support buffs)
+National Spirits to do:
+- Unsatisfying Conclusion to the Habsburg Law Debate: (may rework name, bit of a mouthful) probably gives -20% stab (maybe -15%?), 1.5 pp cost, but only 0.01 neutrality drift, all only for maybe 120 days? happens if player says no to the habsburg law repeal.
 
 March Crisis - Series of events regarding the resignation of the president Karl Seitz, the "Great Compromiser" who held together the center-left and far left wings of the SocDem Party, essentially results in a party schism (and therefore debatably illegitimate govt.). The SocDem Party scrambles to find another president, while the Fatherland Front (fascist party) pressures the govt to hold snap elections.
 	- At the crisis's opening, the Constituent National Assembly holds a vote on whether or not to repeal the Habsburg Law. Voting to repeal it removes the national spirit and allows for the Otto von Habsburg path; voting against repealing it results in the spirit being replaced by a worse spirit (that goes away later)

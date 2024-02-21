@@ -34,3 +34,10 @@ set_popularities = {
 	democratic = 42
 	communism = 19
 }
+
+add_ideas = {
+	disemboweled_army
+	habsburg_law_debate
+	constituent_national_assembly
+	fallout_agrarian_subsidy_cuts
+}
