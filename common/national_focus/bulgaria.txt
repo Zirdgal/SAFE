@@ -1,7 +1,7 @@
 focus_tree = {
 	id = BUL
 	country = {
-		factor = 0
+		factor = 10
 		modifier = {
 			add = 10
 			tag = BUL
@@ -150,8 +150,19 @@ focus_tree = {
         relative_position_id = BUL_the_social_democrats
         prerequisite = { focus = BUL_the_social_democrats }
         completion_reward = {
-        #add extra resources 
+		212 = {
+		add_resource = {
+		type = chromium
+		amount = 12
         }
+		}
+		48 = {
+		add_resource = {
+		type = aluminium
+		amount = 12
+		}
+		}
+		}
     }
 	
     focus = {
@@ -164,7 +175,7 @@ focus_tree = {
         relative_position_id = BUL_the_social_democrats
         prerequisite = { focus = BUL_the_social_democrats }
         completion_reward = {
-        #add nat spirit; -5% production effiecency, +5% pp gain, +5% stability
+        add_ideas = BUL_sd_work_regulations_idea
         }
     }
 	
@@ -178,8 +189,11 @@ focus_tree = {
         relative_position_id = BUL_the_social_democrats
         prerequisite = { focus = BUL_work_regulations focus = BUL_strenghten_the_mining_unions }
         completion_reward = {
-        #add nat spirit with pop growth 
+        swap_ideas = {
+		remove_idea = BUL_sd_work_regulations_idea
+		add_idea = BUL_sd_healthcare_idea
         }
+		}
     }
 	
     focus = {
@@ -192,8 +206,11 @@ focus_tree = {
         relative_position_id = BUL_healthcare
         prerequisite = { focus = BUL_healthcare }
         completion_reward = {
-        #add +5% construction speed and +15% repair speed to BUL_work_regulations nat spirit
+		swap_ideas = {
+		remove_idea = BUL_sd_healthcare_idea
+		add_idea = BUL_sd_public_works_idea
         }
+		}
     }
 	
 #    focus = {
@@ -234,8 +251,8 @@ focus_tree = {
         relative_position_id = BUL_liberals
         prerequisite = { focus = BUL_liberals }
         completion_reward = {
-		#add nat spirit, -15% consumer goods, +10% construction speed 
-        #change trade law to free trade 
+		add_ideas = free_trade
+		add_ideas = BUL_lib_open_up_the_economy_idea
         }
     }
 	
@@ -292,7 +309,10 @@ focus_tree = {
 		    ideology = democratic
 			popularity = 0.1
 		}
-		#add -15% consumer goods to BUL_open_up_the_economy nat spirit 
+        swap_ideas = {
+		remove_idea = BUL_lib_open_up_the_economy_idea
+		add_idea = BUL_lib_economic_uproar_idea
+        }
         }
     }
 	
@@ -334,7 +354,7 @@ focus_tree = {
         relative_position_id = BUL_conservatives
         prerequisite = { focus = BUL_conservatives }
         completion_reward = {
-        #National Spirit for pop growth + recruitable pop
+		add_ideas = BUL_con_promote_rural_life_idea
         }
     }
 	
@@ -357,7 +377,9 @@ focus_tree = {
 		ideology = neutrality
 		popularity = 0.05
 		}
-		#add Tsar ferdinand as nat spirit; +10% stability and +0.1 daily pp
+		#add_ideas = BUL_con_tsar_boris_idea
+		#add_ideas = BUL_con_tsar_ferdinand_idea
+		#add_ideas = BUL_con_tsar_simeon_the_II_idea
 		#events for negotiations with monarchists, strenght of nat spirit depends on outcome
         }
     }
@@ -372,8 +394,11 @@ focus_tree = {
         relative_position_id = BUL_compromise_with_the_monarchists
         prerequisite = { focus = BUL_compromise_with_the_monarchists }
         completion_reward = {
-        #adds nat spirit; + 0.5% recruitable pop, + 5% atk and def on core territory
+		swap_ideas = {
+		remove_idea = BUL_con_promote_rural_life_idea
+		add_idea = BUL_con_patriotism_idea
         }
+		}
     }
 	
     focus = {
@@ -387,7 +412,11 @@ focus_tree = {
         prerequisite = { focus = BUL_public_works }
 		prerequisite = { focus = BUL_economic_uproar }
         completion_reward = {  
-		#add +5% consumer goods, pop growth, +%pp gain, +%weekly stability to nat spirit
+		remove_ideas = BUL_lib_economic_uproar_idea
+		swap_ideas = {
+		remove_idea = BUL_sd_public_works_idea
+		add_idea = BUL_a_social_market_idea
+		}
         }
     }
 	
@@ -402,7 +431,11 @@ focus_tree = {
         prerequisite = { focus = BUL_patriotism }
 		prerequisite = { focus = BUL_economic_uproar }
         completion_reward = {  
-		#add recruitable pop, pop growth, +daily democratic drift, +construction speed, +repair speed, +atk/def on core 
+		remove_ideas = BUL_lib_economic_uproar_idea
+		swap_ideas = {
+		remove_idea = BUL_con_patriotism_idea
+		add_idea = BUL_a_democratic_society_idea
+		}
         }
     }
 	
@@ -423,7 +456,7 @@ focus_tree = {
     }
 	
     focus = {
-        id = BUL_the_light_of_democracy_shines_bright
+        id = BUL_bright_shines_the_light_of_democracy
         icon = GFX_none
         x = 0
         y = 2
@@ -434,6 +467,11 @@ focus_tree = {
         completion_reward = {  
 		#buff the nat spirit
 		#event 
+		remove_ideas = BUL_a_social_market_idea
+		swap_ideas = {
+		remove_idea = BUL_a_democratic_society_idea
+		add_idea = BUL_bright_shines_the_light_of_democracy_idea
+		}
         }
     }
 	

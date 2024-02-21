@@ -11,6 +11,14 @@ spriteTypes = {
 
 
 	SpriteType = {
+	name = "GFX_focus_LIV_expand_parnu_military_production"
+	texturefile = "gfx/interface/goals/focus_LIV_expand_parnu_military_production.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_LIV_latvia_courish_military_plan"
+	texturefile = "gfx/interface/goals/focus_LIV_latvia_courish_military_plan.dds"			
+	}
+	SpriteType = {
 	name = "GFX_focus_LIV_militarize_riga"
 	texturefile = "gfx/interface/goals/focus_LIV_militarize_riga.dds"			
 	}
@@ -77,6 +85,26 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_focus_DEN_the_northern_way_of_war"
 	texturefile = "gfx/interface/goals/focus_DEN_the_northern_way_of_war.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_DEN_fate_of_the_king"
+	texturefile = "gfx/interface/goals/focus_DEN_fate_of_the_king.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_DEN_the_death_of_the_king"
+	texturefile = "gfx/interface/goals/focus_DEN_the_death_of_the_king.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_DEN_the_king_lives"
+	texturefile = "gfx/interface/goals/focus_DEN_the_king_lives.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_DEN_the_slesvig_question"
+	texturefile = "gfx/interface/goals/focus_DEN_the_slesvig_question.dds"			
+	}
+	SpriteType = {
+	name = "GFX_focus_DEN_realise_european_unity"
+	texturefile = "gfx/interface/goals/focus_DEN_realise_european_unity.dds"			
 	}
 
 

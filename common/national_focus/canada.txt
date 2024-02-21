@@ -1,0 +1,730 @@
+﻿search_filter_prios = {
+	FOCUS_FILTER_POLITICAL = 1010
+	
+	FOCUS_FILTER_RESEARCH = 522
+	
+	FOCUS_FILTER_INDUSTRY = 509
+
+	FOCUS_FILTER_BALANCE_OF_POWER = 200
+	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
+	FOCUS_FILTER_PROPAGANDA = 110
+	FOCUS_FILTER_MISSIOLINI = 110
+	FOCUS_FILTER_ARMY_XP = 103
+	FOCUS_FILTER_NAVY_XP = 102
+	FOCUS_FILTER_AIR_XP = 101
+
+}
+
+focus_tree = {
+	id = canadian_focus
+	
+	country = {
+		factor = 10
+		
+		modifier = {
+			add = 10
+			tag = CAN
+		
+		}
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+
+	initial_show_position = {
+		focus = CAN_industrial_effort
+	}
+	
+	
+	focus = {
+		id = can_reverse_urbanization
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 8
+		y = 0
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+		focus = {
+		id = can_techslot_1
+		icon = GFX_focus_research
+		prerequisite = { focus = can_reverse_urbanization }
+		x = 7
+		y = 1
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = can_investment
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = can_reverse_urbanization }
+		x = 3
+		y = 1
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = can_investment_west
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = can_investment }
+		x = 1
+		y = 2
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+		focus = {
+		id = can_solve_dustbowl
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = can_investment_west }
+		x = 1
+		y = 3
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = {
+				remove_idea = CAN_Dustbowl_IDEA
+				
+			}
+		}
+	}
+	
+		focus = {
+		id = can_exploit_alberta
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = can_solve_dustbowl }
+		x = 1
+		y = 4
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	
+	focus = {
+		id = can_investment_north
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = can_investment }
+		x = 3
+		y = 2
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = can_investment_east
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = can_investment }
+		x = 5
+		y = 2
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = can_expand_fishing
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = can_investment_east }
+		x = 5
+		y = 3
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = can_unemployment_camps
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = can_reverse_urbanization }
+		x = 9
+		y = 1
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = can_urban_relief
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = can_unemployment_camps }
+		x = 9
+		y = 2
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = can_social_welfare
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = can_urban_relief }
+		mutually_exclusive = { focus = can_privitization}
+		x = 8
+		y = 3
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = can_privitization
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = can_urban_relief }
+		mutually_exclusive = { focus = can_social_welfare}
+		x = 10
+		y = 3
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = can_end_depression
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = can_social_welfare focus = can_privitization }
+		x = 9
+		y = 4
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CAN_great_depression_1
+				add_idea = CAN_booming_economy
+			}
+		}
+	}
+	
+
+	focus = {
+		id = can_attract_aid
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = can_reverse_urbanization }
+		x = 11
+		y = 1
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	##ARMY
+	
+	focus = {
+		id = can_increase_army
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 15
+		y = 0
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+			
+				add_idea = CAN_Increased_Military_Spending
+			}
+		
+		}
+	}
+	
+	focus = {
+		id = can_lee_enfield 
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = can_increase_army }
+		x = -1
+		y = 1
+		relative_position_id = can_increase_army
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				}
+
+				
+		}
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	##POLITICAL
+	
+	focus = {
+		id = Follow_Britain
+		icon = GFX_goal_generic_demand_territory
+		mutually_exclusive = { focus = Break_From_Crown}
+		x = 19
+		y = 0
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = Break_From_Crown
+		icon = GFX_goal_generic_demand_territory
+		mutually_exclusive = { focus = Break_From_Crown}
+		x = 32
+		y = 0
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+
+	focus = {
+		id = can_Prepare_the_Revolution
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Break_From_Crown }
+		mutually_exclusive = { focus = free_canada}
+		x = 30
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = free_canada
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = Break_From_Crown }
+		mutually_exclusive = { focus = can_Prepare_the_Revolution}
+		x = 36
+		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = Canada_First
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = free_canada }
+		mutually_exclusive = { focus = CAN_Surrender_AM }
+		x = 34
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_french_rioters
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = free_canada }
+		x = 40
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_Arrest_Communist
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = free_canada }
+		x = 42
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_Ensure_Stability
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_Arrest_Communist focus = CAN_french_rioters }
+		x = 41
+		y = 3
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_Looking_Outwards
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_Ensure_Stability }
+		x = 41
+		y = 4
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+		focus = {
+		id = CAN_Seize_Newfoundland
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_Looking_Outwards }
+		x = 41
+		y = 5
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_American_Bases
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_Seize_Newfoundland }
+		prerequisite = { focus = CAN_American_Protectorate }
+		
+		x = 39
+		y = 6
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	
+	focus = {
+		id = CAN_populism
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = free_canada }
+		x = 34
+		y = 3
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_lose_chains
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_populism }
+		x = 34
+		y = 4
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_Surrender_AM
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = free_canada }
+		mutually_exclusive = { focus = Canada_First}
+		x = 38
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_American_Democracy
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_Surrender_AM }
+		x = 38
+		y = 3
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_American_Protectorate
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_American_Democracy }
+		x = 38
+		y = 4
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+		focus = {
+		id = can_communist_revolution
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = can_Prepare_the_Revolution }
+		mutually_exclusive = { focus = can_fascist_revolution}
+		x = 30
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = can_fascist_revolution
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = can_Prepare_the_Revolution }
+		mutually_exclusive = { focus = can_communist_revolution}
+		x = 26
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = can_secure_positions
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = can_fascist_revolution }
+		x = 26
+		y = 3
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = attract_quebec
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = can_communist_revolution focus = can_fascist_revolution }
+		x = 28
+		y = 3
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = can_rally
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = can_communist_revolution }
+		x = 30
+		y = 3
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	
+
+
+
+
+

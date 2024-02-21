@@ -930,7 +930,7 @@ focus_tree = {
     }
 	focus = {
 		id = LIV_the_courish_military_plan
-		icon = GFX_
+		icon = GFX_focus_LIV_latvia_courish_military_plan
 		x = 0
 		y = 1
 		relative_position_id = LIV_militarize_riga
@@ -971,8 +971,8 @@ focus_tree = {
 		}
     }
 	focus = {
-		id = LIV_expand_the_parnu_military_production
-		icon = GFX_
+		id = LIV_militarize_the_border_states
+		icon = GFX_focus_LIV_militarize_the_border_states
 		x = 0
 		y = 1
 		relative_position_id = LIV_estonia_effort
@@ -992,31 +992,9 @@ focus_tree = {
 		}
     }
 	focus = {
-		id = LIV_militarize_the_border_states
-		icon = GFX_focus_LIV_militarize_the_border_states
+		id = LIV_expand_the_parnu_military_production
+		icon = GFX_focus_LIV_expand_parnu_military_production
 		x = 0
-		y = 1
-		relative_position_id = LIV_expand_the_parnu_military_production
-
-		available = {
-
-		}
-		bypass = {
-
-		}
-
-		cost = 5
-		prerequisite = { focus = LIV_expand_the_parnu_military_production }
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-    }
-
-	focus = {
-		id = LIV_livonian_mobilization
-		icon = GFX_focus_generic_limited_social_mobilization
-		x = 1
 		y = 1
 		relative_position_id = LIV_militarize_the_border_states
 
@@ -1029,10 +1007,37 @@ focus_tree = {
 
 		cost = 5
 		prerequisite = { focus = LIV_militarize_the_border_states }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+
+	focus = {
+		id = LIV_livonian_mobilization
+		icon = GFX_focus_generic_limited_social_mobilization
+		x = 1
+		y = 1
+		relative_position_id = LIV_expand_the_parnu_military_production
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 5
+		prerequisite = { focus = LIV_expand_the_parnu_military_production }
 		prerequisite = { focus = LIV_the_courish_military_plan }
 		available_if_capitulated = yes
 
 		completion_reward = {
+			IF = {
+				NOT = {
+					has_idea = war_economy
+				}
+			}
 			add_ideas = LIV_livonian_mobilization_idea
 		}
     }
