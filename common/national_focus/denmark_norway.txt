@@ -880,11 +880,32 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_the_kalmar_union
-		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
-		prerequisite = { focus = DEN_a_new_democratic_scandinavia }
+		icon = GFX_focus_generic_scandinavia_flags
+		prerequisite = { focus = DEN_a_new_democratic_scandinavia focus = DEN_integrate_sweden }
+		mutually_exclusive = { focus = DEN_a_northern_allience }
 		x = -1
 		y = 1
 		relative_position_id = DEN_a_new_democratic_scandinavia
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_secure_finland
+		icon = GFX_focus_generic_attack_finland
+		prerequisite = { focus = DEN_the_kalmar_union }
+		mutually_exclusive = { focus = DEN_invite_finland }
+		x = 0
+		y = 1
+		relative_position_id = DEN_the_kalmar_union
 		
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -918,9 +939,29 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = DEN_integrate_sweden
+		icon = GFX_focus_generic_develop_sweden_silhouette
+		prerequisite = { focus = DEN_approach_sweden }
+		x = 1
+		y = 1
+		relative_position_id = DEN_approach_sweden
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_stability = -0.25
+			
+		}
+	}
+	
+	focus = {
 		id = DEN_a_northern_allience
 		icon = GFX_focus_DEN_northern_defense_alliance
 		prerequisite = { focus = DEN_approach_sweden }
+		mutually_exclusive = { focus = DEN_the_kalmar_union }
 		x = 0
 		y = 2
 		relative_position_id = DEN_approach_sweden
@@ -957,8 +998,9 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_invite_finland
-		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		icon = GFX_focus_invite_finland
 		prerequisite = { focus = DEN_a_northern_allience }
+		mutually_exclusive = { focus = DEN_secure_finland }
 		x = 0
 		y = 1
 		relative_position_id = DEN_a_northern_allience
@@ -1079,7 +1121,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_move_west
-		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		icon = GFX_focus_attack_france
 		prerequisite = { focus = DEN_visions_of_a_new_europe }
 		x = 0
 		y = 1
@@ -1091,7 +1133,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+				expire = 1095
+			}
 			
 		}
 	}
@@ -1099,10 +1145,34 @@ focus_tree = {
 	focus = {
 		id = DEN_pacify_the_east
 		icon = GFX_focus_attack_soviet
-		prerequisite = { focus = DEN_visions_of_a_new_europe focus = DEN_invite_finland focus = DEN_invite_livonia }
+		prerequisite = { focus = DEN_visions_of_a_new_europe focus = DEN_invite_finland focus = DEN_invite_livonia focus = DEN_secure_finland }
 		x = -2
 		y = 1
 		relative_position_id = DEN_visions_of_a_new_europe
+		
+		cost = 4
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+				expire = 1095
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = DEN_clean_up_the_small_fry
+		icon = GFX_focus_usa_focus_on_europe
+		prerequisite = { focus = DEN_pacify_the_east }
+		prerequisite = { focus = DEN_move_west }
+		x = 1
+		y = 1
+		relative_position_id = DEN_pacify_the_east
 		
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1118,11 +1188,10 @@ focus_tree = {
 	focus = {
 		id = DEN_realize_european_unity
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
-		prerequisite = { focus = DEN_pacify_the_east }
-		prerequisite = { focus = DEN_move_west }
-		x = 1
+		prerequisite = { focus = DEN_clean_up_the_small_fry }
+		x = 0
 		y = 1
-		relative_position_id = DEN_pacify_the_east
+		relative_position_id = DEN_clean_up_the_small_fry
 		
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
