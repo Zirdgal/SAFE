@@ -639,7 +639,7 @@ SpriteType = {
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_DEN_fate_of_the_king"
+		name = "GFX_focus_DEN_fate_of_the_king_shine"
 		texturefile = "gfx/interface/goals/focus_DEN_fate_of_the_king.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -671,7 +671,7 @@ SpriteType = {
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_DEN_the_death_of_the_king"
+		name = "GFX_focus_DEN_the_death_of_the_king_shine"
 		texturefile = "gfx/interface/goals/focus_DEN_the_death_of_the_king.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -703,7 +703,7 @@ SpriteType = {
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_DEN_the_king_lives"
+		name = "GFX_focus_DEN_the_king_lives_shine"
 		texturefile = "gfx/interface/goals/focus_DEN_the_king_lives.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -735,7 +735,7 @@ SpriteType = {
 	}
 	
 	SpriteType = {
-		name = "GFX_focus_DEN_the_slesvig_question"
+		name = "GFX_focus_DEN_the_slesvig_question_shine"
 		texturefile = "gfx/interface/goals/focus_DEN_the_slesvig_question.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

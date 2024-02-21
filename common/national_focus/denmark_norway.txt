@@ -362,7 +362,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = {
-				idea = neutrality_idea
+				neutrality_idea
 			}
 			
 		}
@@ -1189,7 +1189,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = {
-				idea = DEN_northern_way_of_war_idea
+				DEN_northern_way_of_war_idea
 			}
 		}
 	}
