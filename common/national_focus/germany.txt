@@ -10,6 +10,8 @@ focus_tree = {
 		}
 	}
 	
+	continuous_focus_position = { x = 3000 y = 500 }
+	
 
     default = no
 	reset_on_civilwar = no
@@ -37,7 +39,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
 		x = -8
-		y = 2
+		y = 1
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -90,7 +92,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
 		x = -4
-		y = 2
+		y = 1
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -143,7 +145,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -196,7 +198,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
 		x = 4
-		y = 2
+		y = 1
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -249,7 +251,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = GER_aftermath_of_elections }
 		x = 8
-		y = 2
+		y = 1
 		relative_position_id = GER_aftermath_of_elections
 		
 		cost = 4
@@ -300,7 +302,7 @@ focus_tree = {
 	focus = {
 		id = GER_democratic_election_win
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
-		x = 0
+		x = 2
 		y = 5
 		relative_position_id = GER_aftermath_of_elections
 		
@@ -323,7 +325,8 @@ focus_tree = {
 	focus = {
 		id = GER_conservative_majority
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
-		x = 1
+		prerequisite = { focus = GER_democratic_election_win }
+		x = 3
 		y = 1
 		relative_position_id = GER_democratic_election_win
 		
@@ -344,6 +347,156 @@ focus_tree = {
 				long_name = GER_democratic_party_conservative_long
 				name = GER_democratic_party_conservative
 			}
+			swap_ideas = {
+				remove_idea = GER_idea_democratic_deadlock_victory
+				add_idea = GER_idea_democratic_conservative_deadlock_victory
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_liberal_majority
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = GER_democratic_election_win }
+		x = -3
+		y = 1
+		relative_position_id = GER_democratic_election_win
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_government = democratic
+			democratic > 0.5
+			neutrality < 0.15
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_idea_democratic_deadlock_victory
+				add_idea = GER_idea_democratic_liberal_deadlock_victory
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_democratic_coalition
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = GER_democratic_election_win }
+		x = 0
+		y = 1
+		relative_position_id = GER_democratic_election_win
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			has_government = democratic
+			democratic > 0.5
+		}
+
+		completion_reward = {
+			set_party_name = {
+				ideology = democratic
+				long_name = GER_democratic_party_coalition_long
+				name = GER_democratic_party_coalition
+			}
+			swap_ideas = {
+				remove_idea = GER_idea_democratic_deadlock_victory
+				add_idea = GER_idea_democratic_coalition_deadlock_victory
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_liberal_start_reforms
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = GER_liberal_majority }
+		x = -3
+		y = 1
+		relative_position_id = GER_liberal_majority
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_reorganize_the_administration
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = GER_liberal_start_reforms }
+		x = -3
+		y = 1
+		relative_position_id = GER_liberal_start_reforms
+		
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_reinvigorate_the_economy
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = GER_liberal_start_reforms }
+		x = 0
+		y = 1
+		relative_position_id = GER_liberal_start_reforms
+		
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			
+		}
+
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = GER_reform_the_legislation
+		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		prerequisite = { focus = GER_liberal_start_reforms }
+		x = 3
+		y = 1
+		relative_position_id = GER_liberal_start_reforms
+		
+		cost = 10
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+		
+		available = {
+			
+		}
+
+		completion_reward = {
+			
 		}
 	}
 	
