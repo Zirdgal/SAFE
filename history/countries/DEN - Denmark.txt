@@ -14,7 +14,7 @@ set_politics = {
 
 create_country_leader = {
 	name = "Christian X"
-	desc = "POLITICS_CHRISTIAN_THE_X_DESC"
+	desc = "DEN_POLITICS_STORM_DESC"
 	picture = "portrait_large_christian_the_x.dds"
 	expire = "1954.2.17"
 	ideology = despotism

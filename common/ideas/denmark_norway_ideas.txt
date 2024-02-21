@@ -235,7 +235,7 @@ ideas = {
 			picture = great_depression ###PLACEHOLDER
 			
 			modifier = {
-				democratic_drift = 0.05
+				democratic_drift = 0.2
 			}
 	
 		}
@@ -245,7 +245,7 @@ ideas = {
 			picture = great_depression ###PLACEHOLDER
 			
 			modifier = {
-				communism_drift = 0.05
+				communism_drift = 0.2
 			}
 	
 		}
