@@ -16,9 +16,9 @@ focus_tree = {
 
 
 	focus = {
-		id = "State Of Emegency"
+		id = SAX_state_of_emergency
 		icon = GFX_focus_SAX_emergency
-		x = 0
+		x = 10
 		y = 0
 		#relative_position_id = LIV_stay_eastward
 		#mutually_exclusive = { focus = LIV_stay_eastward }
@@ -39,12 +39,12 @@ focus_tree = {
     }
 	
 	focus = {
-		id = "REMAIN CALM"
+		id = SAX_remain_calm
 		icon = GFX_focus_SAX_calm
-		x = 1
+		x = 3
 		y = 1
-		relative_position_id = "State Of Emegency"
-		mutually_exclusive = { focus = "Concede To Their Demands" }
+		relative_position_id = SAX_state_of_emergency
+		mutually_exclusive = { focus = SAX_concede_to_their_demands}
 
 		available = {
 
@@ -54,20 +54,21 @@ focus_tree = {
 		}
 
 		cost = 10
-		prerequisite = { focus = "State Of Emegency"}
+		prerequisite = { focus = SAX_state_of_emergency}
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas =	SAX_failed_sate
 		}
     }
 	
 	focus = {
-		id = "Concede To Their Demands"
+		id = SAX_concede_to_their_demands
 		icon = GFX_goal_LIV_look_westward
-		x = -1
+		x = 7
 		y = 1
 		relative_position_id = SAX_state_of_emergency
-		mutually_exclusive = { focus = "REMAIN CALM" }
+		mutually_exclusive = { focus = SAX_remain_calm }
 
 		available = {
 
@@ -77,7 +78,7 @@ focus_tree = {
 		}
 
 		cost = 10
-		prerequisite = { focus = "State Of Emegency"}
+		prerequisite = { focus = SAX_state_of_emergency}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -85,11 +86,11 @@ focus_tree = {
     }
 	
 		focus = {
-		id = "Send In The Army"
+		id = SAX_send_in_the_army
 		icon = GFX_focus_SAX_march
 		x = 0
 		y = 1
-		relative_position_id = "REMAIN CALM"
+		relative_position_id = SAX_remain_calm
 		#mutually_exclusive = { focus = "REMAIN CALM" }
 
 		available = {
@@ -100,11 +101,80 @@ focus_tree = {
 		}
 
 		cost = 10
-		prerequisite = { focus = "REMAIN CALM"}
+		prerequisite = { focus = SAX_remain_calm}
 		available_if_capitulated = yes
 
 		completion_reward = {
 		}
     }
 	
+	focus = {
+		id = SAX_silence
+		icon = GFX_goal_LIV_look_westward
+		x = 0
+		y = 1
+		relative_position_id = SAX_send_in_the_army
+		#mutually_exclusive = { focus = "REMAIN CALM" }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = SAX_send_in_the_army}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+	focus = {
+		id = SAX_their_eyes_wide_shut
+		icon = GFX_goal_LIV_look_westward
+		x = 0
+		y = 1
+		relative_position_id = SAX_silence
+		#mutually_exclusive = { focus = "REMAIN CALM" }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = SAX_silence}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+	
+	focus = {
+		id = SAX_rise_of_thule
+		icon = GFX_goal_LIV_look_westward
+		x = 0
+		y = 1
+		relative_position_id = SAX_their_eyes_wide_shut
+		#mutually_exclusive = { focus = "REMAIN CALM" }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = SAX_their_eyes_wide_shut}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
 }
