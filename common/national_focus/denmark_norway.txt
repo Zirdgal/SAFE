@@ -1188,7 +1188,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_realize_european_unity
-		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		icon = GFX_focus_DEN_realise_european_unity
 		prerequisite = { focus = DEN_clean_up_the_small_fry }
 		x = 0
 		y = 1

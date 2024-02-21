@@ -94,6 +94,10 @@ spriteTypes = {
 	name = "GFX_focus_DEN_the_slesvig_question"
 	texturefile = "gfx/interface/goals/focus_DEN_the_slesvig_question.dds"			
 	}
+	SpriteType = {
+	name = "GFX_focus_DEN_realise_european_unity"
+	texturefile = "gfx/interface/goals/focus_DEN_realise_european_unity.dds"			
+	}
 
 
 
