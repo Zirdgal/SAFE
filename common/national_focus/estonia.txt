@@ -57,6 +57,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_power_balance_value = {
+			    id = LIV_balance_of_power
+			    value = 0.05
+			}
 		}
     }
 	
@@ -1034,9 +1038,12 @@ focus_tree = {
 
 		completion_reward = {
 			IF = {
-				NOT = {
-					has_idea = war_economy
+				limit = {
+					NOT = {
+						has_idea = war_economy
+					}
 				}
+				upgrade_economy_law = yes
 			}
 			add_ideas = LIV_livonian_mobilization_idea
 		}
