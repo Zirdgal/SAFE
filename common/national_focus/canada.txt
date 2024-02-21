@@ -116,7 +116,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_political_power = 120
+			remove_ideas = {
+				remove_idea = CAN_Dustbowl_IDEA
+				
+			}
 		}
 	}
 	
@@ -259,6 +262,24 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = can_end_depression
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = can_social_welfare focus = can_privitization }
+		x = 9
+		y = 4
+		cost = 5
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = CAN_great_depression_1
+				add_idea = CAN_booming_economy
+			}
+		}
+	}
+	
 
 	focus = {
 		id = can_attract_aid
@@ -291,8 +312,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-						add_ideas = {
-				CAN_Increased_Military_Spending
+			add_ideas = {
+			
+				add_idea = CAN_Increased_Military_Spending
 			}
 		
 		}
@@ -392,8 +414,217 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = Break_From_Crown }
 		mutually_exclusive = { focus = can_Prepare_the_Revolution}
-		x = 35
+		x = 36
 		y = 1
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = Canada_First
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = free_canada }
+		mutually_exclusive = { focus = CAN_Surrender_AM }
+		x = 34
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_french_rioters
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = free_canada }
+		x = 40
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_Arrest_Communist
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = free_canada }
+		x = 42
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_Ensure_Stability
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_Arrest_Communist focus = CAN_french_rioters }
+		x = 41
+		y = 3
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_Looking_Outwards
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_Ensure_Stability }
+		x = 41
+		y = 4
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+		focus = {
+		id = CAN_Seize_Newfoundland
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_Looking_Outwards }
+		x = 41
+		y = 5
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_American_Bases
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_Seize_Newfoundland }
+		prerequisite = { focus = CAN_American_Protectorate }
+		
+		x = 39
+		y = 6
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	
+	focus = {
+		id = CAN_populism
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = free_canada }
+		x = 34
+		y = 3
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_lose_chains
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_populism }
+		x = 34
+		y = 4
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_Surrender_AM
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = free_canada }
+		mutually_exclusive = { focus = Canada_First}
+		x = 38
+		y = 2
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_American_Democracy
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_Surrender_AM }
+		x = 38
+		y = 3
+		cost = 10
+	
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CAN_American_Protectorate
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CAN_American_Democracy }
+		x = 38
+		y = 4
 		cost = 10
 	
 		search_filters = { FOCUS_FILTER_POLITICAL }
