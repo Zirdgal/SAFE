@@ -901,7 +901,7 @@ focus_tree = {
 	focus = {
 		id = DEN_secure_finland
 		icon = GFX_focus_generic_attack_finland
-		prerequisite = { focus = DEN_the_kalmar_union }
+		prerequisite = { focus = DEN_the_kalmar_union focus = DEN_preach_democratic_ideals }
 		mutually_exclusive = { focus = DEN_invite_finland }
 		x = 0
 		y = 1
@@ -913,8 +913,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
-			
+			create_wargoal = {
+				type = annex_everything
+				target = FIN
+				expire = 0
+			}
 		}
 	}
 	
@@ -1043,14 +1046,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = DEN_the_slesvig_question
 		
-		cost = 4
+		cost = 5
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
-			
 		}
 	}
 	
@@ -1063,7 +1064,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = DEN_the_slesvig_question
 		
-		cost = 4
+		cost = 5
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
