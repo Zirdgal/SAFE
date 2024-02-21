@@ -1,0 +1,149 @@
+#####################
+###BULGARIAN IDEAS###
+#####################
+
+
+#BUL_ = {
+#modifier = {
+#
+#}
+#}
+
+
+
+ideas = {
+
+country = {
+
+BUL_sd_work_regulations_idea = {
+modifier = {
+production_factory_efficiency_gain_factor = -0.05
+political_power_factor  = 0.05
+stability_factor = 0.05
+}
+}
+
+BUL_sd_healthcare_idea = {
+modifier = {
+production_factory_efficiency_gain_factor = -0.05
+political_power_factor = 0.1
+monthly_population = 0.025
+consumer_goods_expected_value = 0.05
+stability_factor = 0.1
+}
+}
+
+BUL_sd_public_works_idea = {
+modifier = {
+production_factory_efficiency_gain_factor = -0.05
+political_power_factor = 0.1
+monthly_population = 0.025
+consumer_goods_expected_value = 0.05
+production_speed_industrial_complex_factor = 0.1
+industry_repair_factor = 0.15
+conscription = -0.01
+stability_factor = 0.1
+}
+}
+
+BUL_lib_open_up_the_economy_idea = {
+modifier = {
+consumer_goods_expected_value = -0.1
+production_speed_buildings_factor = 0.1
+}
+}
+
+BUL_lib_economic_uproar_idea = {
+modifier = {
+consumer_goods_expected_value = -0.25
+production_speed_buildings_factor = 0.1
+production_factory_efficiency_gain_factor = 0.1
+}
+}
+
+BUL_con_promote_rural_life_idea = {
+modifier = {
+monthly_population = 0.05
+conscription = 0.015
+}
+}
+
+BUL_con_tsar_boris_idea = {
+modifier = {
+stability_factor = 0.1
+political_power_gain = 0.1
+neutrality_drift = 0.01
+}
+}
+
+BUL_con_tsar_ferdinand_idea = {
+modifier = {
+stability_factor = 0.05
+political_power_gain = 0.2
+neutrality_drift = 0.02
+}
+}
+
+BUL_con_tsar_simeon_the_II_idea = {
+modifier = {
+stability_factor = 0.15
+political_power_gain = 0.05
+democratic_drift = 0.01
+}
+}
+
+BUL_con_patriotism_idea = {
+modifier = {
+conscription = 0.04
+monthly_population = 0.05
+army_core_attack_factor = 0.1
+army_core_defence_factor = 0.1
+}
+}
+
+BUL_a_social_market_idea = {
+modifier = {
+political_power_factor = 0.1
+monthly_population = 0.03
+production_speed_industrial_complex_factor = 0.1
+industry_repair_factor = 0.15
+conscription = -0.01
+stability_factor = 0.1
+consumer_goods_expected_value = -0.25
+production_speed_buildings_factor = 0.1
+production_factory_efficiency_gain_factor = 0.1
+stability_weekly = 0.001
+}
+}
+
+BUL_a_democratic_society_idea = {
+modifier = {
+conscription = 0.05
+monthly_population = 0.05
+army_core_attack_factor = 0.15
+army_core_defence_factor = 0.15
+democratic_drift = 0.01
+stability_factor = 0.05
+production_factory_efficiency_gain_factor = 0.05
+}
+}
+
+BUL_bright_shines_the_light_of_democracy_idea = {
+modifier = {
+political_power_factor = 0.1
+production_speed_industrial_complex_factor = 0.1
+industry_repair_factor = 0.15
+stability_factor = 0.15
+consumer_goods_expected_value = -0.25
+production_speed_buildings_factor = 0.1
+production_factory_efficiency_gain_factor = 0.075
+stability_weekly = 0.005
+conscription = 0.05
+monthly_population = 0.08
+army_core_attack_factor = 0.2
+army_core_defence_factor = 0.2
+democratic_drift = 0.01
+}
+}
+}
+}
