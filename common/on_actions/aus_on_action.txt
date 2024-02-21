@@ -1,0 +1,9 @@
+on_actions = {
+    on_startup = {
+        effect = { 
+            AUS {
+                country_event = { id = march_crisis.1 days = 62 } # This is so the event will actually fire on March 2
+            }
+        }
+    }
+}

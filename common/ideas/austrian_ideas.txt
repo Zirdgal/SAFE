@@ -83,7 +83,22 @@ ideas = {
 		
 		### POLITICAL SPIRITS ###
 		
-		
+		march_crisis = {
+			picture = AUS_march_crisis
+			
+			allowed = {
+				tag = AUS
+			}
+			
+			modifier = {
+				political_power_factor = -0.5
+				democracy_drift = -0.05
+				communism_drift = 0.01
+				fascism_drift = 0.01
+				neutrality_drift = 0.01
+				stability_weekly = -0.002
+			}
+		}
 	}
 
 }

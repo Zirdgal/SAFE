@@ -17,7 +17,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_LIV_bop_latvia.dds"
 	}
 	
-	# AUSTRIA I'll do the cool text later
+	#######################################
+	# AUSTRIA I'll do the cool text later #
+	#######################################
 	
 	SpriteType = {
 		name = "GFX_idea_AUS_disemboweled_army"
