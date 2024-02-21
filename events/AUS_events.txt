@@ -1,0 +1,39 @@
+# March Crisis event chain
+
+add_namespace = march_crisis
+
+country_event = {
+	id = march_crisis.1
+	title = "President Karl Seitz Resigns!"
+	desc = march_crisis.1.d
+	picture = GFX_seitz
+	
+	is_triggered_only = yes
+	
+	option = { # This is a disaster!
+		name = march_crisis.1.a
+		ai_chance = { factor = 100 }
+		add_political_power = -100
+		add_stability = -0.2
+		add_ideas = march_crisis
+		custom_effect_tooltip = AUS_seitz_resigns_tt
+		hidden_effect = {
+			retire_character = AUS_karl_seitz
+			create_country_leader = {
+				name = AUS_CONSTITUENT_NATIONAL_ASSEMBLY
+				desc = AUS_CONSTITUENT_NATIONAL_ASSEMBLY_DESC
+				picture = GFX_portrait_constituent_national_assembly
+				expire = "2011.1.1.1"
+				ideology = socialism
+				traits = {
+					
+				}
+			}
+			country_event = {
+				id = march_crisis.2
+				days = 14
+			}
+		}
+	}
+}
+

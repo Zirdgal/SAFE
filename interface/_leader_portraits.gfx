@@ -9,6 +9,8 @@ spriteTypes = {
 		texturefile = "gfx/leaders/DEN/portrait_large_christian_the_x.dds"
 	}
 	
+	# AUSTRIA
+	
 	spriteType = {
 		name = "GFX_portrait_karl_seitz"
 		texturefile = "gfx/leaders/AUS/portrait_large_karl_seitz.dds"
@@ -18,4 +20,8 @@ spriteTypes = {
 		name = "GFX_portrait_otto_habsburg"
 		texturefile = "gfx/leaders/AUS/portrait_large_otto_von_habsburg.dds"
 	}
-}	
+	spriteType = {
+		name = "GFX_portrait_constituent_national_assembly"
+		texturefile = "gfx/leaders/AUS/portrait_large_constituent_national_assembly.dds"
+	}
+}
