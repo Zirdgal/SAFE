@@ -1057,13 +1057,14 @@ focus_tree = {
 #	╚███╔███╔╝███████╗███████║   ██║       ██║     ██║  ██║   ██║   ██║  ██║
 #	 ╚══╝╚══╝ ╚══════╝╚══════╝   ╚═╝       ╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝ 
 
-	focus = {
-		id = LIV_the_english
+
+focus = {
+		id = LIV_the_french
 		icon = GFX_
 		x = -7
 		y = 1
 		relative_position_id = LIV_look_westward
-		mutually_exclusive = { focus = LIV_the_french focus = LIV_the_poles }
+		mutually_exclusive = { focus = LIV_the_germans focus = LIV_the_polish }
 
 		available = {
 
@@ -1079,6 +1080,30 @@ focus_tree = {
 		completion_reward = {
 		}
     }
+	focus = {
+		id = LIV_the_french_eastern_territory
+		icon = GFX_
+		x = 0
+		y = 10
+		relative_position_id = LIV_the_french
+		#mutually_exclusive = { focus =  }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_the_french }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+
+
 
 
 
@@ -1086,12 +1111,12 @@ focus_tree = {
 
 
 	focus = {
-		id = LIV_the_french
+		id = LIV_the_polish
 		icon = GFX_
 		x = -2
 		y = 1
 		relative_position_id = LIV_look_westward
-		mutually_exclusive = { focus = LIV_the_english focus = LIV_the_poles }
+		mutually_exclusive = { focus = LIV_the_french focus = LIV_the_germans }
 
 		available = {
 
@@ -1107,6 +1132,56 @@ focus_tree = {
 		completion_reward = {
 		}
     }
+	focus = {
+		id = LIV_connect_the_borders
+		icon = GFX_
+		x = 0
+		y = 5
+		relative_position_id = LIV_the_polish
+		#mutually_exclusive = { focus =  }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_the_polish }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_glory_of_the_pink_union
+		icon = GFX_
+		x = 0
+		y = 5
+		relative_position_id = LIV_connect_the_borders
+		#mutually_exclusive = { focus =  }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_connect_the_borders }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+
+
+
+
+
+
 
 
 
@@ -1118,12 +1193,12 @@ focus_tree = {
 
 
 	focus = {
-		id = LIV_the_poles
+		id = LIV_the_germans
 		icon = GFX_
 		x = 3
 		y = 1
 		relative_position_id = LIV_look_westward
-		mutually_exclusive = { focus = LIV_the_english focus = LIV_the_french }
+		mutually_exclusive = { focus = LIV_the_polish focus = LIV_the_french }
 
 		available = {
 
@@ -1134,6 +1209,51 @@ focus_tree = {
 
 		cost = 10
 		prerequisite = { focus = LIV_look_westward }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_prussian_militirism
+		icon = GFX_
+		x = 1
+		y = 5
+		relative_position_id = LIV_the_germans
+		#mutually_exclusive = { focus =  }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_the_germans }
+		prerequisite = { focus = LIV_begin_militarization }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_the_dual_republiks
+		icon = GFX_
+		x = 0
+		y = 10
+		relative_position_id = LIV_the_germans
+		#mutually_exclusive = { focus =  }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_the_germans }
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1289,6 +1409,28 @@ focus_tree = {
 
 		cost = 10
 		prerequisite = { focus = LIV_stay_eastward }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_the_glory_of_an_independant_SSR
+		icon = GFX_
+		x = 0
+		y = 10
+		relative_position_id = LIV_soviet_autonomous_region
+		#mutually_exclusive = { focus =  }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_soviet_autonomous_region }
 		available_if_capitulated = yes
 
 		completion_reward = {
