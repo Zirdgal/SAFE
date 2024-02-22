@@ -707,6 +707,21 @@ bookmarks = {
 				DEN_the_slesvig_question
 			}
 		}
+		"AUS"={
+			minor = yes
+			history = AUS_POLITICS_STORM_DESC
+			ideology = democratic
+			ideas = {
+				disemboweled_army
+				habsburg_law_debate
+				fallout_agrarian_subsidy_cuts
+			}
+			focuses = { # placeholders til I get my focus tree started
+				AUS_placeholder_a
+				AUS_placeholder_b
+				AUS_placeholder_c
+			}
+		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }

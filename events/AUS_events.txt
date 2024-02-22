@@ -26,14 +26,67 @@ country_event = {
 				expire = "2011.1.1.1"
 				ideology = socialism
 				traits = {
-					
+					AUS_trait_anarchic_govt
 				}
 			}
 			country_event = {
 				id = march_crisis.2
-				days = 14
+				days = 7
 			}
 		}
 	}
 }
 
+country_event = {
+	id = march_crisis.2
+	title = "Fatherland Front Reintroduces Habsburg Law Repeal"
+	desc = march_crisis.2.d
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # The vote narrowly favors repeal
+		name = march_crisis.2.a
+		ai_chance = { factor = 75 }
+		add_political_power = 20
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+		remove_ideas = habsburg_law_debate
+		hidden_effect = {
+			country_event = {
+				id = march_crisis.3
+				days = 4
+			}
+		}
+	}
+	
+	option = { # The SDAPÖB holds on to their precious law.
+		name = march_crisis.2.b
+		ai_chance = { factor = 25 }
+		add_political_power = -20
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		swap_ideas = {
+			remove_idea = habsburg_law_debate
+			add_idea = unsatisfying_conclusion
+		}
+		hidden_effect = {
+			country_event = {
+				id = march_crisis.4
+				days 14
+			}
+		}
+	}
+}
