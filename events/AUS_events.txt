@@ -78,14 +78,16 @@ country_event = {
 			ideology = democratic
 			popularity = 0.1
 		}
-		swap_ideas = {
-			remove_idea = habsburg_law_debate
-			add_idea = unsatisfying_conclusion
-		}
+		custom_effect_tooltip = AUS_swap_habsburg_law_tt
 		hidden_effect = {
 			country_event = {
 				id = march_crisis.4
 				days 14
+			}
+			remove_ideas = habsburg_law_debate
+			add_timed_idea = {
+				idea = unsatisfying_conclusion
+				days = 180
 			}
 		}
 	}
