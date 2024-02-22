@@ -586,9 +586,7 @@ bookmarks = {
 				LIV_soviet_subordination_idea
 			}
 			focuses = {
-				LIV_connect_the_borders
-				LIV_the_dual_republiks
-				LIV_the_glory_of_an_independant_SSR
+				LIV_complete_the_integration
 			}
 		}
 		"POL"={

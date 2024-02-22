@@ -1282,7 +1282,7 @@ focus = {
 	focus = {
 		id = LIV_greater_cooperation_with_the_soviet_union
 		icon = GFX_focus_chi_mission_to_the_soviet_union
-		x = -2
+		x = 8
 		y = 1
 		relative_position_id = LIV_stay_eastward
 		mutually_exclusive = { focus = LIV_soviet_autonomous_region }
@@ -1302,9 +1302,52 @@ focus = {
 		}
     }
 	focus = {
-		id = LIV_appoint_soviet_ministers
-		icon = GFX_focus_SWE_socialist_reforms
-		x = 1
+		id = LIV_soviet_autonomous_region
+		icon = GFX_focus_LIV_soviet_autonomous_region
+		x = -2
+		y = 1
+		relative_position_id = LIV_stay_eastward
+		mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_stay_eastward }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_demand_soviet_investment
+		icon = GFX_focus_SOV_merge_plants
+		x = 5
+		y = 1
+		relative_position_id = LIV_soviet_autonomous_region
+
+		available = {
+			has_completed_focus = LIV_construct_the_livonian_rail_network
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_greater_cooperation_with_the_soviet_union focus = LIV_soviet_autonomous_region }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_begin_soviet_integration
+		icon = GFX_
+		x = 5
 		y = 1
 		relative_position_id = LIV_greater_cooperation_with_the_soviet_union
 		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
@@ -1324,31 +1367,9 @@ focus = {
 		}
     }
 	focus = {
-		id = LIV_demand_soviet_investment
-		icon = GFX_focus_SOV_merge_plants
-		x = 6
-		y = 1
-		relative_position_id = LIV_construct_the_livonian_rail_network
-
-		available = {
-
-		}
-		bypass = {
-
-		}
-
-		cost = 10
-		prerequisite = { focus = LIV_construct_the_livonian_rail_network }
-		prerequisite = { focus = LIV_greater_cooperation_with_the_soviet_union }
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-    }
-	focus = {
-		id = LIV_invite_the_NKVD
-		icon = GFX_focus_LIV_nkvd_invitation
-		x = 1
+		id = LIV_closen_economic_ties_with_the_ussr
+		icon = GFX_
+		x = 2
 		y = 1
 		relative_position_id = LIV_demand_soviet_investment
 		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
@@ -1361,20 +1382,19 @@ focus = {
 		}
 
 		cost = 10
-		prerequisite = { focus = LIV_appoint_soviet_ministers }
 		prerequisite = { focus = LIV_demand_soviet_investment }
+		prerequisite = { focus = LIV_begin_soviet_integration }
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_intelligence_agency = yes
 		}
     }
 	focus = {
-		id = LIV_integration_into_ussr
+		id = LIV_invite_political_advisors
 		icon = GFX_
-		x = 0
-		y = 3
-		relative_position_id = LIV_invite_the_NKVD
+		x = -5
+		y = 1
+		relative_position_id = LIV_begin_soviet_integration
 		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
 
 		available = {
@@ -1385,20 +1405,20 @@ focus = {
 		}
 
 		cost = 10
-		prerequisite = { focus = LIV_begin_militarization }
-		prerequisite = { focus = LIV_invite_the_NKVD }
+		prerequisite = { focus = LIV_begin_soviet_integration }
 		available_if_capitulated = yes
 
-		completion_reward = {	
+		completion_reward = {
 		}
     }
+
 	focus = {
-		id = LIV_soviet_autonomous_region
-		icon = GFX_focus_LIV_soviet_autonomous_region
-		x = 2
+		id = LIV_begin_integration_with_the_military
+		icon = GFX_
+		x = -2
 		y = 1
-		relative_position_id = LIV_stay_eastward
-		mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+		relative_position_id = LIV_begin_soviet_integration
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
 
 		available = {
 
@@ -1408,12 +1428,317 @@ focus = {
 		}
 
 		cost = 10
-		prerequisite = { focus = LIV_stay_eastward }
+		prerequisite = { focus = LIV_begin_soviet_integration }
 		available_if_capitulated = yes
 
 		completion_reward = {
 		}
     }
+	focus = {
+		id = LIV_appoint_gosplan_economists
+		icon = GFX_
+		x = -1
+		y = 1
+		relative_position_id = LIV_closen_economic_ties_with_the_ussr
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_closen_economic_ties_with_the_ussr }
+		prerequisite = { focus = LIV_invite_political_advisors }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_allow_NKVD_operations
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = LIV_invite_political_advisors
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_invite_political_advisors }
+		prerequisite = { focus = LIV_begin_integration_with_the_military }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_invite_soviet_generals
+		icon = GFX_
+		x = 1
+		y = 1
+		relative_position_id = LIV_begin_integration_with_the_military
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_begin_integration_with_the_military }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_a_new_head_of_state
+		icon = GFX_
+		x = 2
+		y = 1
+		relative_position_id = LIV_appoint_gosplan_economists
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_appoint_gosplan_economists focus = LIV_allow_NKVD_operations }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_latvian_oppression
+		icon = GFX_
+		x = -2
+		y = 1
+		relative_position_id = LIV_invite_soviet_generals
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_appoint_gosplan_economists focus = LIV_allow_NKVD_operations }
+		prerequisite = { focus = LIV_invite_soviet_generals }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_an_extension_of_the_union
+		icon = GFX_
+		x = 2
+		y = 1
+		relative_position_id = LIV_a_new_head_of_state
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_a_new_head_of_state }
+		prerequisite = { focus = LIV_latvian_oppression }
+		prerequisite = { focus = LIV_allow_NKVD_operations }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_integrate_national_infrastructure
+		icon = GFX_
+		x = -1
+		y = 1
+		relative_position_id = LIV_an_extension_of_the_union
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_an_extension_of_the_union }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_integrate_the_soviet_army
+		icon = GFX_
+		x = 1
+		y = 1
+		relative_position_id = LIV_an_extension_of_the_union
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_an_extension_of_the_union }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_begin_territorial_integration
+		icon = GFX_
+		x = 1
+		y = 1
+		relative_position_id = LIV_integrate_national_infrastructure
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_integrate_national_infrastructure }
+		prerequisite = { focus = LIV_integrate_the_soviet_army }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_cede_the_latvian_russian_counties
+		icon = GFX_
+		x = -2
+		y = 1
+		relative_position_id = LIV_begin_territorial_integration
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_begin_territorial_integration }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_cede_the_estonian_russian_border_states
+		icon = GFX_
+		x = 2
+		y = 1
+		relative_position_id = LIV_begin_territorial_integration
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_begin_territorial_integration }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_hand_over_courland
+		icon = GFX_
+		x = 2
+		y = 1
+		relative_position_id = LIV_cede_the_latvian_russian_counties
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_cede_the_latvian_russian_counties }
+		prerequisite = { focus = LIV_cede_the_estonian_russian_border_states }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	focus = {
+		id = LIV_complete_the_integration
+		icon = GFX_focus_LIV_complete_the_integration
+		x = 0
+		y = 1
+		relative_position_id = LIV_hand_over_courland
+		#mutually_exclusive = { focus = LIV_greater_cooperation_with_the_soviet_union }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = LIV_hand_over_courland }
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+
+
+
+
+
+
+
+
+
+
+
 	focus = {
 		id = LIV_the_glory_of_an_independant_SSR
 		icon = GFX_

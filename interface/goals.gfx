@@ -11,6 +11,10 @@ spriteTypes = {
 
 
 	SpriteType = {
+	name = "GFX_focus_LIV_complete_the_integration"
+	texturefile = "gfx/interface/goals/focus_LIV_complete_the_integration.dds"			
+	}
+	SpriteType = {
 	name = "GFX_focus_LIV_expand_parnu_military_production"
 	texturefile = "gfx/interface/goals/focus_LIV_expand_parnu_military_production.dds"			
 	}
