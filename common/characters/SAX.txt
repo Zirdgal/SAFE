@@ -12,4 +12,32 @@ characters={
 			id=-1
 		}
 	}
+	
+	SAX_Ernst_Röhm={
+		name=SAX_Ernst_Röhm
+		portraits={
+			civilian={
+				large="GFX_portrait_sax_ernst_Röhm_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1999.1.1.1"
+			id=-1
+		}
+	}
+	
+	SAX_Rudolf_von_Sebottendorf={
+		name=SAX_Rudolf_von_Sebottendor
+		portraits={
+			civilian={
+				large="GFX_portrait_sax_rudolf_large"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			expire="1999.1.1.1"
+			id=-1
+		}
+	}
 }
