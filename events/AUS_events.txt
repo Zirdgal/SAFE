@@ -92,3 +92,59 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = march_crisis.3
+	title = "Otto von Habsburg Breaks Rank With the Fatherland Front!"
+	desc = march_crisis.3.d
+	picture = GFX_otto_breaks_rank
+	
+	is_triggered_only = yes
+	
+	option = { # How dare he, with all we have supported him with?!
+		name = march_crisis.3.a
+		ai_chance - { factor = 100 }
+		set_party_name = {
+			ideology = neutrality
+			long_name = AUS_paneuropa_bund_long
+			name = AUS_paneuropa_bund
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = march_crisis.4
+				days 10
+			}
+		}
+	}
+	option = { # same as other option but with different response - Alles Europa ist Österreich untertan!
+		name = march_crisis.3.b
+		ai_chance - { factor = 100 }
+		set_party_name = {
+			ideology = neutrality
+			long_name = AUS_paneuropa_bund_long
+			name = AUS_paneuropa_bund
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = march_crisis.4
+				days 10
+			}
+		}
+	}
+}

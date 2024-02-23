@@ -1,28 +1,28 @@
-characters={
-	AUS_karl_seitz={
-		name=AUS_CHARACTER_KARL_SEITZ
-		portraits={
-			civilian={
-				large="GFX_portrait_karl_seitz"
+characters = {
+	AUS_karl_seitz = {
+		name = AUS_CHARACTER_KARL_SEITZ
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_karl_seitz"
 			}
 		}
-		country_leader={
-			ideology=socialism
+		country_leader = {
+			ideology = socialism
 			traits = { AUS_trait_great_compromiser }
-			expire="2011.1.1.1"
+			expire = "2011.1.1.1"
 			desc = AUS_KARL_SEITZ_DESC
 		}
 	}
-	AUS_otto_habsburg={
-		name=AUS_CHARACTER_OTTO_HABSURG
-		portraits={
-			civilian={
-				large="GFX_portrait_otto_habsburg"
+	AUS_otto_habsburg = {
+		name = AUS_CHARACTER_OTTO_HABSURG
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_otto_habsburg"
 			}
 		}
-		country_leader={
-			ideology=moderatism
-			expire="2011.1.1.1"
+		country_leader = {
+			ideology = habsburg_pan_europeanism
+			expire = "2011.1.1.1"
 			desc = AUS_OTTO_HABSBURG_DESC
 		}
 	}
