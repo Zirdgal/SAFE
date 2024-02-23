@@ -19,8 +19,10 @@
  DEN_northern_way_of_war_idea_2:0 "Northern Way of War"
  DEN_northern_way_of_war_idea_2_desc:0 "Placeholder"
  
- DEN_cheaper_car_manufacturing:0 "Cheaper Car Manufacturing"
- DEN_cheaper_car_manufacturing_desc:0 "Placeholder"
+ DEN_daf_idea:0 "DAF"
+ DEN_daf_idea_desc:0 "Placeholder"
+ DEN_daf_idea_2:0 "DAF"
+ DEN_daf_idea_2_desc:0 "Placeholder"
  
  DEN_an_army_on_wheels:0 "An Army on Wheels"
  DEN_an_army_on_wheels_desc:0 "Placeholder"
@@ -64,6 +66,11 @@
  DEN_protector_of_democracy_idea_desc:0 "We have declared ourselves the true european-wide protectors of democracy! Others dare not harm other european democracies while our nation still exists."
  DEN_protector_of_democracy_idea_2:0 "Protector of Democracy"
  DEN_protector_of_democracy_idea_desc_2:0 "We have declared ourselves the true european-wide protectors of democracy! Others dare not harm other european democracies while our nation still exists."
+ 
+ DEN_danish_norwegian_industrial_capabilities_idea:0 "Danish-Norwegian Industrial Capabilities"
+ DEN_danish_norwegian_industrial_capabilities_idea_desc:0 "Placeholder"
+ DEN_danish_norwegian_industrial_capabilities_idea_2:0 "Danish-Norwegian Industrial Capabilities"
+ DEN_danish_norwegian_industrial_capabilities_idea_2_desc:0 "Placeholder"
  
  ####TOOLTIPS
  lose_all_cores_on_norway_tooltip:0 "Lose cores on §Yall Norwegian states§!"
