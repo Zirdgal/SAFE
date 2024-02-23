@@ -1913,7 +1913,7 @@ focus_tree = {
 		id = DEN_build_up_iceland
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
 		prerequisite = { focus = DEN_build_up_the_islands }
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = DEN_build_up_the_islands
 		
@@ -1943,8 +1943,9 @@ focus_tree = {
 		id = DEN_icelandic_naval_prospects
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
 		prerequisite = { focus = DEN_build_up_iceland }
-		x = -1
-		y = 1
+		prerequisite = { focus = DEN_begin_the_military_buildup }
+		x = 0
+		y = 2
 		relative_position_id = DEN_build_up_iceland
 		
 		cost = 5
@@ -1954,15 +1955,10 @@ focus_tree = {
 
 		completion_reward = {
 			100 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
+					type = dockyard
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1973,8 +1969,8 @@ focus_tree = {
 		id = DEN_build_up_the_faroe_islands
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
 		prerequisite = { focus = DEN_build_up_the_islands }
-		x = 2
-		y = 3
+		x = 1
+		y = 1
 		relative_position_id = DEN_build_up_the_islands
 		
 		cost = 5
@@ -2003,8 +1999,9 @@ focus_tree = {
 		id = DEN_faroese_naval_prospects
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
 		prerequisite = { focus = DEN_build_up_the_faroe_islands }
-		x = -1
-		y = 1
+		prerequisite = { focus = DEN_begin_the_military_buildup }
+		x = 0
+		y = 2
 		relative_position_id = DEN_build_up_the_faroe_islands
 		
 		cost = 5
@@ -2014,15 +2011,10 @@ focus_tree = {
 
 		completion_reward = {
 			337 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
+					type = dockyard
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2033,8 +2025,8 @@ focus_tree = {
 		id = DEN_build_up_greenland
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
 		prerequisite = { focus = DEN_build_up_the_islands }
-		x = -2
-		y = 3
+		x = -1
+		y = 1
 		relative_position_id = DEN_build_up_the_islands
 		
 		cost = 5
@@ -2063,8 +2055,9 @@ focus_tree = {
 		id = DEN_greenlandish_naval_prospects
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
 		prerequisite = { focus = DEN_build_up_greenland }
-		x = 1
-		y = 1
+		prerequisite = { focus = DEN_begin_the_military_buildup }
+		x = 0
+		y = 2
 		relative_position_id = DEN_build_up_greenland
 		
 		cost = 5
@@ -2076,12 +2069,7 @@ focus_tree = {
 			101 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
+					type = dockyard
 					level = 1
 					instant_build = yes
 				}
@@ -2093,7 +2081,7 @@ focus_tree = {
 		id = DEN_build_up_bornholm
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
 		prerequisite = { focus = DEN_build_up_the_islands }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = DEN_build_up_the_islands
 		
@@ -2123,8 +2111,9 @@ focus_tree = {
 		id = DEN_bornholmish_naval_prospects
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
 		prerequisite = { focus = DEN_build_up_bornholm }
-		x = 1
-		y = 1
+		prerequisite = { focus = DEN_begin_the_military_buildup }
+		x = 0
+		y = 2
 		relative_position_id = DEN_build_up_bornholm
 		
 		cost = 5
@@ -2134,15 +2123,10 @@ focus_tree = {
 
 		completion_reward = {
 			910 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
+					type = dockyard
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2155,7 +2139,7 @@ focus_tree = {
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
 		prerequisite = { focus = DEN_build_up_bornholm focus = DEN_build_up_iceland focus = DEN_build_up_greenland focus = DEN_build_up_the_faroe_islands }
 		x = 0
-		y = 5
+		y = 2
 		relative_position_id = DEN_build_up_the_islands
 		
 		cost = 5
