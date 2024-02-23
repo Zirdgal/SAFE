@@ -71,3 +71,5 @@
  den_all_norwegian_infrastructure_tooltip:0 "§YAll Norwegian infrastructure§! increases by §Y1 level§!"
  den_all_danish_infrastructure_tooltip:0 "§YAll Danish infrastructure§! increases by §Y1 level§!"
  release_norway_as_dominion_tooltip:0 "§YRelease Norway§! as a §YDominion§!"
+ warning_of_civil_war:0 "§RWARNING: A civil war is GUARENTEED after taking this focus.§!"
+ warning_of_unfinished_path:0 "§RWARNING: This path is INCLOMPLETE. Either highly unstable, or completely unplayable.§!"
