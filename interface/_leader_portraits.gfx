@@ -5,6 +5,16 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_portrait_sax_ernst_Röhm_large"
+		texturefile = "gfx/leaders/SAX/portrait_large_ernst.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_sax_rudolf_large"
+		texturefile = "gfx/leaders/SAX/portrait_large_rudolf.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_portrait_DEN_christian_the_x"
 		texturefile = "gfx/leaders/DEN/portrait_large_christian_the_x.dds"
 	}
