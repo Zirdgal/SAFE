@@ -4,4 +4,8 @@ spriteTypes = {
 		name = "GFX_seitz"
 		texturefile = "gfx/event_pictures/seitz.dds"
 	}
+	spriteType = {
+		name = "GFX_otto_breaks_rank"
+		texturefile = "gfx/event_pictures/otto_breaks_rank.dds"
+	}
 }

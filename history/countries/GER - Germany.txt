@@ -8,6 +8,11 @@ set_war_support = 0.5
 add_ideas = {
 	GER_government_deadlock_1
 	GER_decadent_army
+	GER_untrained_navy
+	GER_devastated_airforce
+	GER_international_humiliation
+	GER_inefficient_administration
+	GER_inflated_currency
 }
 
 set_politics = {
@@ -26,6 +31,13 @@ create_country_leader = {
 	traits = {
 		GER_trait_ineffective_leader
 	}
+}
+
+
+set_party_name = {
+	ideology = democratic
+	long_name = GER_democratic_party_liberal_long
+	name = GER_democratic_party_liberal
 }
 
 set_popularities = {

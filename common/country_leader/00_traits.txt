@@ -37,6 +37,19 @@ leader_traits = {
 		}
 	}
 	
+	AUS_trait_anarchic_govt = {
+		random = no
+		disabled_ideas = 1
+		stability_factor = -0.15
+		party_popularity_stability_factor = -0.4
+		drift_defense_factor = -0.2
+		stability_weekly = -0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 
 	###BASEGAME TRAITS
 

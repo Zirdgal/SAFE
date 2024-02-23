@@ -1,9 +1,10 @@
-
-### FOCUS TREE IDEAS
-
 ideas = {
 
 	country = {
+	
+		####
+		#### STARTING IDEAS
+		####
 		
 		###MILITARY
 		
@@ -17,18 +18,30 @@ ideas = {
 				army_defence_factor = -0.05
 				max_planning_factor = -0.2
 			}
-			
 		}
-	
-		GER_cornered_eagle = {
 		
-			picture = idea_yug_federal_defense_council ###PLACEHOLDER
+		GER_untrained_navy = {
+		
+			picture = great_depression ###PLACEHOLDER
 			
 			modifier = {
-				army_core_defence_factor = 0.05
-				army_org_factor = -0.15
-				resistance_growth_on_our_occupied_states = 0.12
-				resistance_decay_on_our_occupied_states = -0.20
+				naval_damage_factor = -0.05
+				naval_hit_chance = -0.1
+				navy_org_factor = -0.05
+				navy_leader_cost_factor = 2
+				naval_doctrine_cost_factor = 0.5
+			}
+		}
+		
+		GER_devastated_airforce = {
+		
+			picture = great_depression ###PLACEHOLDER
+			
+			modifier = {
+				air_accidents_factor = 0.2
+				air_mission_efficiency = -0.25
+				air_mission_xp_gain_factor = -0.33
+				air_doctrine_cost_factor = 0.5
 			}
 		}
 		
@@ -44,6 +57,66 @@ ideas = {
 				war_stability_factor = -0.2
 			}
 		}
+	
+		GER_international_humiliation = {
+		
+			picture = great_depression ###PLACEHOLDER
+			
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.05
+				opinion_gain_monthly_factor = -0.5
+				drift_defence_factor = -0.33
+			}
+		}
+	
+		GER_inefficient_administration = {
+		
+			picture = great_depression ###PLACEHOLDER
+			
+			modifier = {
+				stability_factor = -0.1
+				surrender_limit = -0.25
+				party_popularity_stability_factor = -0.125
+				political_advisor_cost_factor = 0.5
+			}
+		}
+		
+		###ECONOMICAL
+	
+		GER_inflated_currency = {
+		
+			picture = great_depression ###PLACEHOLDER
+			
+			modifier = {
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+		
+
+		####
+		#### FOCUS TREE IDEAS
+		####
+		
+		
+		###MILITARY
+	
+		GER_cornered_eagle = {
+		
+			picture = idea_yug_federal_defense_council ###PLACEHOLDER
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+				army_org_factor = -0.15
+				resistance_growth_on_our_occupied_states = 0.12
+				resistance_decay_on_our_occupied_states = -0.20
+			}
+		}
+		
+		###POLITICAL
 	
 		GER_government_deadlock_2 = {
 		
@@ -99,6 +172,7 @@ ideas = {
 			
 			modifier = {
 				democratic_drift = 0.05
+				neutrality_drift = -0.02
 			}
 		}
 	
@@ -108,6 +182,7 @@ ideas = {
 			
 			modifier = {
 				democratic_drift = 0.15
+				neutrality_drift = -0.06
 			}
 		}
 	
@@ -156,6 +231,38 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.2
 				stability_factor = 0.1
+			}
+		}
+	
+		GER_idea_democratic_conservative_deadlock_victory = {
+		
+			picture = generic_democratic_drift_bonus ###PLACEHOLDER
+			
+			modifier = {
+				political_power_gain = 0.3
+				stability_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+	
+		GER_idea_democratic_liberal_deadlock_victory = {
+		
+			picture = generic_democratic_drift_bonus ###PLACEHOLDER
+			
+			modifier = {
+				political_power_gain = 0.3
+				stability_factor = 0.15
+			}
+		}
+	
+		GER_idea_democratic_coalition_deadlock_victory = {
+		
+			picture = generic_democratic_drift_bonus ###PLACEHOLDER
+			
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.05
+				drift_defence_factor = 0.2
 			}
 		}
 	}

@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_habsburg_pan_europeanism"
+		texturefile = "gfx/interface/ideologies/habsburg_pan_europeanism.dds"
+	}
+}

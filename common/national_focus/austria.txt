@@ -16,9 +16,9 @@ focus_tree = {
 
 
 	focus = {
-		id = "State Of Emegency"
+		id = SAX_state_of_emergency
 		icon = GFX_focus_SAX_emergency
-		x = 0
+		x = 6
 		y = 0
 		#relative_position_id = LIV_stay_eastward
 		#mutually_exclusive = { focus = LIV_stay_eastward }
@@ -35,16 +35,19 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = -100
+			add_ideas = {
+				SAX_failed_state_idea
+			} 
 		}
     }
 	
 	focus = {
-		id = "REMAIN CALM"
+		id = SAX_remain_calm
 		icon = GFX_focus_SAX_calm
-		x = 1
+		x = 3
 		y = 1
-		relative_position_id = "State Of Emegency"
-		mutually_exclusive = { focus = "Concede To Their Demands" }
+		relative_position_id = SAX_state_of_emergency
+		mutually_exclusive = { focus = SAX_concede_to_their_demands}
 
 		available = {
 
@@ -54,20 +57,21 @@ focus_tree = {
 		}
 
 		cost = 10
-		prerequisite = { focus = "State Of Emegency"}
+		prerequisite = { focus = SAX_state_of_emergency}
 		available_if_capitulated = yes
 
 		completion_reward = {
+			SAX = { country_event = sax_focus_events.1 }
 		}
     }
 	
 	focus = {
-		id = "Concede To Their Demands"
+		id = SAX_concede_to_their_demands
 		icon = GFX_goal_LIV_look_westward
-		x = -1
+		x = -3
 		y = 1
 		relative_position_id = SAX_state_of_emergency
-		mutually_exclusive = { focus = "REMAIN CALM" }
+		mutually_exclusive = { focus = SAX_remain_calm }
 
 		available = {
 
@@ -77,7 +81,7 @@ focus_tree = {
 		}
 
 		cost = 10
-		prerequisite = { focus = "State Of Emegency"}
+		prerequisite = { focus = SAX_state_of_emergency}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -85,11 +89,11 @@ focus_tree = {
     }
 	
 		focus = {
-		id = "Send In The Army"
+		id = SAX_send_in_the_army
 		icon = GFX_focus_SAX_march
 		x = 0
 		y = 1
-		relative_position_id = "REMAIN CALM"
+		relative_position_id = SAX_remain_calm
 		#mutually_exclusive = { focus = "REMAIN CALM" }
 
 		available = {
@@ -100,11 +104,250 @@ focus_tree = {
 		}
 
 		cost = 10
-		prerequisite = { focus = "REMAIN CALM"}
+		prerequisite = { focus = SAX_remain_calm}
 		available_if_capitulated = yes
 
 		completion_reward = {
 		}
     }
 	
+		focus = {
+		id = SAX_the_army_prevails
+		icon = GFX_goal_LIV_look_westward
+		x = -3
+		y = 1
+		relative_position_id = SAX_send_in_the_army
+		mutually_exclusive = { focus = SAX_silence}
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = SAX_send_in_the_army}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SAX = { country_event = sax_focus_events.1 }
+		}
+    }
+	
+	focus = {
+		id = SAX_silence
+		icon = GFX_goal_LIV_look_westward
+		x = 1
+		y = 1
+		relative_position_id = SAX_send_in_the_army
+		#mutually_exclusive = { focus = "REMAIN CALM" }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = SAX_send_in_the_army}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+	focus = {
+		id = SAX_their_eyes_wide_shut
+		icon = GFX_goal_LIV_look_westward
+		x = 0
+		y = 1
+		relative_position_id = SAX_silence
+		#mutually_exclusive = { focus = "REMAIN CALM" }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = SAX_silence}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+	
+	focus = {
+		id = SAX_rise_of_thule
+		icon = GFX_goal_LIV_look_westward
+		x = 0
+		y = 1
+		relative_position_id = SAX_their_eyes_wide_shut
+		#mutually_exclusive = { focus = "REMAIN CALM" }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = SAX_their_eyes_wide_shut}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+	focus = {
+		id = SAX_begin_mass_recruitment
+		icon = GFX_goal_LIV_look_westward
+		x = -4
+		y = 1
+		relative_position_id = SAX_rise_of_thule
+		#mutually_exclusive = { focus = "REMAIN CALM" }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = SAX_rise_of_thule}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+		focus = {
+		id = SAX_secure_the_borders
+		icon = GFX_goal_LIV_look_westward
+		x = -2
+		y = 1
+		relative_position_id = SAX_rise_of_thule
+		#mutually_exclusive = { focus = "REMAIN CALM" }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = SAX_rise_of_thule}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+			focus = {
+		id = SAX_capture_the_desenters
+		icon = GFX_goal_LIV_look_westward
+		x = 2
+		y = 1
+		relative_position_id = SAX_rise_of_thule
+		#mutually_exclusive = { focus = "REMAIN CALM" }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = SAX_rise_of_thule}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+				focus = {
+		id = SAX_a_message_to_the_world
+		icon = GFX_goal_LIV_look_westward
+		x = 4
+		y = 1
+		relative_position_id = SAX_rise_of_thule
+		#mutually_exclusive = { focus = "REMAIN CALM" }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = SAX_rise_of_thule}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+
+				focus = {
+		id = SAX_confrence_of_the_occult
+		icon = GFX_goal_LIV_look_westward
+		x = 0
+		y = 1
+		relative_position_id = SAX_rise_of_thule
+		#mutually_exclusive = { focus = "REMAIN CALM" }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = SAX_rise_of_thule}
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+    }
+	
+					focus = {
+		id = SAX_our_position_secured
+		icon = GFX_goal_LIV_look_westward
+		x = 0
+		y = 1
+		relative_position_id = SAX_confrence_of_the_occult SAX_secure_the_borders SAX_begin_mass_recruitment SAX_capture_the_desenters SAX_a_message_to_the_world
+		#mutually_exclusive = { focus = "REMAIN CALM" }
+
+		available = {
+
+		}
+		bypass = {
+
+		}
+
+		cost = 10
+		prerequisite = { focus = SAX_confrence_of_the_occult }
+		prerequisite = { focus =  SAX_secure_the_borders }   
+		prerequisite = { focus = SAX_begin_mass_recruitment}
+		prerequisite = { focus = SAX_capture_the_desenters}
+		prerequisite = { focus = SAX_a_message_to_the_world}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_popularity = {
+					ideology = fascism
+					popularity = 0.40
+				}
+		}
+    }
 }

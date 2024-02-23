@@ -66,8 +66,9 @@ country_event = {
 	option = {
 		name = ger_focus_events.4.option
 		
-		add_ideas = {
-			GER_idea_democratic_deadlock_victory
+		swap_ideas = {
+			remove_idea = GER_government_deadlock_2
+			add_idea = GER_idea_democratic_deadlock_victory
 		}
 		
 		ai_chance = { factor = 1}

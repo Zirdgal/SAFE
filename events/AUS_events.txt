@@ -26,14 +26,125 @@ country_event = {
 				expire = "2011.1.1.1"
 				ideology = socialism
 				traits = {
-					
+					AUS_trait_anarchic_govt
 				}
 			}
 			country_event = {
 				id = march_crisis.2
-				days = 14
+				days = 7
 			}
 		}
 	}
 }
 
+country_event = {
+	id = march_crisis.2
+	title = "Fatherland Front Reintroduces Habsburg Law Repeal"
+	desc = march_crisis.2.d
+	picture = GFX_report_event_generic_parliament
+	
+	is_triggered_only = yes
+	
+	option = { # The vote narrowly favors repeal
+		name = march_crisis.2.a
+		ai_chance = { factor = 75 }
+		add_political_power = 20
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+		remove_ideas = habsburg_law_debate
+		hidden_effect = {
+			country_event = {
+				id = march_crisis.3
+				days = 4
+			}
+		}
+	}
+	
+	option = { # The SDAPÖB holds on to their precious law.
+		name = march_crisis.2.b
+		ai_chance = { factor = 25 }
+		add_political_power = -20
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		custom_effect_tooltip = AUS_swap_habsburg_law_tt
+		hidden_effect = {
+			country_event = {
+				id = march_crisis.4
+				days 14
+			}
+			remove_ideas = habsburg_law_debate
+			add_timed_idea = {
+				idea = unsatisfying_conclusion
+				days = 180
+			}
+		}
+	}
+}
+
+country_event = {
+	id = march_crisis.3
+	title = "Otto von Habsburg Breaks Rank With the Fatherland Front!"
+	desc = march_crisis.3.d
+	picture = GFX_otto_breaks_rank
+	
+	is_triggered_only = yes
+	
+	option = { # How dare he, with all we have supported him with?!
+		name = march_crisis.3.a
+		ai_chance - { factor = 100 }
+		set_party_name = {
+			ideology = neutrality
+			long_name = AUS_paneuropa_bund_long
+			name = AUS_paneuropa_bund
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = march_crisis.4
+				days 10
+			}
+		}
+	}
+	option = { # same as other option but with different response - Alles Europa ist Österreich untertan!
+		name = march_crisis.3.b
+		ai_chance - { factor = 100 }
+		set_party_name = {
+			ideology = neutrality
+			long_name = AUS_paneuropa_bund_long
+			name = AUS_paneuropa_bund
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = march_crisis.4
+				days 10
+			}
+		}
+	}
+}

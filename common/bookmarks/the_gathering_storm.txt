@@ -586,7 +586,7 @@ bookmarks = {
 				LIV_soviet_subordination_idea
 			}
 			focuses = {
-
+				LIV_complete_the_integration
 			}
 		}
 		"POL"={
@@ -705,6 +705,21 @@ bookmarks = {
 				DEN_the_fate_of_the_king
 				DEN_northern_way_of_war
 				DEN_the_slesvig_question
+			}
+		}
+		"AUS"={
+			minor = yes
+			history = AUS_POLITICS_STORM_DESC
+			ideology = democratic
+			ideas = {
+				disemboweled_army
+				habsburg_law_debate
+				fallout_agrarian_subsidy_cuts
+			}
+			focuses = { # placeholders til I get my focus tree started
+				AUS_placeholder_a
+				AUS_placeholder_b
+				AUS_placeholder_c
 			}
 		}
 		effect = {

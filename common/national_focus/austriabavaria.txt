@@ -1,0 +1,61 @@
+focus_tree = {
+	id = aus_focus
+	
+    country = {
+	    factor = 10
+		
+		modifier = {
+		    add = 100
+		    tag = AUS
+		}
+	}
+	
+    default = no
+	reset_on_civilwar = no
+	
+	### Wait... it's all placeholder?
+	
+	focus = {
+		id = AUS_placeholder_a
+		icon = GFX_focus_SWE_marauder_bombers
+		x = 5
+		y = 1
+		cost = 2
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = AUS_placeholder_b
+		icon = GFX_focus_SWE_marauder_bombers
+		x = 7
+		y = 3
+		cost = 2
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	
+	focus = {
+		id = AUS_placeholder_c
+		icon = GFX_focus_SWE_marauder_bombers
+		x = 8
+		y = 6
+		cost = 2
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}

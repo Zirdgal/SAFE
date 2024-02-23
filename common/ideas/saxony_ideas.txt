@@ -1,0 +1,25 @@
+
+### FOCUS TREE IDEAS
+
+ideas = {
+
+	country = {
+		
+		###MILITARY
+		
+		SAX_failed_state_idea = {
+		
+			picture = great_depression ###PLACEHOLDER
+			
+			modifier = {
+				army_org_factor = -0.15
+				max_planning_factor = -0.2
+				political_power_factor = -0.1
+				stability_factor = -0.25
+				consumer_goods_factor = 0.50
+				production_speed_buildings_factor = -0.2
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+	}
+}

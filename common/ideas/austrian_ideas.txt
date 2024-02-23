@@ -99,6 +99,20 @@ ideas = {
 				stability_weekly = -0.002
 			}
 		}
+		
+		unsatisfying_conclusion = { # Unsatisfying Conclusion to the Habsburg Question
+			picture = AUS_unsatisfying_conclusion
+			
+			allowed = {
+				tag = AUS
+			}
+			
+			modifier = {
+				political_power_factor = -0.15
+				political_power_cost = 1
+				stability_factor = -0.2
+			}
+		}
 	}
 
 }

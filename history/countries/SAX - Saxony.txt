@@ -23,6 +23,16 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Rudolf von Sebottendorf"
+	desc = "Hyperborea is real"
+	picture = "portrait_large_rudolf.dds"
+	expire = "1999.1.1"
+	ideology = nazism
+	traits = {
+		dictator
+	}
+
 1939.1.1 = {
 	set_politics = {
 		ruling_party = neutrality
