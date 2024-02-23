@@ -204,6 +204,17 @@ ideas = {
 	
 		}
 		
+		DEN_a_divided_nation_idea_2 = {
+		
+			picture = great_depression ###PLACEHOLDER
+			
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.1
+			}
+	
+		}
+		
 		DEN_pacifying_norwegian_recistance = {
 		
 			picture = great_depression ###PLACEHOLDER

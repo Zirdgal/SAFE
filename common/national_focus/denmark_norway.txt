@@ -110,7 +110,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = DEN_pacifying_norwegian_recistance
-				days = 140
+				days = 365
 
 			}
 		}
@@ -131,7 +131,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -382,7 +382,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -401,7 +401,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -420,7 +420,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -443,7 +443,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -721,15 +721,21 @@ focus_tree = {
 		y = 1
 		relative_position_id = DEN_expand_norwegian_highways
 		
+		available = {
+			NOT = {
+				has_idea = { DEN_pacifying_norwegian_recistance }
+			}
+		}
+		
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.05
-			remove_ideas = {
-				DEN_a_divided_nation_idea
+			swap_ideas = {
+				remove_idea = DEN_a_divided_nation_idea
+				add_idea = DEN_a_divided_nation_idea_2
 			}
 			
 		}
@@ -790,7 +796,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.10
 			remove_ideas = {
-				DEN_a_divided_nation_idea
+				DEN_a_divided_nation_idea_2
 			}
 			
 		}
@@ -854,7 +860,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -873,7 +879,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -893,7 +899,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -936,7 +942,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -955,7 +961,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -975,7 +981,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -994,7 +1000,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -1014,7 +1020,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -1074,7 +1080,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -1115,7 +1121,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -1181,7 +1187,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -1200,7 +1206,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
