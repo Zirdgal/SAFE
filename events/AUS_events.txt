@@ -82,7 +82,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = march_crisis.4
-				days 14
+				days = 14
 			}
 			remove_ideas = habsburg_law_debate
 			add_timed_idea = {
@@ -120,7 +120,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = march_crisis.4
-				days 10
+				days = 10
 			}
 		}
 	}
@@ -143,7 +143,54 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = march_crisis.4
-				days 10
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = march_crisis.4
+	title = "The SDAPÖB Party Convention"
+	desc = march_crisis.4.d
+	picture = GFX_sdapob_conference
+	
+	is_triggered_only = yes
+	
+	option = { # Adolf Schicklgruber, the right Social Democrat
+		name = march_crisis.4.a
+		ai_chance - { factor = 34 }
+		has_idea = unsatisfying_conclusion
+		custom_effect_tooltip = AUS_adolf_schicklgruber_acting_president_tt
+		hidden_effect = {
+			retire_character = AUS_CONSTITUENT_NATIONAL_ASSEMBLY
+			promote_character = {
+				character = AUS_adolf_schicklgruber
+				ideology = socialism
+			}
+		}
+	}
+	option = { # Otto Glöckel, the moderate
+		name = march_crisis.4.b
+		ai_chance - { factor = 33 }
+		custom_effect_tooltip = AUS_otto_glockel_acting_president_tt
+		hidden_effect = {
+			retire_character = AUS_CONSTITUENT_NATIONAL_ASSEMBLY
+			promote_character = {
+				character = AUS_otto_glockel
+				ideology = socialism
+			}
+		}
+	}
+	option = { # Ruth Fischer, the Austromarxist
+		name = march_crisis.4.c
+		ai_chance - { factor = 33 }
+		custom_effect_tooltip = AUS_ruth_fischer_acting_president_tt
+		hidden_effect = {
+			retire_character = AUS_CONSTITUENT_NATIONAL_ASSEMBLY
+			promote_character = {
+				character = AUS_ruth_fischer
+				ideology = socialism
 			}
 		}
 	}

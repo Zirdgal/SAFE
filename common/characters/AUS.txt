@@ -26,4 +26,59 @@ characters = {
 			desc = AUS_OTTO_HABSBURG_DESC
 		}
 	}
+	AUS_otto_glockel = {
+		name = AUS_CHARACTER_OTTO_GLOCKEL
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_otto_glockel"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits = { AUS_trait_acting_president }
+			expire = "2011.1.1.1"
+			desc = AUS_OTTO_GLOCKEL_DESC
+		}
+	}
+	AUS_adolf_schicklgruber = {
+		name = AUS_CHARACTER_ADOLF_SCHICKLGRUBER
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_adolf_schicklgruber"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits = { AUS_trait_acting_president }
+			expire = "2011.1.1.1"
+			desc = AUS_ADOLF_SCHICKLGRUBER_DESC
+		}
+	}
+	AUS_ruth_fischer_commie = {
+		name = AUS_CHARACTER_RUTH_FISCHER_COMMIE
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ruth_fischer_commie"
+			}
+		}
+		country_leader = {
+			ideology = anti_revisionism
+			expire = "2011.1.1.1"
+			desc = AUS_RUTH_FISCHER_COMMIE_DESC
+		}
+	}
+	AUS_ruth_fischer = {
+		name = AUS_CHARACTER_RUTH_FISCHER
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_ruth_fischer"
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			traits = { AUS_trait_acting_president }
+			expire = "2011.1.1.1"
+			desc = AUS_RUTH_FISCHER_DESC
+		}
+	}
 }

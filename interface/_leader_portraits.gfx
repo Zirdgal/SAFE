@@ -34,4 +34,20 @@ spriteTypes = {
 		name = "GFX_portrait_constituent_national_assembly"
 		texturefile = "gfx/leaders/AUS/portrait_large_constituent_national_assembly.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_adolf_schicklgruber"
+		texturefile = "gfx/leaders/AUS/portrait_large_adolf_schicklgruber.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ruth_fischer"
+		texturefile = "gfx/leaders/AUS/portrait_large_ruth_fischer.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_otto_glockel"
+		texturefile = "gfx/leaders/AUS/portrait_large_otto_glockel.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ruth_fischer_commie"
+		texturefile = "gfx/leaders/AUS/portrait_large_ruth_fischer_commie.dds"
+	}
 }
