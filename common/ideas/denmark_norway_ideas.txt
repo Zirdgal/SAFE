@@ -375,6 +375,11 @@ ideas = {
 
 		DEN_the_king_lives_hidden_idea = {
 			picture = great_depression ###PLACEHOLDER
+
+			allowed = {
+        		always = no 
+      		}
+
 			
 			available = {
 			}
@@ -382,6 +387,10 @@ ideas = {
 	
 		DEN_the_death_of_the_king_hidden_idea = {
 			picture = great_depression ###PLACEHOLDER
+			
+			allowed = {
+        		always = no 
+      		}
 			
 			available = {
 			}
