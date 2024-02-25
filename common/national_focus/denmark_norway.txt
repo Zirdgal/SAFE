@@ -45,13 +45,10 @@ focus_tree = {
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
-		hidden_trigger = {
-			available = {
-				NOT = {
-					has_idea = { DEN_the_death_of_the_king_hidden_idea }
-				}
-			}
+		available = {
+			has_idea =  DEN_the_king_lives_hidden_idea
 		}
+		
 		
 		available_if_capitulated = yes
 
@@ -71,12 +68,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = DEN_the_fate_of_the_king
 		
-		hidden_trigger = {
-			available = {
-				NOT = {
-					has_idea = { DEN_the_king_lives_hidden_idea }
-				}
-			}
+		available = {
+			has_idea =  DEN_the_death_of_the_king_hidden_idea
 		}
 		
 		cost = 4
