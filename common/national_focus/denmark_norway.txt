@@ -45,6 +45,14 @@ focus_tree = {
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
+		hidden_trigger = {
+			available = {
+				NOT = {
+					has_idea = { DEN_the_death_of_the_king_hidden_idea }
+				}
+			}
+		}
+		
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -62,6 +70,14 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = DEN_the_fate_of_the_king
+		
+		hidden_trigger = {
+			available = {
+				NOT = {
+					has_idea = { DEN_the_king_lives_hidden_idea }
+				}
+			}
+		}
 		
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1044,7 +1060,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		DEN = { country_event = den_focus_events.2_slesvig_holstein_question }
+			add_war_support = 0.05
+			DEN = { country_event = den_focus_events.2_slesvig_holstein_question }
 		}
 	}
 	
@@ -1063,6 +1080,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_war_support = 0.1
 		}
 	}
 	

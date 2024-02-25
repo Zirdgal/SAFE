@@ -15,20 +15,23 @@ country_event = {
 	option = {
 		name = den_focus_events.1.option.a
 		
-		swap_ideas = {
+		hidden_effect = {
+			add_ideas = {
+				DEN_the_king_lives_hidden_idea
+			}
 		}
-		
-		complete_national_focus = DEN_the_king_lives
 		
 		ai_chance = { factor = 1}
 	}
+	
 	option = {
 		name = den_focus_events.1.option_b
 		
-		swap_ideas = {
+		hidden_effect = {
+			add_ideas = {
+				DEN_the_death_of_the_king_hidden_idea
+			}
 		}
-		
-		complete_national_focus = DEN_the_death_of_the_king
 		
 		ai_chance = { factor = 1}
 	}
