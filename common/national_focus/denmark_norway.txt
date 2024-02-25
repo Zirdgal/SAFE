@@ -28,6 +28,12 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 			DEN = { country_event = den_focus_events.1 }
+			hidden_effect = {
+				remove_ideas = {
+					DEN_the_king_lives_hidden_idea
+					DEN_the_death_of_the_king_hidden_idea
+				}
+			}
 		}
 	}
 	
@@ -47,7 +53,7 @@ focus_tree = {
 		
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = why_is_this_not_a_loc_file_you_psycho_tt
+				tooltip = DEN_the_king_lives_tooltip
 				has_idea =  DEN_the_king_lives_hidden_idea
 			}
 		}
@@ -72,7 +78,10 @@ focus_tree = {
 		relative_position_id = DEN_the_fate_of_the_king
 		
 		available = {
-			has_idea =  DEN_the_death_of_the_king_hidden_idea
+			custom_trigger_tooltip = {
+				tooltip = DEN_the_death_of_the_king_tooltip
+				has_idea =  DEN_the_death_of_the_king_hidden_idea
+			}
 		}
 		
 		cost = 4
