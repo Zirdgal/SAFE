@@ -46,7 +46,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available = {
-			has_idea =  DEN_the_king_lives_hidden_idea
+			custom_trigger_tooltip = {
+				tooltip = why_is_this_not_a_loc_file_you_psycho_tt
+				has_idea =  DEN_the_king_lives_hidden_idea
+			}
 		}
 		
 		

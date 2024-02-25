@@ -80,3 +80,11 @@
  release_norway_as_dominion_tooltip:0 "§YRelease Norway§! as a §YDominion§!"
  warning_of_civil_war:0 "§RWARNING: A civil war is GUARENTEED after taking this focus.§!"
  warning_of_unfinished_path:0 "§RWARNING: This path is INCLOMPLETE. Either highly unstable, or completely unplayable.§!"
+
+
+
+
+ # psychotic tooltips
+
+why_is_this_not_a_loc_file_you_psycho_tt:0 "Has Chosen to Not KIll the King"
+
