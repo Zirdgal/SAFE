@@ -15,9 +15,21 @@ country_event = {
 	option = {
 		name = sax_focus_events.1.option.a
 		
-		swap_ideas = {
+		swap_ideas = {	
 		}
 		
+		completion_reward = {
+			retire_country_leader = yes 
+			add_country_leader_role = {
+				haracter = SAX_Ernst_Röhm  # Must be recruited
+				promote_leader = yes
+				country_leader = {
+					ideology = socialism
+					traits = { my_trait }
+				}
+			}
+		}	
+	
 		#complete_national_focus = SAX_remain_calm
 		
 		ai_chance = { factor = 1}
