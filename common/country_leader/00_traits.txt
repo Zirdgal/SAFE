@@ -50,6 +50,17 @@ leader_traits = {
 		}
 	}
 	
+	AUS_trait_acting_president = {
+		random = no
+		stability_factor = -0.05
+		party_popularity_stability_factor = -0.1
+		drift_defense_factor = -0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 
 	###BASEGAME TRAITS
 

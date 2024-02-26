@@ -4,4 +4,12 @@ spriteTypes = {
 		name = "GFX_seitz"
 		texturefile = "gfx/event_pictures/seitz.dds"
 	}
+	spriteType = {
+		name = "GFX_otto_breaks_rank"
+		texturefile = "gfx/event_pictures/otto_breaks_rank.dds"
+	}
+	spriteType = {
+		name = "GFX_sdapob_conference"
+		texturefile = "gfx/event_pictures/sdapob_conference.dds"
+	}
 }

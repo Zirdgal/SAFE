@@ -28,6 +28,12 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 25
 			DEN = { country_event = den_focus_events.1 }
+			hidden_effect = {
+				remove_ideas = {
+					DEN_the_king_lives_hidden_idea
+					DEN_the_death_of_the_king_hidden_idea
+				}
+			}
 		}
 	}
 	
@@ -44,6 +50,14 @@ focus_tree = {
 		
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = DEN_the_king_lives_tooltip
+				has_idea =  DEN_the_king_lives_hidden_idea
+			}
+		}
+		
 		
 		available_if_capitulated = yes
 
@@ -63,13 +77,24 @@ focus_tree = {
 		y = 1
 		relative_position_id = DEN_the_fate_of_the_king
 		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = DEN_the_death_of_the_king_tooltip
+				has_idea =  DEN_the_death_of_the_king_hidden_idea
+			}
+		}
+		
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
 
+	
+
 		completion_reward = {
 			add_stability = -0.25
+			custom_effect_tooltip = warning_of_unfinished_path
+			custom_effect_tooltip = warning_of_civil_war
 			
 		}
 	}
@@ -86,7 +111,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
-
+		
 		completion_reward = {
 			add_stability = 0.05
 			
@@ -110,7 +135,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = DEN_pacifying_norwegian_recistance
-				days = 140
+				days = 365
 
 			}
 		}
@@ -131,7 +156,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			custom_effect_tooltip = warning_of_unfinished_path
 			
 		}
 	}
@@ -199,8 +224,8 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
 		prerequisite = { focus = DEN_allow_for_greater_norwegian_autonomy }
 		mutually_exclusive = { focus = DEN_nationalise_orsted }
-		x = 5
-		y = 1
+		x = 3
+		y = 2
 		relative_position_id = DEN_allow_for_greater_norwegian_autonomy
 		
 		available = {
@@ -215,7 +240,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = warning_of_unfinished_path
 		}
 	}
 	
@@ -361,6 +386,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = warning_of_unfinished_path
 			add_ideas = {
 				neutrality_idea
 			}
@@ -382,7 +408,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -401,7 +427,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -420,7 +446,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -443,7 +469,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			custom_effect_tooltip = warning_of_unfinished_path
 			
 		}
 	}
@@ -721,15 +747,21 @@ focus_tree = {
 		y = 1
 		relative_position_id = DEN_expand_norwegian_highways
 		
+		available = {
+			NOT = {
+				has_idea = { DEN_pacifying_norwegian_recistance }
+			}
+		}
+		
 		cost = 4
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.05
-			remove_ideas = {
-				DEN_a_divided_nation_idea
+			swap_ideas = {
+				remove_idea = DEN_a_divided_nation_idea
+				add_idea = DEN_a_divided_nation_idea_2
 			}
 			
 		}
@@ -790,7 +822,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.10
 			remove_ideas = {
-				DEN_a_divided_nation_idea
+				DEN_a_divided_nation_idea_2
 			}
 			
 		}
@@ -854,7 +886,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -873,7 +905,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -893,7 +925,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -936,7 +968,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -955,7 +987,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -975,7 +1007,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -994,7 +1026,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -1014,7 +1046,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -1033,7 +1065,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		DEN = { country_event = den_focus_events.2_slesvig_holstein_question }
+			add_war_support = 0.05
+			DEN = { country_event = den_focus_events.2_slesvig_holstein_question }
 		}
 	}
 	
@@ -1052,6 +1085,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_war_support = 0.1
 		}
 	}
 	
@@ -1074,7 +1108,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -1103,7 +1137,7 @@ focus_tree = {
 	
 	focus = {
 		id = DEN_visions_of_a_new_europe
-		icon = GFX_focus_generic_improve_the_administration ##PLACEHOLDER
+		icon = GFX_focus_DEN_visions_of_a_new_europe
 		prerequisite = { focus = DEN_preach_democratic_ideals }
 		x = 0
 		y = 1
@@ -1115,7 +1149,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -1181,7 +1215,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -1200,7 +1234,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = -0.25
+			
 			
 		}
 	}
@@ -1210,7 +1244,7 @@ focus_tree = {
 	focus = {
 		id = DEN_state_of_the_navy
 		icon = GFX_focus_DEN_sovaernets_operative_kommando
-		x = 40
+		x = 45
 		y = 0
 		relative_position_id = DEN_the_fate_of_the_king
 		
@@ -1229,7 +1263,7 @@ focus_tree = {
 	focus = {
 		id = DEN_state_of_the_airforce
 		icon = GFX_focus_DEN_unify_flyvevabnet
-		x = 42
+		x = 47
 		y = 0
 		relative_position_id = DEN_the_fate_of_the_king
 		
@@ -1345,7 +1379,8 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = DEN_superior_firepower
-		prerequisite { focus = DEN_superior_firepower focus = DEN_mobile_warfare }
+		prerequisite = { focus = DEN_superior_firepower focus = DEN_mobile_warfare }
+		prerequisite = { focus = DEN_invest_in_daf }
 		
 		cost = 10
 		search_filters = { FOCUS_FILTER_ARMY_XP }
@@ -1353,8 +1388,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = {
-				DEN_cheaper_car_manufacturing
+			swap_ideas = {
+				remove_idea = DEN_daf_idea
+				add_idea = DEN_daf_idea_2
 			}
 		}
 	}
@@ -1498,7 +1534,7 @@ focus_tree = {
 	focus = {
 		id = DEN_state_of_the_haer
 		icon = GFX_focus_DEN_haeren_reorganization
-		x = 34
+		x = 35
 		y = 2
 		relative_position_id = DEN_the_fate_of_the_king
 		prerequisite { focus = DEN_superior_firepower focus = DEN_mobile_warfare focus = DEN_grand_battleplan focus = DEN_mass_assault }
@@ -1726,7 +1762,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = DEN_danish_norwegian_industrial_capabilities_idea
+				add_idea = DEN_danish_norwegian_industrial_capabilities_idea_2
+			}
 		}
 	}
 	
@@ -1744,7 +1783,27 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			99 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			37 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -1762,7 +1821,65 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			110 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			922 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = DEN_nationalise_orsted
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_begin_the_military_buildup }
+		x = 0
+		y = 7
+		relative_position_id = DEN_begin_the_military_buildup
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
 			
+		}
+	}
+	
+	focus = {
+		id = DEN_invest_in_daf
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_adressing_our_economic_situation }
+		x = 3
+		y = 1
+		relative_position_id = DEN_adressing_our_economic_situation
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = {
+				DEN_daf_idea
+			}
 		}
 	}
 	
@@ -1780,16 +1897,272 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			910 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			337 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			100 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			101 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
 	focus = {
-		id = DEN_nationalise_orsted
+		id = DEN_build_up_iceland
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
 		prerequisite = { focus = DEN_build_up_the_islands }
-		x = 0
+		x = -3
 		y = 1
+		relative_position_id = DEN_build_up_the_islands
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			100 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = DEN_icelandic_naval_prospects
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_build_up_iceland }
+		prerequisite = { focus = DEN_begin_the_military_buildup }
+		x = 0
+		y = 2
+		relative_position_id = DEN_build_up_iceland
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			100 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = DEN_build_up_the_faroe_islands
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_build_up_the_islands }
+		x = 1
+		y = 1
+		relative_position_id = DEN_build_up_the_islands
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			337 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = DEN_faroese_naval_prospects
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_build_up_the_faroe_islands }
+		prerequisite = { focus = DEN_begin_the_military_buildup }
+		x = 0
+		y = 2
+		relative_position_id = DEN_build_up_the_faroe_islands
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			337 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = DEN_build_up_greenland
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_build_up_the_islands }
+		x = -1
+		y = 1
+		relative_position_id = DEN_build_up_the_islands
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			101 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = DEN_greenlandish_naval_prospects
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_build_up_greenland }
+		prerequisite = { focus = DEN_begin_the_military_buildup }
+		x = 0
+		y = 2
+		relative_position_id = DEN_build_up_greenland
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			101 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = DEN_build_up_bornholm
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_build_up_the_islands }
+		x = 3
+		y = 1
+		relative_position_id = DEN_build_up_the_islands
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			910 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = DEN_bornholmish_naval_prospects
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_build_up_bornholm }
+		prerequisite = { focus = DEN_begin_the_military_buildup }
+		x = 0
+		y = 2
+		relative_position_id = DEN_build_up_bornholm
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			910 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+		
+	focus = {
+		id = DEN_begin_the_military_buildup
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_build_up_bornholm focus = DEN_build_up_iceland focus = DEN_build_up_greenland focus = DEN_build_up_the_faroe_islands }
+		x = 0
+		y = 2
 		relative_position_id = DEN_build_up_the_islands
 		
 		cost = 5

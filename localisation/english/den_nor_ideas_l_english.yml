@@ -19,8 +19,10 @@
  DEN_northern_way_of_war_idea_2:0 "Northern Way of War"
  DEN_northern_way_of_war_idea_2_desc:0 "Placeholder"
  
- DEN_cheaper_car_manufacturing:0 "Cheaper Car Manufacturing"
- DEN_cheaper_car_manufacturing_desc:0 "Placeholder"
+ DEN_daf_idea:0 "DAF"
+ DEN_daf_idea_desc:0 "Placeholder"
+ DEN_daf_idea_2:0 "DAF"
+ DEN_daf_idea_2_desc:0 "Placeholder"
  
  DEN_an_army_on_wheels:0 "An Army on Wheels"
  DEN_an_army_on_wheels_desc:0 "Placeholder"
@@ -39,6 +41,8 @@
  
  DEN_a_divided_nation_idea:0 "A Divided Nation"
  DEN_a_divided_nation_idea_desc:0 "Our Nation is divided between different ethnic groups and peoples. We must unite them under a single nationality or country in order to make cooperation easier."
+ DEN_a_divided_nation_idea_2:0 "A Divided Nation"
+ DEN_a_divided_nation_idea_2_desc:0 "Our Nation is divided between different ethnic groups and peoples. We must unite them under a single nationality or country in order to make cooperation easier."
  
  DEN_norwegian_partisans_idea:0 "Norwegian Partisans"
  DEN_norwegian_partisans_idea_desc:0 "Our nation is as divided as it's been in centuries. The Norwegians feel that they do not have an equal place in our union. We should find a way to pacify them soon."
@@ -63,9 +67,19 @@
  DEN_protector_of_democracy_idea_2:0 "Protector of Democracy"
  DEN_protector_of_democracy_idea_desc_2:0 "We have declared ourselves the true european-wide protectors of democracy! Others dare not harm other european democracies while our nation still exists."
  
+ DEN_danish_norwegian_industrial_capabilities_idea:0 "Danish-Norwegian Industrial Capabilities"
+ DEN_danish_norwegian_industrial_capabilities_idea_desc:0 "Placeholder"
+ DEN_danish_norwegian_industrial_capabilities_idea_2:0 "Danish-Norwegian Industrial Capabilities"
+ DEN_danish_norwegian_industrial_capabilities_idea_2_desc:0 "Placeholder"
+ 
  ####TOOLTIPS
  lose_all_cores_on_norway_tooltip:0 "Lose cores on §Yall Norwegian states§!"
  lose_the_sami_tooltip:0 "Lose any §RSami buff/debuff§!"
  den_all_norwegian_infrastructure_tooltip:0 "§YAll Norwegian infrastructure§! increases by §Y1 level§!"
  den_all_danish_infrastructure_tooltip:0 "§YAll Danish infrastructure§! increases by §Y1 level§!"
  release_norway_as_dominion_tooltip:0 "§YRelease Norway§! as a §YDominion§!"
+ warning_of_civil_war:0 "§RWARNING: A civil war is GUARENTEED after taking this focus.§!"
+ warning_of_unfinished_path:0 "§RWARNING: This path is INCLOMPLETE. Either highly unstable, or completely unplayable.§!"
+ DEN_the_king_lives_tooltip:0 "Has chosen to not kill the King"
+ DEN_the_death_of_the_king_tooltip:0 "Has chosen to let the King die"
+

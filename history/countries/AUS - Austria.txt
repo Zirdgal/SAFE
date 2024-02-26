@@ -13,6 +13,11 @@ set_politics = {
 
 recruit_character = AUS_karl_seitz
 recruit_character = AUS_otto_habsburg
+recruit_character = AUS_ruth_fischer_commie
+# (fascist guy goes here) recruit_character = 
+recruit_character = AUS_ruth_fischer
+recruit_character = AUS_adolf_schicklgruber
+recruit_character = AUS_otto_glockel
 
 
 set_research_slots = 2

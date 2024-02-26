@@ -5,7 +5,12 @@ ideas = {
 
 	country = {
 		
-		###MILITARY
+	#███╗   ███╗██╗██╗     ██╗████████╗ █████╗ ██████╗ ██╗   ██╗
+	#████╗ ████║██║██║     ██║╚══██╔══╝██╔══██╗██╔══██╗╚██╗ ██╔╝
+	#██╔████╔██║██║██║     ██║   ██║   ███████║██████╔╝ ╚████╔╝ 
+	#██║╚██╔╝██║██║██║     ██║   ██║   ██╔══██║██╔══██╗  ╚██╔╝  
+	#██║ ╚═╝ ██║██║███████╗██║   ██║   ██║  ██║██║  ██║   ██║   
+	#╚═╝     ╚═╝╚═╝╚══════╝╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   
 		
 		DEN_the_haer_idea = {
 		
@@ -78,7 +83,7 @@ ideas = {
 		}
 		
 		
-		DEN_cheaper_car_manufacturing = {
+		DEN_daf_idea = {
 		
 			picture = great_depression ###PLACEHOLDER
 			
@@ -96,27 +101,45 @@ ideas = {
 			}
 		}
 		
+		DEN_daf_idea_2 = {
+		
+			picture = great_depression ###PLACEHOLDER
+			
+
+			equipment_bonus = {
+				motorized_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+					
+				mechanized_equipment = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+			}
+		}
+		
 		DEN_an_army_on_wheels = {
 		
 			picture = great_depression ###PLACEHOLDER
 			
 			modifier = {
-				army_speed_factor = 0.15
-				motorized_attack_factor = 0.1
-				motorized_defence_factor = 0.1
-				mechanized_attack_factor = 0.1
-				mechanized_defence_factor = 0.1
+				army_speed_factor = 0.2
+				motorized_attack_factor = 0.25
+				motorized_defence_factor = 0.25
+				mechanized_attack_factor = 0.25
+				mechanized_defence_factor = 0.25
 			}
 			
 			equipment_bonus = {
 				motorized_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.10
 				}
 					
 				mechanized_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.10
 				}
 			}
 	
@@ -142,7 +165,12 @@ ideas = {
 	
 		}
 		
-		###POLITICAL
+	#██████╗  ██████╗ ██╗     ██╗████████╗██╗ ██████╗ █████╗ ██╗     
+	#██╔══██╗██╔═══██╗██║     ██║╚══██╔══╝██║██╔════╝██╔══██╗██║     
+	#██████╔╝██║   ██║██║     ██║   ██║   ██║██║     ███████║██║     
+	#██╔═══╝ ██║   ██║██║     ██║   ██║   ██║██║     ██╔══██║██║     
+	#██║     ╚██████╔╝███████╗██║   ██║   ██║╚██████╗██║  ██║███████╗
+	#╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝
 	
 		DEN_the_sami_idea = {
 		
@@ -199,6 +227,17 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.25
+				political_power_factor = -0.1
+			}
+	
+		}
+		
+		DEN_a_divided_nation_idea_2 = {
+		
+			picture = great_depression ###PLACEHOLDER
+			
+			modifier = {
+				stability_factor = -0.15
 				political_power_factor = -0.1
 			}
 	
@@ -291,7 +330,12 @@ ideas = {
 	
 		}
 		
-		###ECONOMIC
+	#███████╗ ██████╗ ██████╗ ███╗   ██╗ ██████╗ ███╗   ███╗██╗ ██████╗
+	#██╔════╝██╔════╝██╔═══██╗████╗  ██║██╔═══██╗████╗ ████║██║██╔════╝
+	#█████╗  ██║     ██║   ██║██╔██╗ ██║██║   ██║██╔████╔██║██║██║     
+	#██╔══╝  ██║     ██║   ██║██║╚██╗██║██║   ██║██║╚██╔╝██║██║██║     
+	#███████╗╚██████╗╚██████╔╝██║ ╚████║╚██████╔╝██║ ╚═╝ ██║██║╚██████╗
+	#╚══════╝ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝ ╚═════╝
 		
 		DEN_danish_norwegian_industrial_capabilities_idea = {
 			picture = great_depression ###PLACEHOLDER
@@ -306,16 +350,49 @@ ideas = {
 			}
 		}
 		
-		DEN_danish_industrial_capabilities_idea = {
+		DEN_danish_norwegian_industrial_capabilities_idea_2 = {
 			picture = great_depression ###PLACEHOLDER
 			
 			available = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = 0.25
-				production_speed_buildings_factor = -0.2
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = -0.15
 				production_factory_max_efficiency_factor = -0.1
+			}
+		}
+	}
+	
+	# ██╗  ██╗██╗██████╗ ██████╗ ███████╗███╗   ██╗    ██╗██████╗ ███████╗ █████╗ ███████╗
+	# ██║  ██║██║██╔══██╗██╔══██╗██╔════╝████╗  ██║    ██║██╔══██╗██╔════╝██╔══██╗██╔════╝
+	# ███████║██║██║  ██║██║  ██║█████╗  ██╔██╗ ██║    ██║██║  ██║█████╗  ███████║███████╗
+	# ██╔══██║██║██║  ██║██║  ██║██╔══╝  ██║╚██╗██║    ██║██║  ██║██╔══╝  ██╔══██║╚════██║
+	# ██║  ██║██║██████╔╝██████╔╝███████╗██║ ╚████║    ██║██████╔╝███████╗██║  ██║███████║
+	# ╚═╝  ╚═╝╚═╝╚═════╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝    ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝
+
+	hidden_ideas = {
+
+		DEN_the_king_lives_hidden_idea = {
+			picture = great_depression ###PLACEHOLDER
+
+			allowed = {
+        		always = no 
+      		}
+
+			
+			available = {
+			}
+		}
+	
+		DEN_the_death_of_the_king_hidden_idea = {
+			picture = great_depression ###PLACEHOLDER
+			
+			allowed = {
+        		always = no 
+      		}
+			
+			available = {
 			}
 		}
 	}

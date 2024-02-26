@@ -82,12 +82,115 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = march_crisis.4
-				days 14
+				days = 14
 			}
 			remove_ideas = habsburg_law_debate
 			add_timed_idea = {
 				idea = unsatisfying_conclusion
 				days = 180
+			}
+		}
+	}
+}
+
+country_event = {
+	id = march_crisis.3
+	title = "Otto von Habsburg Breaks Rank With the Fatherland Front!"
+	desc = march_crisis.3.d
+	picture = GFX_otto_breaks_rank
+	
+	is_triggered_only = yes
+	
+	option = { # How dare he, with all we have supported him with?!
+		name = march_crisis.3.a
+		ai_chance - { factor = 100 }
+		set_party_name = {
+			ideology = neutrality
+			long_name = AUS_paneuropa_bund_long
+			name = AUS_paneuropa_bund
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = march_crisis.4
+				days = 10
+			}
+		}
+	}
+	option = { # same as other option but with different response - Alles Europa ist Österreich untertan!
+		name = march_crisis.3.b
+		ai_chance - { factor = 100 }
+		set_party_name = {
+			ideology = neutrality
+			long_name = AUS_paneuropa_bund_long
+			name = AUS_paneuropa_bund
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = march_crisis.4
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = march_crisis.4
+	title = "The SDAPÖB Party Convention"
+	desc = march_crisis.4.d
+	picture = GFX_sdapob_conference
+	
+	is_triggered_only = yes
+	
+	option = { # Adolf Schicklgruber, the right Social Democrat
+		name = march_crisis.4.a
+		ai_chance - { factor = 34 }
+		has_idea = unsatisfying_conclusion
+		custom_effect_tooltip = AUS_adolf_schicklgruber_acting_president_tt
+		hidden_effect = {
+			retire_character = AUS_CONSTITUENT_NATIONAL_ASSEMBLY
+			promote_character = {
+				character = AUS_adolf_schicklgruber
+				ideology = socialism
+			}
+		}
+	}
+	option = { # Otto Glöckel, the moderate
+		name = march_crisis.4.b
+		ai_chance - { factor = 33 }
+		custom_effect_tooltip = AUS_otto_glockel_acting_president_tt
+		hidden_effect = {
+			retire_character = AUS_CONSTITUENT_NATIONAL_ASSEMBLY
+			promote_character = {
+				character = AUS_otto_glockel
+				ideology = socialism
+			}
+		}
+	}
+	option = { # Ruth Fischer, the Austromarxist
+		name = march_crisis.4.c
+		ai_chance - { factor = 33 }
+		custom_effect_tooltip = AUS_ruth_fischer_acting_president_tt
+		hidden_effect = {
+			retire_character = AUS_CONSTITUENT_NATIONAL_ASSEMBLY
+			promote_character = {
+				character = AUS_ruth_fischer
+				ideology = socialism
 			}
 		}
 	}
