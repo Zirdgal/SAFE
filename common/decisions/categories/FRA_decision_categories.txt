@@ -1,0 +1,16 @@
+################
+##### FRA ######
+################
+
+FRA_resistance_balance_category = { 							#id of category
+	icon = power_struggle										#icon for the category
+	priority = 20												#order displayed in decisions
+	visible_when_empty = yes
+	scripted_gui = fra_resistance_balance_gui
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+
+	}
+}

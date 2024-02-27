@@ -1,0 +1,30 @@
+FRA_resistance_balance_category = {
+    simple_decision = {
+
+        icon = GFX
+
+        available = {
+
+        }
+
+        fire_only_once = no
+        days_re_enable = 5
+
+        visible = {
+            ROOT = {
+                is_ai = no
+            }
+        }
+        
+        cost = 10
+
+        complete_effect = {
+            
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}
+ 
