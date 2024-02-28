@@ -33,6 +33,12 @@ country_event = {
 				id = march_crisis.2
 				days = 7
 			}
+			news_event = {
+				id = aus_news.4
+				days = 0
+				random_hours = 0
+				random_days = 0
+			}
 		}
 	}
 }
@@ -168,6 +174,12 @@ country_event = {
 				character = AUS_adolf_schicklgruber
 				ideology = socialism
 			}
+			news_event = {
+				id = aus_news.3
+				days = 0
+				random_hours = 0
+				random_days = 0
+			}
 		}
 	}
 	option = { # Otto Glöckel, the moderate
@@ -180,6 +192,12 @@ country_event = {
 				character = AUS_otto_glockel
 				ideology = socialism
 			}
+			news_event = {
+				id = aus_news.2
+				days = 0
+				random_hours = 0
+				random_days = 0
+			}
 		}
 	}
 	option = { # Ruth Fischer, the Austromarxist
@@ -191,6 +209,12 @@ country_event = {
 			promote_character = {
 				character = AUS_ruth_fischer
 				ideology = socialism
+			}
+			news_event = {
+				id = aus_news.1
+				days = 0
+				random_hours = 0
+				random_days = 0
 			}
 		}
 	}

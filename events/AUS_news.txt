@@ -1,0 +1,103 @@
+# News Stuff
+
+add_namespace = aus_news
+
+news_event = { # Fischer Wins
+	id = aus_news.1
+	title = {
+		text = "Fischer Elected Acting President"
+	}
+	desc = {
+		text = aus_news.1.d
+	}
+
+	picture = GFX_fischer_elected_news_event_image
+	
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		trigger = {
+			NOI = {
+				has_government = communism
+			}
+		}
+		name = "A woman in power? And a communist, no less? Preposterous!"
+	}
+	option = {
+		trigger = {
+			has_government = communism
+		}
+		name = "A woman in power? Preposterous! At least she's a communist."
+	}
+}
+
+news_event = { # Glöckel Wins
+	id = aus_news.2
+	title = {
+		text = "Glöckel Elected Acting President"
+	}
+	desc = {
+		text = aus_news.2.d
+	}
+
+	picture = GFX_glockel_elected_news_event_image
+	
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "... This won't go down well with the Bavarians, will it?"
+	}
+}
+
+news_event = { # Schicklgruber Wins
+	id = aus_news.3
+	title = {
+		text = "Schicklgruber Elected Acting President"
+	}
+	desc = {
+		text = aus_news.3.d
+	}
+
+	picture = GFX_schicklgruber_elected_news_event_image
+	
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "What a great orator! Maybe he's what Austria-Bavaria really needs."
+	}
+}
+
+news_event = { # Seitz Resignation worldwide event
+	id = aus_news.4
+	title = {
+		text = "Austrian President Resigns!"
+	}
+	desc = {
+		text = aus_news.4.d
+	}
+
+	picture = GFX_seitz_resigns_news_event_image
+	
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "Oh my! Let us hope their situation gets better."
+		trigger = {
+			NOT = { tag = AUS }
+		}
+	}
+	option = {
+		name = "God save Austria-Bavaria, for no one else can."
+		trigger = {
+			tag = AUS
+		}
+	}
+}
