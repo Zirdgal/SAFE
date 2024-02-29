@@ -1,0 +1,100 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_scripted_gui_window_background"
+		textureFile = "/gfx/interface/scripted_gui_graphics/scripted_gui_background.dds"
+	}
+
+	spriteType = {
+		name = "GFX_FRA_TEST_frankia_map_debug"
+		textureFile = "/gfx/interface/scripted_gui_graphics/frankia_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_brittany_debug"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_britanny_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_brittany_puppet"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_britanny_puppet.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_west_france_debug"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_west_france_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_west_france_core"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_west_france_core.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_south_france_debug"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_south_france_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_south_france_core"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_south_france_core.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_east_france_debug"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_east_france_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_east_france_core"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_east_france_core.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_benelux_debug"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_benelux_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_benelux_high_resistance"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_benelux_high_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_corsica_sardinia_debug"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_corsica_sardinia_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_corsica_sardinia_moderate_resistance"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_corsica_sardinia_moderate_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_mecklenburg_debug"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_mecklenburg_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_mecklenburg_puppet"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_mecklenburg_puppet.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_north_germany_debug"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_north_germany_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_north_germany_high_resistance"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_north_germany_high_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_south_germany_debug"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_south_germany_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_south_germany_high_resistance"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_south_germany_high_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_piedmont_italy_debug"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_piedmont_italy_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_piedmont_italy_moderate_resistance"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_piedmont_italy_moderate_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_switzerland_debug"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_switzerland_debug.dds"
+	}
+	spriteType = {
+		name = "GFX_FRA_map_switzerland_moderate_resistance"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_switzerland_moderate_resistance.dds"
+	}
+}

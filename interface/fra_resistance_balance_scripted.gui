@@ -1,18 +1,119 @@
-@MAP-FRA-X = 144
-@MAP-FRA-Y = -3
-
 guiTypes = {
 
 	containerWindowType = {
-		name = "fra_resistance_balance_decision_ui"
-		position = { x = 0 y = 0 }
+		name = "FRA_scripted_gui_resistance_balance_window"
+		position = { x = 0 y = 0}	
 		size = { width = 100% height= 500 }
 
-		iconType = {
-			name ="france_map_test"
-			spriteType = "GFX_SOV_paranoia_bg"
-			position = { x=@MAP-FRA-X	 y=@MAP-FRA-Y }
-			#pdx_tooltip = FRA_map_test_tt
+#		iconType ={
+#			name ="Brittany DEBUG"
+#			spriteType = "GFX_FRA_map_brittany_debug"
+#			position = { x= 15 y = 175 }
+#		}
+		iconType ={
+			name ="Brittany"
+			spriteType = "GFX_FRA_map_brittany_puppet"
+			position = { x= 15 y = 175 }
+		}
+#		iconType ={
+#			name ="West France DEBUG"
+#			spriteType = "GFX_FRA_map_west_france_debug"
+#			position = { x= 85 y = 135 }
+#		}
+		iconType ={
+			name ="West France"
+			spriteType = "GFX_FRA_map_west_france_core"
+			position = { x= 85 y = 135 }
+		}
+#		iconType ={
+#			name ="South France DEBUG"
+#			spriteType = "GFX_FRA_map_south_france_debug"
+#			position = { x= 100 y = 240 }
+#		}
+		iconType ={
+			name ="South France"
+			spriteType = "GFX_FRA_map_south_france_core"
+			position = { x= 100 y = 240 }
+		}
+#		iconType ={
+#			name ="East France DEBUG"
+#			spriteType = "GFX_FRA_map_east_france_debug"
+#			position = { x= 155 y = 100 }
+#		}
+		iconType ={
+			name ="East France"
+			spriteType = "GFX_FRA_map_east_france_core"
+			position = { x= 155 y = 100 }
+		}
+#		iconType ={
+#			name ="Benelux DEBUG"
+#			spriteType = "GFX_FRA_map_benelux_debug"
+#			position = { x= 210 y = 15 }
+#		}
+		iconType ={
+			name ="Benelux"
+			spriteType = "GFX_FRA_map_benelux_high_resistance"
+			position = { x= 210 y = 15 }
+		}
+#		iconType ={
+#			name ="Corsica & Sardinia DEBUG"
+#			spriteType = "GFX_FRA_map_corsica_sardinia_debug"
+#			position = { x= 435 y = 330 }
+#		}
+		iconType ={
+			name ="Corsica & Sardinia"
+			spriteType = "GFX_FRA_map_corsica_sardinia_moderate_resistance"
+			position = { x= 435 y = 330 }
+		}
+#		iconType ={
+#			name ="North Germany DEBUG"
+#			spriteType = "GFX_FRA_map_north_germany_debug"
+#			position = { x= 305 y = 2 }
+#		}
+		iconType ={
+			name ="North Germany"
+			spriteType = "GFX_FRA_map_north_germany_high_resistance"
+			position = { x= 305 y = 2 }
+		}
+#		iconType ={
+#			name ="South Germany DEBUG"
+#			spriteType = "GFX_FRA_map_south_germany_debug"
+#			position = { x= 310 y = 83 }
+#		}
+		iconType ={
+			name ="South Germany"
+			spriteType = "GFX_FRA_map_south_germany_high_resistance"
+			position = { x= 310 y = 83 }
+		}
+#		iconType ={
+#			name ="Piedmont Italy DEBUG"
+#			spriteType = "GFX_FRA_map_piedmont_italy_debug"
+#			position = { x= 310 y = 270 }
+#		}
+		iconType ={
+			name ="Piedmont Italy"
+			spriteType = "GFX_FRA_map_piedmont_italy_moderate_resistance"
+			position = { x= 310 y = 270 }
+		}
+#		iconType ={
+#			name ="Mecklenburg DEBUG"
+#			spriteType = "GFX_FRA_map_mecklenburg_debug"
+#			position = { x= 430 y = 70 }
+#		}
+		iconType ={
+			name ="Mecklenburg"
+			spriteType = "GFX_FRA_map_mecklenburg_puppet"
+			position = { x= 430 y = 70 }
+		}
+#		iconType ={
+#			name ="Switzerland DEBUG"
+#			spriteType = "GFX_FRA_map_switzerland_debug"
+#			position = { x= 310 y = 230 }
+#		}
+		iconType ={
+			name ="Switzerland"
+			spriteType = "GFX_FRA_map_switzerland_moderate_resistance"
+			position = { x= 310 y = 230 }
 		}
 	}
 }
