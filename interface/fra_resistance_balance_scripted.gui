@@ -1,3 +1,5 @@
+
+
 guiTypes = {
 
 	# Greetings Unlucky fellow, welcome to hell, this is the FRA_resistance_balance scripted GUI! How does it work? Well first off we got random DEBUG icons that have been commented off.
@@ -121,8 +123,7 @@ guiTypes = {
 			position = { x= 305 y = 230 }
 			pdx_tooltip = "FRA_CGTT_switzerland_moderate_resistance"
 		}
-	}
-}
+
 
 
 
@@ -151,3 +152,5 @@ guiTypes = {
 			position = { x= 10 y = 175 }
 			pdx_tooltip = "FRA_CGTT_brittany_puppet"
 		}
+	}
+}

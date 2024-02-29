@@ -10,7 +10,7 @@ FRA_resistance_balance_category = { 							#id of category
 		always = yes
 	}
 	priority = 20
-	icon = #TBD
+	icon = GFX_decision_category_SOV_propaganda
 	visible_when_empty = yes
 	scripted_gui = fra_resistance_balance_gui
 }
