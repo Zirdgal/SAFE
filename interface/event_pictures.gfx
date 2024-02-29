@@ -12,4 +12,20 @@ spriteTypes = {
 		name = "GFX_sdapob_conference"
 		texturefile = "gfx/event_pictures/sdapob_conference.dds"
 	}
+	spriteType = {
+		name = "GFX_fischer_elected_news_event_image"
+		texturefile = "gfx/event_pictures/news_fischer_elected.dds"
+	}
+	spriteType = {
+		name = "GFX_glockel_elected_news_event_image"
+		texturefile = "gfx/event_pictures/news_glockel_elected.dds"
+	}
+	spriteType = {
+		name = "GFX_schicklgruber_elected_news_event_image"
+		texturefile = "gfx/event_pictures/news_schicklgruber_elected.dds"
+	}
+	spriteType = {
+		name = "GFX_seitz_resigns_news_event_image"
+		texturefile = "gfx/event_pictures/seitz_resigns.dds"
+	}
 }
