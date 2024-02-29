@@ -1,5 +1,4 @@
 ﻿units = {
-
 	##### NAVAL UNITS #####
 	fleet = {
 		name = "Den Danske Flåde"			

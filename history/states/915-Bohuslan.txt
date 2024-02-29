@@ -10,7 +10,7 @@ state = {
 		}
 		owner = DEN
 		add_core_of = DEN
-		add_core_of = SWE
+		add_claim_by = SWE
 		buildings = {
 			infrastructure = 3
 		}
