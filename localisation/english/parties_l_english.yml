@@ -49,6 +49,8 @@
  anarchism_desc:0 "Anarchism is the rejection of authority itself, promoting the division of society into self-managing and self-governing collectives instead of a singular, centralized state."
  habsburg_pan_europeanism:0 "Pan-Europeanism"
  habsburg_pan_europeanism_desc:0 "Based particularly on his thesis titled 'European Cooperation and Integration as Planned for the 21st Century,' Otto von Habsburg's Pan-Europeanism describes an ideology where the end goal is the integration of the various European nations into a single, cohesive but decentralized megastate."
+ guided_democracy:0 "Guided Democracy"
+ guided_democracy_desc:0 "Guided democracy is a form of authoritarian government where the institutions of a more liberal system are still in place but controlled by an authoritarian figure or heavily weighted to favor a particular party or group."
  GER_fascism_party:0 "NSDAP"
  GER_fascism_party_long:0 "Nationalsozialistische Deutsche Arbeiterpartei"
  GER_communism_party:0 "KPD"

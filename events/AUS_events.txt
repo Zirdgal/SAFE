@@ -33,6 +33,10 @@ country_event = {
 				id = march_crisis.2
 				days = 7
 			}
+			country_event = {
+				id = march_crisis.5
+				days = 3
+			}
 			news_event = {
 				id = aus_news.4
 				days = 0
@@ -94,6 +98,16 @@ country_event = {
 			add_timed_idea = {
 				idea = unsatisfying_conclusion
 				days = 180
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = AUS_fatherland_front_moderates_long
+				name = AUS_fatherland_front_moderates
+			}
+			retire_character = AUS_CHARACTER_OTTO_HABSURG
+			promote_character = {
+				character = AUS_konrad_dellmensingen 
+				ideology = guided_democracy
 			}
 		}
 	}
@@ -217,5 +231,20 @@ country_event = {
 				random_days = 0
 			}
 		}
+	}
+}
+
+country_event = {
+	id = march_crisis.5
+	title = "Bavarian Parties Reactivate!"
+	desc = march_crisis.5.d
+	picture = GFX_bavarian_parties
+	
+	is_triggered_only = yes
+	
+	option = { # Only more to add to our troubles...
+		name = march_crisis.5.a
+		ai_chance = { factor = 100 }
+		add_ideas = bavarian_parties
 	}
 }

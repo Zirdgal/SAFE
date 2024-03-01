@@ -81,4 +81,17 @@ characters = {
 			desc = AUS_RUTH_FISCHER_DESC
 		}
 	}
+	AUS_konrad_dellmensingen = {
+		name = AUS_CHARACTER_KONRAD_DELLMENSINGEN
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_konrad_dellmensingen"
+			}
+		}
+		country_leader = {
+			ideology = guided_democracy
+			expire = "2011.1.1.1"
+			desc = AUS_KONRAD_DELLMENSINGEN_DESC
+		}
+	}
 }

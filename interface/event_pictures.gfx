@@ -28,4 +28,8 @@ spriteTypes = {
 		name = "GFX_seitz_resigns_news_event_image"
 		texturefile = "gfx/event_pictures/seitz_resigns.dds"
 	}
+	spriteType = {
+		name = "GFX_bavarian_parties"
+		texturefile = "gfx/event_pictures/bavarian_parties.dds"
+	}
 }
