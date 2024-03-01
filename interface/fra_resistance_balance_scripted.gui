@@ -1,9 +1,8 @@
-
+# This barely functions if you need help contact z1rd for tech support
 
 guiTypes = {
 
-	# Greetings Unlucky fellow, welcome to hell, this is the FRA_resistance_balance scripted GUI! How does it work? Well first off we got random DEBUG icons that have been commented off.
-	# These are the starting positions, for when you need to copy an existing state. The rest is uhhhh ran by lunar energy (aka barely functions.)
+
 
 	containerWindowType = {
 		name = "FRA_scripted_gui_resistance_balance_window"
@@ -91,17 +90,6 @@ guiTypes = {
 
 
 #		iconType ={
-#			name ="Corsica & Sardinia DEBUG"
-#			spriteType = "GFX_FRA_map_corsica_sardinia_debug"
-#			position = { x= 430 y = 330 }
-#		}
-		iconType ={
-			name ="Corsica & Sardinia"
-			spriteType = "GFX_FRA_map_corsica_sardinia_moderate_resistance"
-			position = { x= 430 y = 330 }
-			pdx_tooltip = "FRA_CGTT_corsica_sardinia_moderate_resistance"
-		}
-#		iconType ={
 #			name ="Piedmont Italy DEBUG"
 #			spriteType = "GFX_FRA_map_piedmont_italy_debug"
 #			position = { x= 305 y = 272 }
@@ -127,30 +115,23 @@ guiTypes = {
 
 
 
-
-
-
-#		iconType ={
-#			name ="Mecklenburg DEBUG"
-#			spriteType = "GFX_FRA_map_mecklenburg_debug"
-#			position = { x= 425 y = 70 }
-#		}
 		iconType ={
-			name ="Mecklenburg"
-			spriteType = "GFX_FRA_map_mecklenburg_puppet"
-			position = { x= 425 y = 70 }
-			pdx_tooltip = "FRA_CGTT_mecklenburg_puppet"
+			name ="FRA_resistance_balance_corsica_sardinia_strip"
+			spriteType = "GFX_FRA_resistance_balance_corsica_sardinia_strip"
+			position = { x= 430 y = 330 }
 		}
-#		iconType ={
-#			name ="Brittany DEBUG"
-#			spriteType = "GFX_FRA_map_brittany_debug"
-#			position = { x= 10 y = 175 }
-#		}
+
+
+
 		iconType ={
-			name ="Brittany"
-			spriteType = "GFX_FRA_map_brittany_puppet"
+			name ="FRA_resistance_balance_mecklenburg_strip"
+			spriteType = "GFX_FRA_resistance_balance_mecklenburg_strip"
+			position = { x= 425 y = 70 }
+		}
+		iconType ={
+			name ="FRA_resistance_balance_brittany_strip"
+			spriteType = "GFX_FRA_resistance_balance_brittany_strip"
 			position = { x= 10 y = 175 }
-			pdx_tooltip = "FRA_CGTT_brittany_puppet"
 		}
 	}
 }

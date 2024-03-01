@@ -1,10 +1,12 @@
+global.FRA_MAP_TEST_BRITTANY = 3
+
 scripted_gui = {
   fra_resistance_balance_gui = {
-    window_name = "FRA_scripted_gui_resistance_balance_window"
-    context_type = decision_category 
+  window_name = "FRA_scripted_gui_resistance_balance_window"
+  context_type = decision_category 
 
     visible = {
-		always = no
+	    always = no
     }
 
     effects = {
@@ -14,17 +16,27 @@ scripted_gui = {
     }
 
     dynamic_lists = {
-	}
+	  }
 
     properties = {
+      set_variable = { global.FRA_MAP_TEST_BRITTANY = 3 }
+      FRA_resistance_balance_brittany_strip = {
+        frame = global.FRA_MAP_TEST_BRITTANY
+      }
+      FRA_resistance_balance_mecklenburg_strip = {
+        frame = 3
+      }
+      FRA_resistance_balance_corsica_sardinia_strip = {
+        frame = 6
+      }
     }
 
     ai_enabled = {
-		always = no
+	    always = no
     }
 
     ai_test_interval = 290  # The higher, the long it takes the ai to do actions
-	ai_test_variance = 0.5
+	  ai_test_variance = 0.5
 
     ai_check = {
     }

@@ -1,23 +1,3 @@
 ﻿l_english:
 
- FRA_CGTT_south_france_core:0 "§!South France §B\nStatus - Core"
- FRA_CGTT_west_france_core:0 "§! West France §B\nStatus - Core"
- FRA_CGTT_east_france_core:0 "§! East France §B\nStatus - Core"
-
-
-
- FRA_CGTT_benelux_high_resistance:0 "§!            Benelux §O\nStatus - High Resistance"
- FRA_CGTT_south_germany_high_resistance:0 "§!       South Germany §O\nStatus - High Resistance"
- FRA_CGTT_north_germany_high_resistance:0 "§!       North Germany §O\nStatus - High Resistance"
-
-
-
- FRA_CGTT_corsica_sardinia_moderate_resistance:0 "§!          Corsica & Sardinia §Y\nStatus - Moderate Resistance"
- FRA_CGTT_piedmont_italy_moderate_resistance:0 "§!          Piedmontese Italy §Y\nStatus - Moderate Resistance"
- FRA_CGTT_switzerland_moderate_resistance:0 "§!             Switzerland §Y\nStatus - Moderate Resistance"
-
-
- 
- FRA_CGTT_mecklenburg_puppet:0 "§!Mecklenburg §1\nStatus - Puppet"
- FRA_CGTT_brittany_puppet:0 "§!      Brittany §1\nStatus - Puppet"
-
+# removed until functionality added.

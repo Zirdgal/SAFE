@@ -1,22 +1,36 @@
 spriteTypes = {
-
-	spriteType = {
-		name = "GFX_scripted_gui_window_background"
-		textureFile = "/gfx/interface/scripted_gui_graphics/scripted_gui_background.dds"
-	}
-
 	spriteType = {
 		name = "GFX_FRA_TEST_frankia_map_debug"
 		textureFile = "/gfx/interface/scripted_gui_graphics/frankia_debug.dds"
 	}
+
+
+
+
 	spriteType = {
-		name = "GFX_FRA_map_brittany_debug"
-		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_britanny_debug.dds"
+		name = "GFX_FRA_resistance_balance_brittany_strip"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_balance_brittany_strip.dds"
+		noOfFrames = 9
 	}
 	spriteType = {
-		name = "GFX_FRA_map_brittany_puppet"
-		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_britanny_puppet.dds"
+		name = "GFX_FRA_resistance_balance_mecklenburg_strip"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_balance_mecklenburg_strip.dds"
+		noOfFrames = 9
 	}
+
+
+
+
+	spriteType = {
+		name = "GFX_FRA_resistance_balance_corsica_sardinia_strip"
+		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_balance_corsica_sardinia_strip.dds"
+		noOfFrames = 9
+	}
+
+
+
+
+
 	spriteType = {
 		name = "GFX_FRA_map_west_france_debug"
 		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_west_france_debug.dds"
@@ -48,22 +62,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_FRA_map_benelux_high_resistance"
 		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_benelux_high_resistance.dds"
-	}
-	spriteType = {
-		name = "GFX_FRA_map_corsica_sardinia_debug"
-		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_corsica_sardinia_debug.dds"
-	}
-	spriteType = {
-		name = "GFX_FRA_map_corsica_sardinia_moderate_resistance"
-		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_corsica_sardinia_moderate_resistance.dds"
-	}
-	spriteType = {
-		name = "GFX_FRA_map_mecklenburg_debug"
-		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_mecklenburg_debug.dds"
-	}
-	spriteType = {
-		name = "GFX_FRA_map_mecklenburg_puppet"
-		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_mecklenburg_puppet.dds"
 	}
 	spriteType = {
 		name = "GFX_FRA_map_north_germany_debug"
