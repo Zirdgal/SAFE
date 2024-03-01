@@ -50,4 +50,8 @@ spriteTypes = {
 		name = "GFX_portrait_ruth_fischer_commie"
 		texturefile = "gfx/leaders/AUS/portrait_large_ruth_fischer_commie.dds"
 	}
+	spriteType = {
+		name = "GFX_portrait_konrad_dellmensingen"
+		texturefile = "gfx/leaders/AUS/portrait_large_konrad_dellmensingen.dds"
+	}
 }

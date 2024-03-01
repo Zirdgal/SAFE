@@ -18,6 +18,7 @@ recruit_character = AUS_ruth_fischer_commie
 recruit_character = AUS_ruth_fischer
 recruit_character = AUS_adolf_schicklgruber
 recruit_character = AUS_otto_glockel
+recruit_character = AUS_konrad_dellmensingen
 
 
 set_research_slots = 2

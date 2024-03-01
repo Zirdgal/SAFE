@@ -81,7 +81,7 @@ ideas = {
 			}
 		}
 		
-		### POLITICAL SPIRITS ###
+### POLITICAL SPIRITS ###
 		
 		march_crisis = {
 			picture = AUS_march_crisis
@@ -111,6 +111,23 @@ ideas = {
 				political_power_factor = -0.15
 				political_power_cost = 1
 				stability_factor = -0.2
+			}
+		}
+		
+		bavarian_parties = { # Bavarian Parties
+			picture = AUS_bavarian_parties
+			
+			allowed = {
+				tag = AUS
+			}
+			
+			modifier = {
+				political_power_factor = -0.15
+				political_power_cost = 2
+				stability_factor = -0.05
+				fascism_drift = 0.01
+				neutrality_drift = 0.03
+				consumer_goods_expected_value = 0.05
 			}
 		}
 	}
