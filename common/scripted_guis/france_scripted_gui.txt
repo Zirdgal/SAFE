@@ -32,7 +32,7 @@ scripted_gui = {
     }
 
     ai_enabled = {
-	    always = no
+	    always = yes
     }
 
     ai_test_interval = 290  # The higher, the long it takes the ai to do actions
