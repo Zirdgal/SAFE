@@ -12,16 +12,28 @@ guiTypes = {
 
 
 
-
 		iconType ={
-			name ="FRA_resistance_balance_west_france_strip"
-			spriteType = "GFX_FRA_resistance_balance_west_france_strip"
-			position = { x= 80 y = 135 }
+			name ="FRA_resistance_balance_mecklenburg_strip"
+			spriteType = "GFX_FRA_resistance_balance_mecklenburg_strip"
+			position = { x= 428 y = 67 }
 		}
+		iconType ={
+			name ="FRA_resistance_balance_brittany_strip"
+			spriteType = "GFX_FRA_resistance_balance_brittany_strip"
+			position = { x= 10 y = 175 }
+		}
+
+
+
 		iconType ={
 			name ="FRA_resistance_balance_south_france_strip"
 			spriteType = "GFX_FRA_resistance_balance_south_france_strip"
 			position = { x= 93 y = 240 }
+		}
+		iconType ={
+			name ="FRA_resistance_balance_west_france_strip"
+			spriteType = "GFX_FRA_resistance_balance_west_france_strip"
+			position = { x= 80 y = 135 }
 		}
 		iconType ={
 			name ="FRA_resistance_balance_east_france_strip"
@@ -39,14 +51,14 @@ guiTypes = {
 			position = { x= 210 y = 15 }
 		}
 		iconType ={
-			name ="FRA_resistance_balance_north_germany_strip"
-			spriteType = "GFX_FRA_resistance_balance_north_germany_strip"
-			position = { x= 305 y = 2 }
-		}
-		iconType ={
 			name ="FRA_resistance_balance_south_germany_strip"
 			spriteType = "GFX_FRA_resistance_balance_south_germany_strip"
 			position = { x= 305 y = 83 }
+		}
+		iconType ={
+			name ="FRA_resistance_balance_north_germany_strip"
+			spriteType = "GFX_FRA_resistance_balance_north_germany_strip"
+			position = { x= 305 y = 2 }
 		}
 
 
@@ -66,21 +78,6 @@ guiTypes = {
 			name ="FRA_resistance_balance_switzerland_strip"
 			spriteType = "GFX_FRA_resistance_balance_switzerland_strip"
 			position = { x= 305 y = 230 }
-		}
-
-
-
-
-
-		iconType ={
-			name ="FRA_resistance_balance_mecklenburg_strip"
-			spriteType = "GFX_FRA_resistance_balance_mecklenburg_strip"
-			position = { x= 425 y = 70 }
-		}
-		iconType ={
-			name ="FRA_resistance_balance_brittany_strip"
-			spriteType = "GFX_FRA_resistance_balance_brittany_strip"
-			position = { x= 10 y = 175 }
 		}
 	}
 }

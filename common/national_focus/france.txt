@@ -1732,6 +1732,39 @@ focus_tree = {
 			set_variable = {
 				global.FRA_resistance_balance_brittany_status = 3
 			}
+			set_variable = {
+				global.FRA_resistance_balance_mecklenburg_status = 3
+			}
+
+			set_variable = {
+				global.FRA_resistance_balance_west_france_status = 9
+			}
+			set_variable = {
+				global.FRA_resistance_balance_south_france_status = 9
+			}
+			set_variable = {
+				global.FRA_resistance_balance_east_france_status = 9
+			}
+
+			set_variable = {
+				global.FRA_resistance_balance_corsica_sardinia_status = 6
+			}
+			set_variable = {
+				global.FRA_resistance_balance_piedmontese_italy_status = 6
+			}
+			set_variable = {
+				global.FRA_resistance_balance_switzerland_status = 6
+			}
+
+			set_variable = {
+				global.FRA_resistance_balance_benelux_status = 5
+			}
+			set_variable = {
+				global.FRA_resistance_balance_north_germany_status = 5
+			}
+			set_variable = {
+				global.FRA_resistance_balance_south_germany_status = 5
+			}
 		}
 	}
 	

@@ -18,40 +18,40 @@ scripted_gui = {
 
     properties = {
       FRA_resistance_balance_brittany_strip = {
-        frame = global.FRA_resistance_balance_brittany_status
+        frame = global.FRA_resistance_balance_brittany_status # 3
       }
       FRA_resistance_balance_mecklenburg_strip = {
-        frame = 3
+        frame = global.FRA_resistance_balance_mecklenburg_status # 3
       }
 
       FRA_resistance_balance_west_france_strip = {
-        frame = 9
+        frame = global.FRA_resistance_balance_west_france_status # 9
       }
       FRA_resistance_balance_east_france_strip = {
-        frame = 9
+        frame = global.FRA_resistance_balance_east_france_status # 9 
       }
       FRA_resistance_balance_south_france_strip = {
-        frame = 9
+        frame = global.FRA_resistance_balance_south_france_status # 9
       }
 
       FRA_resistance_balance_benelux_strip = {
-        frame = 5
+        frame = global.FRA_resistance_balance_benelux_status # 5
       }
       FRA_resistance_balance_north_germany_strip = {
-        frame = 5
+        frame = global.FRA_resistance_balance_north_germany_status # 5
       }
       FRA_resistance_balance_south_germany_strip = {
-        frame = 5
+        frame = global.FRA_resistance_balance_south_germany_status # 5
       }
 
       FRA_resistance_balance_corsica_sardinia_strip = {
-        frame = 6
+        frame = global.FRA_resistance_balance_corsica_sardinia_status # 6
       }
       FRA_resistance_balance_piedmontese_italy_strip = {
-        frame = 6
+        frame = global.FRA_resistance_balance_piedmontese_italy_status # 6
       }
       FRA_resistance_balance_switzerland_strip = {
-        frame = 6
+        frame = global.FRA_resistance_balance_switzerland_status # 6
       }
     }
 
