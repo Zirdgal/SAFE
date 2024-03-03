@@ -50,7 +50,7 @@ spriteTypes = {
 		noOfFrames = 9
 	}
 	spriteType = {
-		name = "GFX_FRA_resistance_switzerland_strip"
+		name = "GFX_FRA_resistance_balance_switzerland_strip"
 		textureFile = "/gfx/interface/scripted_gui_graphics/FRA_resistance_balance_switzerland_strip.dds"
 		noOfFrames = 9
 	}

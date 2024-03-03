@@ -18,12 +18,18 @@ country_event = {
 	
 		#complete_national_focus = SAX_remain_calm
 		
-		ai_chance = { factor = 34}
+		ai_chance = { factor = 1 }
+	
 		hidden_effect = {
 			retire_character = SAX_Friedrich_Christian
-			promote_character = {
-				character = SAX_Ernst_Röhm
+			create_country_leader = {
+				name = SAX_ERNST_ROHM
+				desc = SAX_ERNST_ROHM_DESC
+				picture = GFX_portrait_sax_ernst_Röhm_large
+				expire = "2011.1.1.1"
 				ideology = despotism
+				traits = {
+				}
 			}
 		}
 	}
