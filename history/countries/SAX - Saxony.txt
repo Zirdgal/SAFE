@@ -33,6 +33,16 @@ create_country_leader = {
 		dictator
 	}
 
+create_country_leader = {
+	name = "Ernst Röhm"
+	desc = "Democracy"
+	picture = "portrait_large_rudolf.dds"
+	expire = "1999.1.1"
+	ideology = socialism
+	traits = {
+	}
+
+
 1939.1.1 = {
 	set_politics = {
 		ruling_party = neutrality

@@ -12,16 +12,22 @@ country_event = {
 	
 	picture = GFX_report_event_german_reichstag_gathering ##PLACEHOLDER
 	is_triggered_only = yes
+	
 	option = {
 		name = sax_focus_events.1.option.a
-		
-		swap_ideas = {
-		}
-		
+	
 		#complete_national_focus = SAX_remain_calm
 		
-		ai_chance = { factor = 1}
+		ai_chance = { factor = 34}
+		hidden_effect = {
+			retire_character = SAX_Friedrich_Christian
+			promote_character = {
+				character = SAX_Ernst_Röhm
+				ideology = despotism
+			}
+		}
 	}
+
 	option = {
 		name = sax_focus_events.1.option_b
 		
