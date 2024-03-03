@@ -1,5 +1,12 @@
 FRA_resistance_balance_category = {
-    simple_decision = {
+
+    # Zird's shitty attempt at documentation.
+    # So what we using here is the variables created in national_focus/france.txt as that is the requirement for the whole category to show up.
+    # Just change the variables as those are the ones used for which frame we are using in the GFX strips (the images we use for the map)
+
+
+
+    FRA_resistance_balance_add_1_to_brittany_decision = {
 
         icon = GFX
 
@@ -17,9 +24,42 @@ FRA_resistance_balance_category = {
         }
         
         cost = 0
-
+ 
         complete_effect = {
-            set_variable = { global.FRA_MAP_TEST_BRITTANY = 1 }
+            add_to_variable = {
+                var = global.FRA_resistance_balance_brittany_status
+                value = 1
+            }
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    FRA_resistance_balance_remove_1_to_brittany_decision = {
+
+        icon = GFX
+
+        available = {
+
+        }
+
+        fire_only_once = no
+        days_re_enable = 0
+
+        visible = {
+            ROOT = {
+                is_ai = no
+            }
+        }
+        
+        cost = 0
+ 
+        complete_effect = {
+            subtract_from_variable = {
+                var = global.FRA_resistance_balance_brittany_status
+                value = 1
+            }
         }
 
         ai_will_do = {

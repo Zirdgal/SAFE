@@ -1728,7 +1728,11 @@ focus_tree = {
 		
 		completion_reward = {
 		    create_intelligence_agency = yes
+
+			set_variable = {
+				global.FRA_resistance_balance_brittany_status = 3
 			}
+		}
 	}
 	
 	focus = {

@@ -7,7 +7,7 @@ FRA_resistance_balance_category = { 							#id of category
 		tag = FRA
 	}
 	visible = {
-		always = yes
+		has_completed_focus = FRA_our_path
 	}
 	priority = 20
 	icon = GFX_decision_category_SOV_propaganda
