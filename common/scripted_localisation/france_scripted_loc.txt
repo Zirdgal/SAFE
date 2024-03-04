@@ -67,3 +67,702 @@ defined_text = {
         localization_key = FRA_RBTT_brittany_backup_key
     }
 }
+
+defined_text = {
+    name = FRA_RBTT_mecklenburg_name
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_mecklenburg_status = 1 }
+        }
+        localization_key = FRA_RBTT_mecklenburg_debug_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_mecklenburg_status = 2 }
+        }
+        localization_key = FRA_RBTT_mecklenburg_lost_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_mecklenburg_status = 3 }
+        }
+        localization_key = FRA_RBTT_mecklenburg_puppet_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_mecklenburg_status = 4 }
+        }
+        localization_key = FRA_RBTT_mecklenburg_very_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_mecklenburg_status = 5 }
+        }
+        localization_key = FRA_RBTT_mecklenburg_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_mecklenburg_status = 6 }
+        }
+        localization_key = FRA_RBTT_mecklenburg_moderate_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_mecklenburg_status = 7 }
+        }
+        localization_key = FRA_RBTT_mecklenburg_low_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_mecklenburg_status = 8 }
+        }
+        localization_key = FRA_RBTT_mecklenburg_none_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_mecklenburg_status = 9 }
+        }
+        localization_key = FRA_RBTT_mecklenburg_core_key
+    }
+    text = {
+        localization_key = FRA_RBTT_mecklenburg_backup_key
+    }
+}
+
+defined_text = {
+    name = FRA_RBTT_south_france_name
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_france_status = 1 }
+        }
+        localization_key = FRA_RBTT_south_france_debug_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_france_status = 2 }
+        }
+        localization_key = FRA_RBTT_south_france_lost_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_france_status = 3 }
+        }
+        localization_key = FRA_RBTT_south_france_puppet_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_france_status = 4 }
+        }
+        localization_key = FRA_RBTT_south_france_very_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_france_status = 5 }
+        }
+        localization_key = FRA_RBTT_south_france_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_france_status = 6 }
+        }
+        localization_key = FRA_RBTT_south_france_moderate_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_france_status = 7 }
+        }
+        localization_key = FRA_RBTT_south_france_low_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_france_status = 8 }
+        }
+        localization_key = FRA_RBTT_south_france_none_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_france_status = 9 }
+        }
+        localization_key = FRA_RBTT_south_france_core_key
+    }
+    text = {
+        localization_key = FRA_RBTT_south_france_backup_key
+    }
+}
+
+defined_text = {
+    name = FRA_RBTT_west_france_name
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_west_france_status = 1 }
+        }
+        localization_key = FRA_RBTT_west_france_debug_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_west_france_status = 2 }
+        }
+        localization_key = FRA_RBTT_west_france_lost_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_west_france_status = 3 }
+        }
+        localization_key = FRA_RBTT_west_france_puppet_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_west_france_status = 4 }
+        }
+        localization_key = FRA_RBTT_west_france_very_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_west_france_status = 5 }
+        }
+        localization_key = FRA_RBTT_west_france_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_west_france_status = 6 }
+        }
+        localization_key = FRA_RBTT_west_france_moderate_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_west_france_status = 7 }
+        }
+        localization_key = FRA_RBTT_west_france_low_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_west_france_status = 8 }
+        }
+        localization_key = FRA_RBTT_west_france_none_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_west_france_status = 9 }
+        }
+        localization_key = FRA_RBTT_west_france_core_key
+    }
+    text = {
+        localization_key = FRA_RBTT_west_france_backup_key
+    }
+}
+
+defined_text = {
+    name = FRA_RBTT_east_france_name
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_east_france_status = 1 }
+        }
+        localization_key = FRA_RBTT_east_france_debug_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_east_france_status = 2 }
+        }
+        localization_key = FRA_RBTT_east_france_lost_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_east_france_status = 3 }
+        }
+        localization_key = FRA_RBTT_east_france_puppet_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_east_france_status = 4 }
+        }
+        localization_key = FRA_RBTT_east_france_very_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_east_france_status = 5 }
+        }
+        localization_key = FRA_RBTT_east_france_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_east_france_status = 6 }
+        }
+        localization_key = FRA_RBTT_east_france_moderate_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_east_france_status = 7 }
+        }
+        localization_key = FRA_RBTT_east_france_low_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_east_france_status = 8 }
+        }
+        localization_key = FRA_RBTT_east_france_none_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_east_france_status = 9 }
+        }
+        localization_key = FRA_RBTT_east_france_core_key
+    }
+    text = {
+        localization_key = FRA_RBTT_east_france_backup_key
+    }
+}
+
+defined_text = {
+    name = FRA_RBTT_benelux_name
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_benelux_status = 1 }
+        }
+        localization_key = FRA_RBTT_benelux_debug_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_benelux_status = 2 }
+        }
+        localization_key = FRA_RBTT_benelux_lost_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_benelux_status = 3 }
+        }
+        localization_key = FRA_RBTT_benelux_puppet_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_benelux_status = 4 }
+        }
+        localization_key = FRA_RBTT_benelux_very_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_benelux_status = 5 }
+        }
+        localization_key = FRA_RBTT_benelux_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_benelux_status = 6 }
+        }
+        localization_key = FRA_RBTT_benelux_moderate_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_benelux_status = 7 }
+        }
+        localization_key = FRA_RBTT_benelux_low_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_benelux_status = 8 }
+        }
+        localization_key = FRA_RBTT_benelux_none_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_benelux_status = 9 }
+        }
+        localization_key = FRA_RBTT_benelux_core_key
+    }
+    text = {
+        localization_key = FRA_RBTT_benelux_backup_key
+    }
+}
+
+defined_text = {
+    name = FRA_RBTT_south_germany_name
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_germany_status = 1 }
+        }
+        localization_key = FRA_RBTT_south_germany_debug_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_germany_status = 2 }
+        }
+        localization_key = FRA_RBTT_south_germany_lost_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_germany_status = 3 }
+        }
+        localization_key = FRA_RBTT_south_germany_puppet_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_germany_status = 4 }
+        }
+        localization_key = FRA_RBTT_south_germany_very_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_germany_status = 5 }
+        }
+        localization_key = FRA_RBTT_south_germany_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_germany_status = 6 }
+        }
+        localization_key = FRA_RBTT_south_germany_moderate_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_germany_status = 7 }
+        }
+        localization_key = FRA_RBTT_south_germany_low_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_germany_status = 8 }
+        }
+        localization_key = FRA_RBTT_south_germany_none_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_south_germany_status = 9 }
+        }
+        localization_key = FRA_RBTT_south_germany_core_key
+    }
+    text = {
+        localization_key = FRA_RBTT_south_germany_backup_key
+    }
+}
+defined_text = {
+    name = FRA_RBTT_north_germany_name
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_north_germany_status = 1 }
+        }
+        localization_key = FRA_RBTT_north_germany_debug_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_north_germany_status = 2 }
+        }
+        localization_key = FRA_RBTT_north_germany_lost_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_north_germany_status = 3 }
+        }
+        localization_key = FRA_RBTT_north_germany_puppet_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_north_germany_status = 4 }
+        }
+        localization_key = FRA_RBTT_north_germany_very_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_north_germany_status = 5 }
+        }
+        localization_key = FRA_RBTT_north_germany_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_north_germany_status = 6 }
+        }
+        localization_key = FRA_RBTT_north_germany_moderate_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_north_germany_status = 7 }
+        }
+        localization_key = FRA_RBTT_north_germany_low_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_north_germany_status = 8 }
+        }
+        localization_key = FRA_RBTT_north_germany_none_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_north_germany_status = 9 }
+        }
+        localization_key = FRA_RBTT_north_germany_core_key
+    }
+    text = {
+        localization_key = FRA_RBTT_north_germany_backup_key
+    }
+}
+
+defined_text = {
+    name = FRA_RBTT_piedmontese_italy_name
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_piedmontese_italy_status = 1 }
+        }
+        localization_key = FRA_RBTT_piedmontese_italy_debug_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_piedmontese_italy_status = 2 }
+        }
+        localization_key = FRA_RBTT_piedmontese_italy_lost_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_piedmontese_italy_status = 3 }
+        }
+        localization_key = FRA_RBTT_piedmontese_italy_puppet_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_piedmontese_italy_status = 4 }
+        }
+        localization_key = FRA_RBTT_piedmontese_italy_very_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_piedmontese_italy_status = 5 }
+        }
+        localization_key = FRA_RBTT_piedmontese_italy_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_piedmontese_italy_status = 6 }
+        }
+        localization_key = FRA_RBTT_piedmontese_italy_moderate_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_piedmontese_italy_status = 7 }
+        }
+        localization_key = FRA_RBTT_piedmontese_italy_low_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_piedmontese_italy_status = 8 }
+        }
+        localization_key = FRA_RBTT_piedmontese_italy_none_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_piedmontese_italy_status = 9 }
+        }
+        localization_key = FRA_RBTT_piedmontese_italy_core_key
+    }
+    text = {
+        localization_key = FRA_RBTT_piedmontese_italy_backup_key
+    }
+}
+
+defined_text = {
+    name = FRA_RBTT_corsica_sardinia_name
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_corsica_sardinia_status = 1 }
+        }
+        localization_key = FRA_RBTT_corsica_sardinia_debug_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_corsica_sardinia_status = 2 }
+        }
+        localization_key = FRA_RBTT_corsica_sardinia_lost_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_corsica_sardinia_status = 3 }
+        }
+        localization_key = FRA_RBTT_corsica_sardinia_puppet_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_corsica_sardinia_status = 4 }
+        }
+        localization_key = FRA_RBTT_corsica_sardinia_very_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_corsica_sardinia_status = 5 }
+        }
+        localization_key = FRA_RBTT_corsica_sardinia_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_corsica_sardinia_status = 6 }
+        }
+        localization_key = FRA_RBTT_corsica_sardinia_moderate_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_corsica_sardinia_status = 7 }
+        }
+        localization_key = FRA_RBTT_corsica_sardinia_low_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_corsica_sardinia_status = 8 }
+        }
+        localization_key = FRA_RBTT_corsica_sardinia_none_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_corsica_sardinia_status = 9 }
+        }
+        localization_key = FRA_RBTT_corsica_sardinia_core_key
+    }
+    text = {
+        localization_key = FRA_RBTT_corsica_sardinia_backup_key
+    }
+}
+
+defined_text = {
+    name = FRA_RBTT_switzerland_name
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_switzerland_status = 1 }
+        }
+        localization_key = FRA_RBTT_switzerland_debug_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_switzerland_status = 2 }
+        }
+        localization_key = FRA_RBTT_switzerland_lost_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_switzerland_status = 3 }
+        }
+        localization_key = FRA_RBTT_switzerland_puppet_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_switzerland_status = 4 }
+        }
+        localization_key = FRA_RBTT_switzerland_very_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_switzerland_status = 5 }
+        }
+        localization_key = FRA_RBTT_switzerland_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_switzerland_status = 6 }
+        }
+        localization_key = FRA_RBTT_switzerland_moderate_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_switzerland_status = 7 }
+        }
+        localization_key = FRA_RBTT_switzerland_low_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_switzerland_status = 8 }
+        }
+        localization_key = FRA_RBTT_switzerland_none_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_switzerland_status = 9 }
+        }
+        localization_key = FRA_RBTT_switzerland_core_key
+    }
+    text = {
+        localization_key = FRA_RBTT_switzerland_backup_key
+    }
+}

@@ -1,10 +1,5 @@
 ﻿l_english:
 
-
- FRA_RB_mecklenburg_tt:0 "Mecklenburg \nStatus - "
-
-
-
  FRA_RB_brittany_tt:0 "[FRA_RBTT_brittany_name]"
  FRA_RBTT_brittany_debug_key:0 "Brittany \nStatus - DEBUG"
  FRA_RBTT_brittany_lost_key:0 "Brittany \nStatus - §gLost"
@@ -17,18 +12,137 @@
  FRA_RBTT_brittany_core_key:0 "Brittany \nStatus - §BCore"
  FRA_RBTT_brittany_backup_key:0 "Brittany"
 
+ FRA_RB_mecklenburg_tt:0 "[FRA_RBTT_mecklenburg_name]"
+ FRA_RBTT_mecklenburg_debug_key:0 "Mecklenburg \nStatus - DEBUG"
+ FRA_RBTT_mecklenburg_lost_key:0 "Mecklenburg \nStatus - §gLost"
+ FRA_RBTT_mecklenburg_puppet_key:0 "Mecklenburg \nStatus - §1Puppet"
+ FRA_RBTT_mecklenburg_very_high_key:0 "Mecklenburg \nStatus - §RVery High Resistance"
+ FRA_RBTT_mecklenburg_high_key:0 "Mecklenburg \nStatus - §OHigh Resistance"
+ FRA_RBTT_mecklenburg_moderate_key:0 "Mecklenburg \nStatus - §YModerate Resistance"
+ FRA_RBTT_mecklenburg_low_key:0 "Mecklenburg \nStatus - §7Low Resistance"
+ FRA_RBTT_mecklenburg_none_key:0 "Mecklenburg \nStatus - §GNo Resistance"
+ FRA_RBTT_mecklenburg_core_key:0 "Mecklenburg \nStatus - §BCore"
+ FRA_RBTT_mecklenburg_backup_key:0 "Mecklenburg"
 
 
 
 
- FRA_RB_south_france_tt:0 "South France"
- FRA_RB_west_france_tt:0 "West France"
- FRA_RB_east_france_tt:0 "East France"
 
- FRA_RB_benelux_tt:0 "Benelux"
- FRA_RB_south_germany_tt:0 "South Germany"
- FRA_RB_north_germany_tt:0 "North Germany"
 
- FRA_RB_piedmontese_italy_tt:0 "Piedmontese Italy"
- FRA_RB_corsica_sardinia_tt:0 "Corsica & Sardinia"
- FRA_RB_switzerland_tt:0 "Switzerland"
+ FRA_RB_south_france_tt:0 "[FRA_RBTT_south_france_name]"
+ FRA_RBTT_south_france_debug_key:0 "South France \nStatus - DEBUG"
+ FRA_RBTT_south_france_lost_key:0 "South France \nStatus - §gLost"
+ FRA_RBTT_south_france_puppet_key:0 "South France \nStatus - §1Puppet"
+ FRA_RBTT_south_france_very_high_key:0 "South France \nStatus - §RVery High Resistance"
+ FRA_RBTT_south_france_high_key:0 "South France \nStatus - §OHigh Resistance"
+ FRA_RBTT_south_france_moderate_key:0 "South France \nStatus - §YModerate Resistance"
+ FRA_RBTT_south_france_low_key:0 "South France \nStatus - §7Low Resistance"
+ FRA_RBTT_south_france_none_key:0 "South France \nStatus - §GNo Resistance"
+ FRA_RBTT_south_france_core_key:0 "South France \nStatus - §BCore"
+ FRA_RBTT_south_france_backup_key:0 "South France"
+
+ FRA_RB_west_france_tt:0 "[FRA_RBTT_west_france_name]"
+ FRA_RBTT_west_france_debug_key:0 "West France \nStatus - DEBUG"
+ FRA_RBTT_west_france_lost_key:0 "West France \nStatus - §gLost"
+ FRA_RBTT_west_france_puppet_key:0 "West France \nStatus - §1Puppet"
+ FRA_RBTT_west_france_very_high_key:0 "West France \nStatus - §RVery High Resistance"
+ FRA_RBTT_west_france_high_key:0 "West France \nStatus - §OHigh Resistance"
+ FRA_RBTT_west_france_moderate_key:0 "West France \nStatus - §YModerate Resistance"
+ FRA_RBTT_west_france_low_key:0 "West France \nStatus - §7Low Resistance"
+ FRA_RBTT_west_france_none_key:0 "West France \nStatus - §GNo Resistance"
+ FRA_RBTT_west_france_core_key:0 "West France \nStatus - §BCore"
+ FRA_RBTT_west_france_backup_key:0 "West France"
+
+ FRA_RB_east_france_tt:0 "[FRA_RBTT_east_france_name]"
+ FRA_RBTT_east_france_debug_key:0 "East France \nStatus - DEBUG"
+ FRA_RBTT_east_france_lost_key:0 "East France \nStatus - §gLost"
+ FRA_RBTT_east_france_puppet_key:0 "East France \nStatus - §1Puppet"
+ FRA_RBTT_east_france_very_high_key:0 "East France \nStatus - §RVery High Resistance"
+ FRA_RBTT_east_france_high_key:0 "East France \nStatus - §OHigh Resistance"
+ FRA_RBTT_east_france_moderate_key:0 "East France \nStatus - §YModerate Resistance"
+ FRA_RBTT_east_france_low_key:0 "East France \nStatus - §7Low Resistance"
+ FRA_RBTT_east_france_none_key:0 "East France \nStatus - §GNo Resistance"
+ FRA_RBTT_east_france_core_key:0 "East France \nStatus - §BCore"
+ FRA_RBTT_east_france_backup_key:0 "East France"
+
+
+
+
+
+
+ FRA_RB_benelux_tt:0 "[FRA_RBTT_benelux_name]"
+ FRA_RBTT_benelux_debug_key:0 "Benelux \nStatus - DEBUG"
+ FRA_RBTT_benelux_lost_key:0 "Benelux \nStatus - §gLost"
+ FRA_RBTT_benelux_puppet_key:0 "Benelux \nStatus - §1Puppet"
+ FRA_RBTT_benelux_very_high_key:0 "Benelux \nStatus - §RVery High Resistance"
+ FRA_RBTT_benelux_high_key:0 "Benelux \nStatus - §OHigh Resistance"
+ FRA_RBTT_benelux_moderate_key:0 "Benelux \nStatus - §YModerate Resistance"
+ FRA_RBTT_benelux_low_key:0 "Benelux \nStatus - §7Low Resistance"
+ FRA_RBTT_benelux_none_key:0 "Benelux \nStatus - §GNo Resistance"
+ FRA_RBTT_benelux_core_key:0 "Benelux \nStatus - §BCore"
+ FRA_RBTT_benelux_backup_key:0 "Benelux"
+ 
+ FRA_RB_south_germany_tt:0 "[FRA_RBTT_south_germany_name]"
+ FRA_RBTT_south_germany_debug_key:0 "South German \nStatus - DEBUG"
+ FRA_RBTT_south_germany_lost_key:0 "South German \nStatus - §gLost"
+ FRA_RBTT_south_germany_puppet_key:0 "South German \nStatus - §1Puppet"
+ FRA_RBTT_south_germany_very_high_key:0 "South German \nStatus - §RVery High Resistance"
+ FRA_RBTT_south_germany_high_key:0 "South German \nStatus - §OHigh Resistance"
+ FRA_RBTT_south_germany_moderate_key:0 "South German \nStatus - §YModerate Resistance"
+ FRA_RBTT_south_germany_low_key:0 "South German \nStatus - §7Low Resistance"
+ FRA_RBTT_south_germany_none_key:0 "South German \nStatus - §GNo Resistance"
+ FRA_RBTT_south_germany_core_key:0 "South German \nStatus - §BCore"
+ FRA_RBTT_south_germany_backup_key:0 "South German"
+
+ FRA_RB_north_germany_tt:0 "[FRA_RBTT_north_germany_name]"
+ FRA_RBTT_north_germany_debug_key:0 "North German \nStatus - DEBUG"
+ FRA_RBTT_north_germany_lost_key:0 "North German \nStatus - §gLost"
+ FRA_RBTT_north_germany_puppet_key:0 "North German \nStatus - §1Puppet"
+ FRA_RBTT_north_germany_very_high_key:0 "North German \nStatus - §RVery High Resistance"
+ FRA_RBTT_north_germany_high_key:0 "North German \nStatus - §OHigh Resistance"
+ FRA_RBTT_north_germany_moderate_key:0 "North German \nStatus - §YModerate Resistance"
+ FRA_RBTT_north_germany_low_key:0 "North German \nStatus - §7Low Resistance"
+ FRA_RBTT_north_germany_none_key:0 "North German \nStatus - §GNo Resistance"
+ FRA_RBTT_north_germany_core_key:0 "North German \nStatus - §BCore"
+ FRA_RBTT_north_germany_backup_key:0 "North German"
+
+
+
+
+
+
+ FRA_RB_piedmontese_italy_tt:0 "[FRA_RBTT_piedmontese_italy_name]"
+ FRA_RBTT_piedmontese_italy_debug_key:0 "Piedmontese Italy \nStatus - DEBUG"
+ FRA_RBTT_piedmontese_italy_lost_key:0 "Piedmontese Italy \nStatus - §gLost"
+ FRA_RBTT_piedmontese_italy_puppet_key:0 "Piedmontese Italy \nStatus - §1Puppet"
+ FRA_RBTT_piedmontese_italy_very_high_key:0 "Piedmontese Italy \nStatus - §RVery High Resistance"
+ FRA_RBTT_piedmontese_italy_high_key:0 "Piedmontese Italy \nStatus - §OHigh Resistance"
+ FRA_RBTT_piedmontese_italy_moderate_key:0 "Piedmontese Italy \nStatus - §YModerate Resistance"
+ FRA_RBTT_piedmontese_italy_low_key:0 "Piedmontese Italy \nStatus - §7Low Resistance"
+ FRA_RBTT_piedmontese_italy_none_key:0 "Piedmontese Italy \nStatus - §GNo Resistance"
+ FRA_RBTT_piedmontese_italy_core_key:0 "Piedmontese Italy \nStatus - §BCore"
+ FRA_RBTT_piedmontese_italy_backup_key:0 "Piedmontese Italy"
+
+ FRA_RB_corsica_sardinia_tt:0 "[FRA_RBTT_corsica_sardinia_name]"
+ FRA_RBTT_corsica_sardinia_debug_key:0 "Corsica & Sardinia \nStatus - DEBUG"
+ FRA_RBTT_corsica_sardinia_lost_key:0 "Corsica & Sardinia \nStatus - §gLost"
+ FRA_RBTT_corsica_sardinia_puppet_key:0 "Corsica & Sardinia \nStatus - §1Puppet"
+ FRA_RBTT_corsica_sardinia_very_high_key:0 "Corsica & Sardinia \nStatus - §RVery High Resistance"
+ FRA_RBTT_corsica_sardinia_high_key:0 "Corsica & Sardinia \nStatus - §OHigh Resistance"
+ FRA_RBTT_corsica_sardinia_moderate_key:0 "Corsica & Sardinia \nStatus - §YModerate Resistance"
+ FRA_RBTT_corsica_sardinia_low_key:0 "Corsica & Sardinia \nStatus - §7Low Resistance"
+ FRA_RBTT_corsica_sardinia_none_key:0 "Corsica & Sardinia \nStatus - §GNo Resistance"
+ FRA_RBTT_corsica_sardinia_core_key:0 "Corsica & Sardinia \nStatus - §BCore"
+ FRA_RBTT_corsica_sardinia_backup_key:0 "Corsica & Sardinia"
+
+ FRA_RB_switzerland_tt:0 "[FRA_RBTT_switzerland_name]"
+ FRA_RBTT_switzerland_debug_key:0 "Switzerland \nStatus - DEBUG"
+ FRA_RBTT_switzerland_lost_key:0 "Switzerland \nStatus - §gLost"
+ FRA_RBTT_switzerland_puppet_key:0 "Switzerland \nStatus - §1Puppet"
+ FRA_RBTT_switzerland_very_high_key:0 "Switzerland \nStatus - §RVery High Resistance"
+ FRA_RBTT_switzerland_high_key:0 "Switzerland \nStatus - §OHigh Resistance"
+ FRA_RBTT_switzerland_moderate_key:0 "Switzerland \nStatus - §YModerate Resistance"
+ FRA_RBTT_switzerland_low_key:0 "Switzerland \nStatus - §7Low Resistance"
+ FRA_RBTT_switzerland_none_key:0 "Switzerland \nStatus - §GNo Resistance"
+ FRA_RBTT_switzerland_core_key:0 "Switzerland \nStatus - §BCore"
+ FRA_RBTT_switzerland_backup_key:0 "Switzerland"
