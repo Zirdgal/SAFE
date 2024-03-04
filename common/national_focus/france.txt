@@ -1722,7 +1722,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_our_path
 		x = 40
 		y = 0
-		cost = 10
+		cost = 1
 		
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
