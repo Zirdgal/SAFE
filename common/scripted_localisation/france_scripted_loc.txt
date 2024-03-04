@@ -1,0 +1,69 @@
+defined_text = {
+    name = FRA_RBTT_brittany_name
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_brittany_status = 1 }
+        }
+        localization_key = FRA_RBTT_brittany_debug_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_brittany_status = 2 }
+        }
+        localization_key = FRA_RBTT_brittany_lost_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_brittany_status = 3 }
+        }
+        localization_key = FRA_RBTT_brittany_puppet_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_brittany_status = 4 }
+        }
+        localization_key = FRA_RBTT_brittany_very_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_brittany_status = 5 }
+        }
+        localization_key = FRA_RBTT_brittany_high_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_brittany_status = 6 }
+        }
+        localization_key = FRA_RBTT_brittany_moderate_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_brittany_status = 7 }
+        }
+        localization_key = FRA_RBTT_brittany_low_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_brittany_status = 8 }
+        }
+        localization_key = FRA_RBTT_brittany_none_key
+    }
+    text = {
+        trigger = {
+            original_tag = FRA
+            check_variable = { global.FRA_resistance_balance_brittany_status = 9 }
+        }
+        localization_key = FRA_RBTT_brittany_core_key
+    }
+    text = {
+        localization_key = FRA_RBTT_brittany_backup_key
+    }
+}

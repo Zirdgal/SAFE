@@ -1,3 +1,34 @@
 ﻿l_english:
 
-# removed until functionality added.
+
+ FRA_RB_mecklenburg_tt:0 "Mecklenburg \nStatus - "
+
+
+
+ FRA_RB_brittany_tt:0 "[FRA_RBTT_brittany_name]"
+ FRA_RBTT_brittany_debug_key:0 "Brittany \nStatus - DEBUG"
+ FRA_RBTT_brittany_lost_key:0 "Brittany \nStatus - §gLost"
+ FRA_RBTT_brittany_puppet_key:0 "Brittany \nStatus - §1Puppet"
+ FRA_RBTT_brittany_very_high_key:0 "Brittany \nStatus - §RVery High Resistance"
+ FRA_RBTT_brittany_high_key:0 "Brittany \nStatus - §OHigh Resistance"
+ FRA_RBTT_brittany_moderate_key:0 "Brittany \nStatus - §YModerate Resistance"
+ FRA_RBTT_brittany_low_key:0 "Brittany \nStatus - §7Low Resistance"
+ FRA_RBTT_brittany_none_key:0 "Brittany \nStatus - §GNo Resistance"
+ FRA_RBTT_brittany_core_key:0 "Brittany \nStatus - §BCore"
+ FRA_RBTT_brittany_backup_key:0 "Brittany"
+
+
+
+
+
+ FRA_RB_south_france_tt:0 "South France"
+ FRA_RB_west_france_tt:0 "West France"
+ FRA_RB_east_france_tt:0 "East France"
+
+ FRA_RB_benelux_tt:0 "Benelux"
+ FRA_RB_south_germany_tt:0 "South Germany"
+ FRA_RB_north_germany_tt:0 "North Germany"
+
+ FRA_RB_piedmontese_italy_tt:0 "Piedmontese Italy"
+ FRA_RB_corsica_sardinia_tt:0 "Corsica & Sardinia"
+ FRA_RB_switzerland_tt:0 "Switzerland"

@@ -10,35 +10,23 @@ guiTypes = {
 		size = { width = 100% height= 500 }
 
 
-
-
-		iconType ={
-			name ="FRA_resistance_balance_mecklenburg_strip"
-			spriteType = "GFX_FRA_resistance_balance_mecklenburg_strip"
-			position = { x= 428 y = 67 }
-		}
-		iconType ={
-			name ="FRA_resistance_balance_brittany_strip"
-			spriteType = "GFX_FRA_resistance_balance_brittany_strip"
-			position = { x= 10 y = 175 }
-		}
-
-
-
 		iconType ={
 			name ="FRA_resistance_balance_south_france_strip"
 			spriteType = "GFX_FRA_resistance_balance_south_france_strip"
 			position = { x= 93 y = 240 }
+			pdx_tooltip = FRA_RB_south_france_tt
 		}
 		iconType ={
 			name ="FRA_resistance_balance_west_france_strip"
 			spriteType = "GFX_FRA_resistance_balance_west_france_strip"
 			position = { x= 80 y = 135 }
+			pdx_tooltip = FRA_RB_west_france_tt
 		}
 		iconType ={
 			name ="FRA_resistance_balance_east_france_strip"
 			spriteType = "GFX_FRA_resistance_balance_east_france_strip"
 			position = { x= 150 y = 100 }
+			pdx_tooltip = FRA_RB_east_france_tt
 		}
 
 
@@ -49,16 +37,19 @@ guiTypes = {
 			name ="FRA_resistance_balance_benelux_strip"
 			spriteType = "GFX_FRA_resistance_balance_benelux_strip"
 			position = { x= 210 y = 15 }
+			pdx_tooltip = FRA_RB_benelux_tt
 		}
 		iconType ={
 			name ="FRA_resistance_balance_south_germany_strip"
 			spriteType = "GFX_FRA_resistance_balance_south_germany_strip"
 			position = { x= 305 y = 83 }
+			pdx_tooltip = FRA_RB_south_germany_tt
 		}
 		iconType ={
 			name ="FRA_resistance_balance_north_germany_strip"
 			spriteType = "GFX_FRA_resistance_balance_north_germany_strip"
 			position = { x= 305 y = 2 }
+			pdx_tooltip = FRA_RB_north_germany_tt
 		}
 
 
@@ -68,16 +59,33 @@ guiTypes = {
 			name ="FRA_resistance_balance_piedmontese_italy_strip"
 			spriteType = "GFX_FRA_resistance_balance_piedmontese_italy_strip"
 			position = { x= 305 y = 272 }
+			pdx_tooltip = FRA_RB_piedmontese_italy_tt
 		}
 		iconType ={
 			name ="FRA_resistance_balance_corsica_sardinia_strip"
 			spriteType = "GFX_FRA_resistance_balance_corsica_sardinia_strip"
 			position = { x= 430 y = 330 }
+			pdx_tooltip = FRA_RB_corsica_sardinia_tt
 		}
 		iconType ={
 			name ="FRA_resistance_balance_switzerland_strip"
 			spriteType = "GFX_FRA_resistance_balance_switzerland_strip"
 			position = { x= 305 y = 230 }
+			pdx_tooltip = FRA_RB_switzerland_tt
+		}
+
+
+		iconType ={
+			name ="FRA_resistance_balance_mecklenburg_strip"
+			spriteType = "GFX_FRA_resistance_balance_mecklenburg_strip"
+			position = { x= 428 y = 67 }
+			pdx_tooltip = FRA_RB_mecklenburg_tt
+		}
+		iconType ={
+			name ="FRA_resistance_balance_brittany_strip"
+			spriteType = "GFX_FRA_resistance_balance_brittany_strip"
+			position = { x= 10 y = 175 }
+			pdx_tooltip = FRA_RB_brittany_tt
 		}
 	}
 }
