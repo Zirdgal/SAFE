@@ -36,7 +36,8 @@ add_ideas = {
 	DEN_the_sami_idea
 	DEN_norwegian_partisans_idea
 	DEN_the_haer_idea
-	DEN_danish_norwegian_industrial_capabilities_idea
+	DEN_danish_industrial_capabilities_idea
+	DEN_norwegian_industrial_capabilities_idea
 	DEN_a_divided_nation_idea
 }
 

@@ -211,9 +211,8 @@ focus_tree = {
 					DEN_the_sami_idea_2
 					DEN_the_sami_idea_3
 				}
-				swap_ideas = {
-					remove_idea = DEN_danish_norwegian_industrial_capabilities_idea
-					add_idea = DEN_danish_industrial_capabilities_idea
+				remove_ideas = { 
+					DEN_norwegian_industrial_capabilities_idea
 				}
 			}
 		}
@@ -1534,7 +1533,7 @@ focus_tree = {
 	focus = {
 		id = DEN_state_of_the_haer
 		icon = GFX_focus_DEN_haeren_reorganization
-		x = 35
+		x = 37
 		y = 2
 		relative_position_id = DEN_the_fate_of_the_king
 		prerequisite { focus = DEN_superior_firepower focus = DEN_mobile_warfare focus = DEN_grand_battleplan focus = DEN_mass_assault }
@@ -1763,8 +1762,12 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = DEN_danish_norwegian_industrial_capabilities_idea
-				add_idea = DEN_danish_norwegian_industrial_capabilities_idea_2
+				remove_idea = DEN_danish_industrial_capabilities_idea
+				add_idea = DEN_danish_industrial_capabilities_idea_2
+			}
+			swap_ideas = {
+				remove_idea = DEN_norwegian_industrial_capabilities_idea
+				add_idea = DEN_norwegian_industrial_capabilities_idea_2
 			}
 		}
 	}
@@ -1783,27 +1786,42 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			99 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			37 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
+		}
+	}
+	
+	focus = {
+		id = DEN_fund_farmers_in_jylland
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_invest_in_danish_industrial_capability }
+		x = -2
+		y = 1
+		relative_position_id = DEN_invest_in_danish_industrial_capability
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DEN_promote_capital_urbanization
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_fund_farmers_in_jylland }
+		x = 1
+		y = 1
+		relative_position_id = DEN_fund_farmers_in_jylland
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
 		}
 	}
 	
@@ -1821,27 +1839,43 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			110 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			922 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
+		
+		}
+	}
+	
+	focus = {
+		id = DEN_help_workers_of_oslo
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_invest_in_norwegian_industrial_capability }
+		x = 2
+		y = 1
+		relative_position_id = DEN_invest_in_norwegian_industrial_capability
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DEN_ease_up_on_fishing_restrictions
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_help_workers_of_oslo }
+		x = -1
+		y = 1
+		relative_position_id = DEN_help_workers_of_oslo
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
 		}
 	}
 
@@ -1867,7 +1901,7 @@ focus_tree = {
 		id = DEN_invest_in_daf
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
 		prerequisite = { focus = DEN_adressing_our_economic_situation }
-		x = 3
+		x = 5
 		y = 1
 		relative_position_id = DEN_adressing_our_economic_situation
 		
@@ -1884,12 +1918,61 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = DEN_recruit_swedish_factory_workers
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_fund_farmers_in_jylland focus = DEN_help_workers_of_oslo }
+		x = 1
+		y = 2
+		relative_position_id = DEN_invest_in_danish_industrial_capability
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = DEN_the_dano_norweigan_railway
+		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
+		prerequisite = { focus = DEN_recruit_swedish_factory_workers }
+		prerequisite = { focus = DEN_promote_capital_urbanization }
+		prerequisite = { focus = DEN_ease_up_on_fishing_restrictions }
+		x = 1
+		y = 3
+		relative_position_id = DEN_invest_in_danish_industrial_capability
+		
+		cost = 5
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		
+		available_if_capitulated = yes
+
+		bypass = {
+			NOR = {
+				exists = yes
+			}
+		}
+
+		completion_reward = {
+			build_railway = {
+				level = 2
+				start_province = 6115
+				target_province = 383
+			}
+		}
+	}
+
+	
+	focus = {
 		id = DEN_build_up_the_islands
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
-		prerequisite = { focus = DEN_invest_in_danish_industrial_capability focus = DEN_invest_in_norwegian_industrial_capability }
-		x = 1
+		prerequisite = { focus = DEN_the_dano_norweigan_railway }
+		x = 0
 		y = 1
-		relative_position_id = DEN_invest_in_danish_industrial_capability
+		relative_position_id = DEN_the_dano_norweigan_railway
 		
 		cost = 5
 		search_filters = { FOCUS_FILTER_INDUSTRY }
