@@ -1786,6 +1786,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = DEN_danish_industrial_capabilities_idea
+				add_idea = DEN_danish_industrial_capabilities_idea_2
+			}
 		}
 	}
 	
@@ -1803,7 +1807,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
+			swap_ideas = {
+				remove_idea = DEN_danish_industrial_capabilities_idea_2
+				add_idea = DEN_danish_industrial_capabilities_idea_3
+			}
 		}
 	}
 	
@@ -1839,7 +1846,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
+			swap_ideas = {
+				remove_idea = DEN_norwegian_industrial_capabilities_idea
+				add_idea = DEN_norwegian_industrial_capabilities_idea_2
+			}
 		}
 	}
 	
@@ -1920,7 +1930,7 @@ focus_tree = {
 	focus = {
 		id = DEN_recruit_swedish_factory_workers
 		icon = GFX_focus_ITA_bend_the_bars ##PLACEHOLDER
-		prerequisite = { focus = DEN_fund_farmers_in_jylland focus = DEN_help_workers_of_oslo }
+		prerequisite = { focus = DEN_fund_farmers_in_jylland }
 		x = 1
 		y = 2
 		relative_position_id = DEN_invest_in_danish_industrial_capability
